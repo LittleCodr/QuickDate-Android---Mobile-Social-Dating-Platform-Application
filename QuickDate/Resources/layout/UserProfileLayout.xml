@@ -1,0 +1,468 @@
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="?attr/colorFill"
+	android:id="@+id/TopLayout">
+	<androidx.core.widget.NestedScrollView
+		app:layout_behavior="@string/appbar_scrolling_view_behavior"
+		android:layout_width="match_parent" 
+		android:background="?attr/colorFill"
+		android:layout_height="match_parent">
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical">
+
+			<FrameLayout
+				android:layout_width="match_parent"
+				android:layout_height="300dp">
+
+				<ImageView
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:id="@+id/UserImage"
+					android:scaleType="centerCrop"
+					android:src="@color/accent"/>
+
+				<ImageView
+					android:id="@+id/backIcon"
+					android:layout_width="40dp"
+					android:layout_height="40dp"
+					android:background="@drawable/shape_circle_white"
+					android:clickable="true"
+					android:layout_margin="20dp"
+					android:layout_gravity="start"
+					android:padding="8dp"
+					android:src="@drawable/icon_back_arrow_left"/>
+				 
+				<LinearLayout
+					android:layout_gravity="bottom"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal"
+					android:paddingBottom="60dp"
+					android:gravity="center">
+					<at.markushi.ui.CircleButton
+						android:id="@+id/FavoriteButton"
+						android:layout_width="52dp"
+						android:layout_height="52dp"
+						app:cb_color="@color/gnt_white"
+						android:elevation="10dp"
+						app:cb_pressedRingWidth="2dip"
+						android:src="@drawable/icon_favorites_vector"
+						android:padding="3dp" 
+						android:layout_marginEnd="5dp"
+						android:layout_marginStart="5dp"
+						android:tint="@color/primaryDark"/>
+					<at.markushi.ui.CircleButton
+						android:id="@+id/giftButton"
+						android:layout_width="52dp"
+						android:layout_height="50dp"
+						app:cb_color="@color/gnt_white"
+						android:elevation="5dp"
+						app:cb_pressedRingWidth="2dip"
+						android:src="@drawable/icon_gift_vector"
+						android:padding="3dp"
+						android:layout_marginEnd="5dp"
+						android:layout_marginStart="5dp"
+						android:tint="@color/primaryDark" />
+					<at.markushi.ui.CircleButton
+						android:id="@+id/FriendRequestsButton"
+						android:layout_width="52dp"
+						android:layout_height="52dp"
+						app:cb_color="@color/gnt_white"
+						app:cb_pressedRingWidth="2dip"
+						android:src="@drawable/icon_friendplus_vector"
+						android:padding="3dp"
+						android:layout_marginEnd="5dp"
+						android:layout_marginStart="5dp"
+						android:tint="@color/primaryDark"
+						android:elevation="10dp" />
+				</LinearLayout>
+
+				<View
+					android:background="@drawable/rounded_dialog"
+					android:layout_gravity="bottom"
+					android:layout_width="match_parent"
+					android:layout_height="40dp" />
+			</FrameLayout>
+
+			<ViewStub
+				android:id="@+id/viewStubShimmer"
+				android:inflatedId="@+id/subViewShimmer"
+				android:layout="@layout/ShimmerLoadPageLayout"
+				android:layout_centerInParent="true"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent" />
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="vertical"
+				android:background="?attr/colorFill"
+				android:paddingStart="15dp"
+				android:paddingEnd="15dp">
+				 
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal">
+					<TextView
+						android:id="@+id/Username"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:textSize="20sp"
+						android:textStyle="bold"
+						android:drawablePadding="5dp"
+						android:drawableTint="@color/accent"/>
+
+					<View
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"/>
+
+					<ImageView
+						android:layout_marginTop="6dp"
+						android:id="@+id/iconMore"
+						android:layout_gravity="top"
+						android:gravity="top"
+						android:layout_width="19dp"
+						android:layout_height="19dp"
+						android:tint="?attr/colorSecText"
+						android:src="@drawable/icon_more_dots_vector" />
+
+				</LinearLayout>
+
+				<TextView
+					android:id="@+id/AboutText"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:textColor="?attr/colorSecText"
+					android:textSize="13sp" />
+
+				<androidx.recyclerview.widget.RecyclerView
+					android:id="@+id/Recyler"
+					android:layout_marginTop="10dp"
+					android:layout_width="match_parent"
+					android:layout_height="105dp"
+					android:scrollbars="none"  />
+
+				<FrameLayout
+					android:id="@+id/mapCardView"
+					android:layout_marginTop="9dp"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content">
+					<androidx.cardview.widget.CardView
+						android:layout_width="match_parent"
+						android:layout_height="130dp" 
+						app:cardBackgroundColor="?attr/colorFill"
+						app:cardCornerRadius="20dp"
+						app:cardElevation="0.5dp">
+						<FrameLayout
+							android:id="@+id/map"
+							android:layout_width="match_parent"
+							android:layout_height="130dp" />
+						<TextView
+							android:drawableStart="@drawable/icon_place_vector"
+							android:id="@+id/LocationTextView"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_gravity="bottom"
+							android:textSize="13sp"
+							android:padding="5dp"
+							android:lines="1"
+							android:textColor="?attr/colorSecText"
+							android:drawablePadding="5dp"
+							android:drawableTint="@color/accent"
+							android:background="@drawable/EditTextStyleOne"
+							android:backgroundTint="?attr/colorFill"
+							android:layout_margin="10dp"/>
+					</androidx.cardview.widget.CardView>
+					
+				</FrameLayout>
+
+				<TextView
+					android:id="@+id/MoreInfoHead"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/Lbl_MoreInfo"
+					android:layout_marginTop="16dp"
+					android:textSize="16sp"
+					android:textStyle="bold" />
+
+				<TextView
+					android:id="@+id/Description"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="2dp"
+					android:textColor="?attr/colorSecText"
+					android:textSize="13sp" />
+
+				<LinearLayout
+					android:id="@+id/intersetLayout"
+					android:orientation="vertical"
+					android:layout_marginTop="10dp"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content">
+					<TextView
+						android:id="@+id/IntersetsHead"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@string/Lbl_Interests"
+						android:layout_marginTop="6dp"
+						android:textSize="16sp"
+						android:textStyle="bold" />
+					<androidx.recyclerview.widget.RecyclerView
+						android:id="@+id/RecylerIntersets"
+						android:layout_marginTop="6dp"
+						android:layout_width="match_parent"
+						android:layout_height="50dp"
+						android:scrollbars="none"  />
+				</LinearLayout>
+
+				<LinearLayout
+					android:id="@+id/languagesLayout"
+					android:orientation="vertical"
+					android:layout_marginTop="10dp"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content">
+					<TextView
+						android:id="@+id/LanguagesHead"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@string/Lbl_Languages"
+						android:layout_marginTop="6dp"
+						android:textSize="16sp"
+						android:textStyle="bold" />
+					<androidx.recyclerview.widget.RecyclerView
+						android:id="@+id/RecylerLanguages"
+						android:layout_marginTop="6dp"
+						android:layout_width="match_parent"
+						android:layout_height="50dp"
+						android:scrollbars="none"  />
+				</LinearLayout>
+				 
+				<LinearLayout
+					android:id="@+id/workAndEducationLayout"
+					android:orientation="vertical"
+					android:layout_marginTop="10dp"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content">
+					<TextView
+						android:id="@+id/workAndEducationHead"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@string/Lbl_WorkAndEducation"
+						android:layout_marginTop="6dp"
+						android:textSize="16sp"
+						android:textStyle="bold" />
+					<TextView
+						android:id="@+id/DescriptionworkSection"
+						android:layout_below="@+id/workAndEducationHead"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="2dp"
+						android:textColor="?attr/colorSecText"
+						android:textSize="13sp" />
+				</LinearLayout>
+
+				<LinearLayout
+					android:id="@+id/socialinfolayout"
+					android:orientation="vertical"
+					android:layout_marginTop="10dp"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content">
+
+					<TextView
+						android:id="@+id/SocialInfoHead"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@string/Lbl_SocialInfo"
+						android:layout_marginTop="6dp"
+						android:textSize="16sp"
+						android:textStyle="bold"  />
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:orientation="horizontal"
+						android:layout_marginTop="2dp"
+						android:paddingStart="15dp"
+						android:paddingEnd="29dp"
+						android:paddingTop="3dp"
+						android:gravity="start">
+						<androidx.appcompat.widget.AppCompatButton
+							android:layout_width="30dp"
+							android:layout_height="30dp"
+							android:id="@+id/social1"
+							android:visibility="gone"
+							android:textSize="14sp"
+							android:layout_marginEnd="5dp"
+							android:layout_marginTop="10dp"
+							android:background="@drawable/round_button_outline"
+							android:backgroundTint="#DB4437"
+							android:tag="false"
+							android:paddingTop="1dp"
+							android:paddingStart="2dp"
+							android:paddingEnd="2dp"
+							android:textAlignment="center"
+							android:textAllCaps="false"
+							android:text="G"
+							android:textColor="#DB4437" />
+						<androidx.appcompat.widget.AppCompatButton
+							android:layout_width="30dp"
+							android:layout_height="30dp"
+							android:id="@+id/social2"
+							android:textSize="14sp"
+							android:visibility="gone"
+							android:layout_toEndOf="@id/social1"
+							android:layout_marginStart="6dp"
+							android:layout_marginEnd="5dp"
+							android:layout_marginTop="10dp"
+							android:background="@drawable/round_button_outline"
+							android:backgroundTint="#3B5998"
+							android:tag="false"
+							android:paddingTop="1dp"
+							android:paddingStart="2dp"
+							android:paddingEnd="2dp"
+							android:textAlignment="center"
+							android:textAllCaps="false"
+							android:text="F"
+							android:textColor="#3B5998" />
+						<androidx.appcompat.widget.AppCompatButton
+							android:layout_width="30dp"
+							android:layout_height="30dp"
+							android:id="@+id/social3"
+							android:textSize="14sp"
+							android:visibility="gone"
+							android:layout_toEndOf="@id/social2"
+							android:layout_marginStart="6dp"
+							android:layout_marginEnd="6dp"
+							android:layout_marginTop="10dp"
+							android:background="@drawable/round_button_outline"
+							android:backgroundTint="#1DA1F2"
+							android:tag="false"
+							android:paddingTop="1dp"
+							android:paddingStart="2dp"
+							android:paddingEnd="2dp"
+							android:textAlignment="center"
+							android:textAllCaps="false"
+							android:text="T"
+							android:textColor="#1DA1F2" />
+						<androidx.appcompat.widget.AppCompatButton
+							android:layout_width="30dp"
+							android:layout_height="30dp"
+							android:id="@+id/social4"
+							android:textSize="14sp"
+							android:visibility="gone"
+							android:layout_toEndOf="@id/social3"
+							android:layout_marginStart="6dp"
+							android:layout_marginEnd="6dp"
+							android:layout_marginTop="10dp"
+							android:background="@drawable/round_button_outline"
+							android:backgroundTint="#0077B5"
+							android:tag="false"
+							android:paddingTop="1dp"
+							android:paddingStart="2dp"
+							android:paddingEnd="2dp"
+							android:textAlignment="center"
+							android:textAllCaps="false"
+							android:text="LI"
+							android:textColor="#0077B5" />
+						<androidx.appcompat.widget.AppCompatButton
+							android:layout_width="30dp"
+							android:layout_height="30dp"
+							android:id="@+id/social5"
+							android:textSize="14sp"
+							android:visibility="gone"
+							android:layout_toEndOf="@id/social4"
+							android:layout_marginStart="6dp"
+							android:layout_marginEnd="6dp"
+							android:layout_marginTop="10dp"
+							android:background="@drawable/round_button_outline"
+							android:backgroundTint="#e4405f"
+							android:tag="false"
+							android:paddingTop="1dp"
+							android:paddingStart="2dp"
+							android:paddingEnd="2dp"
+							android:textAlignment="center"
+							android:textAllCaps="false"
+							android:text="In"
+							android:textColor="#e4405f" />
+						<androidx.appcompat.widget.AppCompatButton
+							android:layout_width="30dp"
+							android:layout_height="30dp"
+							android:id="@+id/website"
+							android:textSize="14sp"
+							android:visibility="gone"
+							android:layout_toEndOf="@id/social5"
+							android:layout_marginStart="6dp"
+							android:layout_marginEnd="6dp"
+							android:layout_marginTop="10dp"
+							android:background="@drawable/round_button_outline"
+							android:tag="false"
+							android:paddingTop="1dp"
+							android:paddingStart="2dp"
+							android:paddingEnd="2dp"
+							android:textAlignment="center"
+							android:textAllCaps="false"
+							android:text="W"
+							android:textColor="@color/accent" />
+					</LinearLayout>
+
+				</LinearLayout>
+
+			</LinearLayout>
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="90dp" />
+		</LinearLayout>
+	</androidx.core.widget.NestedScrollView>
+	<LinearLayout
+		android:id="@+id/footerButtonSection"
+		android:layout_alignParentBottom="true"
+		android:background="@xml/framealfacolor"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:paddingBottom="25dp"
+		android:layout_marginTop="0dp"
+		android:gravity="center">
+		<at.markushi.ui.CircleButton
+			android:id="@+id/Chatbutton1"
+			android:layout_width="52dp"
+			android:layout_height="50dp"
+			app:cb_color="@color/accentLight"
+			android:elevation="5dp"
+			app:cb_pressedRingWidth="2dip"
+			android:src="@drawable/icon_message_vector"
+			android:layout_marginEnd="5dp"
+			android:layout_marginStart="5dp"
+			android:tint="@color/accent" />
+		<at.markushi.ui.CircleButton
+			android:id="@+id/closebutton1"
+			android:layout_width="52dp"
+			android:layout_height="52dp"
+			app:cb_color="@color/primaryLight"
+			android:elevation="10dp"
+			app:cb_pressedRingWidth="2dip"
+			android:src="@drawable/icon_close_vector"
+			android:layout_marginEnd="5dp"
+			android:layout_marginStart="5dp"
+			android:tint="@color/primaryDark"/>
+		<at.markushi.ui.CircleButton
+			android:id="@+id/likebutton2"
+			android:layout_width="52dp"
+			android:layout_height="52dp"
+			app:cb_color="@color/accent"
+			app:cb_pressedRingWidth="2dip"
+			android:src="@drawable/icon_like_vector"
+			android:layout_marginEnd="5dp"
+			android:layout_marginStart="5dp"
+			android:tint="@color/gnt_white"
+			android:elevation="10dp" />
+	</LinearLayout>
+</RelativeLayout>

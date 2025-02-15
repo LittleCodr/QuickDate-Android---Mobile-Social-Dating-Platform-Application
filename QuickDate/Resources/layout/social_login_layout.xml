@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:id="@+id/SocialLogin_Layout"
+	android:gravity="center"
+	android:orientation="vertical">
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:weightSum="3"
+		android:gravity="center"
+		android:layout_marginTop="40dp">
+		<View
+			android:layout_width="0dp"
+			android:layout_height="1px"
+			android:layout_weight="1.4"
+			android:background="@color/border_line"/>
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:textAllCaps="false"
+			android:text="@string/Lbl_continueWith"
+			android:layout_marginStart="10dp"
+			android:layout_marginEnd="10dp"
+			android:textSize="12sp" />
+		<View
+			android:layout_width="0dp"
+			android:layout_height="1px"
+			android:layout_weight="1.4"
+			android:background="@color/border_line"/>
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="60dp"
+		android:orientation="horizontal"
+		android:gravity="center"
+		android:layout_gravity="center"
+		android:layout_marginStart="10dp"
+		android:layout_marginEnd="10dp" >
+		<LinearLayout
+			android:id="@+id/ll_Googlelogin"
+			android:layout_width="wrap_content"
+			android:layout_height="45dp"
+			android:layout_marginStart="5dp"
+			android:layout_marginEnd="5dp"
+			android:gravity="center_vertical"
+			android:orientation="horizontal"
+			android:paddingStart="10dp"
+			android:paddingEnd="30dp"
+			android:background="@drawable/shape_radius_white_btn"
+			android:backgroundTint="?attr/colorFill"
+			android:layout_gravity="center_vertical">
+			<ImageView
+				android:layout_width="25dp"
+				android:layout_height="25dp"
+				android:src="@drawable/icon_google_vector"
+				android:layout_marginStart="5dp"/>
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textSize="16sp"
+				android:textColor="@color/gnt_black"
+				android:layout_marginStart="5dp"
+				android:text="@string/Lbl_Google"
+				android:gravity="center_vertical"/>
+		</LinearLayout>
+		<LinearLayout
+			android:id="@+id/ll_fblogin"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="5dp"
+			android:layout_marginEnd="5dp"
+			android:gravity="center" >
+			<ImageView
+				android:layout_width="50dp"
+				android:layout_height="45dp"
+				android:src="@drawable/icon_facebook_vector"
+				android:padding="10dp"
+				android:background="@drawable/shape_radius_white_btn"
+				android:backgroundTint="?attr/colorFill"
+				android:layout_gravity="center" />
+		</LinearLayout>
+		<LinearLayout
+			android:id="@+id/ll_WoWonderLogin"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="5dp"
+			android:layout_marginEnd="5dp"
+			android:gravity="center" >
+			<ImageView
+				android:layout_width="50dp"
+				android:layout_height="45dp"
+				android:src="@mipmap/iconwowonder"
+				android:padding="10dp"
+				android:background="@drawable/shape_radius_white_btn"
+				android:backgroundTint="?attr/colorFill"
+				android:layout_gravity="center" />
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

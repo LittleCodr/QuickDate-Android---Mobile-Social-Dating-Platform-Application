@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorFill"
+    android:fitsSystemWindows="true">
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nested_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:scrollbars="none"
+            android:scrollingCache="true"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+				android:layout_gravity="center"
+				android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:gravity="center"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="220dp"
+                    android:layout_height="220dp"
+                    android:src="@drawable/numberVerification" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="10dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="19sp"
+                    android:text="@string/Lbl_VerifyYourNumber"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+                    
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textSize="15sp"
+                    android:text="@string/Lbl_PleaseEnterYourMobileNumber"
+                    android:gravity="center"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+                    android:textColor="?attr/colorSecText" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="35dp"
+                    android:orientation="horizontal">
+                    <EditText
+                        android:id="@+id/numberEdit1"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="-4dp"
+                        android:layout_marginEnd="-4dp"
+                        android:hint="+"
+                        android:inputType="phone"
+                        android:maxLength="4"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:visibility="gone"
+                        
+                        android:textColorHint="#999999"
+                        android:theme="@style/EditText.Grey" />
+                    <View
+                        android:visibility="gone"
+                        android:layout_width="5dp"
+                        android:layout_height="0dp" />
+                    <EditText
+                        android:id="@+id/numberEdit2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="30dp"
+                        android:layout_marginStart="30dp"
+                        android:hint="@string/Lbl_PhoneNumber"
+                        android:inputType="phone"
+                        android:maxLength="20" 
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        
+                        android:textColorHint="#999999"
+                        android:theme="@style/EditText.Grey" />
+                </LinearLayout>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/sentButton"
+                    android:background="@drawable/round_button_pressed"
+                    android:layout_height="36dp"
+                    android:layout_width="match_parent"
+                    android:padding="5dp"
+                    style="@style/TextAppearance.MaterialComponents.Body1"
+                    android:text="@string/Btn_Continue"
+                    android:textColor="@color/gnt_white"
+                    android:textSize="12sp"
+                    android:clickable="true"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="19dp"
+                    android:gravity="center"
+                    android:layout_marginBottom="10dp" />
+                <TextView
+                    android:id="@+id/skipbutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/Btn_NoOtherTime"
+                    android:textSize="12sp"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/accent"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textAllCaps="true" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

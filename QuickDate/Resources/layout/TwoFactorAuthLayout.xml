@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/TopLayout"
+    android:background="@drawable/firstbackgroundeffects"
+	android:backgroundTint="@color/accent"
+    android:layout_height="match_parent">
+	<androidx.appcompat.widget.Toolbar
+		android:id="@+id/toolbar" 
+		android:layout_width="match_parent" 
+		android:layout_height="48dp"  
+		app:theme="@style/ToolbarTheme" 
+		android:layout_gravity="top"
+		app:layout_collapseMode="pin"
+		app:titleTextAppearance="@style/Toolbar.TitleText" 
+		android:background="@android:color/transparent"
+		android:elevation="2dp" />
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="fill_vertical" 
+        android:layout_marginBottom="1dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="fill_vertical" 
+            android:layout_below="@+id/title_pic_s03">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/describe"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="25dp"
+                android:text="@string/Lbl_TwoFactor"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/description"
+                android:layout_below="@+id/describe"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/Lbl_Describe_TwoFactor"
+                android:textSize="12dp" />
+            <!--TwoFactor Section -->
+            <LinearLayout 
+                android:id="@+id/LayoutTwoFactor"
+                android:paddingTop="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="48dp">
+                <TextView
+                    android:id="@+id/IconTwoFactor"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="#"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textSize="20sp"
+                    android:layout_marginStart="5dp" />
+                <EditText
+                    android:id="@+id/TwoFactorEditText"
+                    style="@style/EditTextNormalStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" 
+                    android:hint="@string/Lbl_TwoFactor"
+                    android:textSize="15sp"
+                    android:gravity="start"
+                    android:background="@drawable/EditTextStyleOne"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="3dp" />
+            </LinearLayout>
+            <androidx.appcompat.widget.AppCompatButton
+              android:id="@+id/SaveButton"
+              android:layout_below="@+id/Resetbutton"
+              android:background="@drawable/round_button_pressed"
+              android:layout_height="36dp"
+              android:layout_width="match_parent"
+              android:padding="5dp"
+              style="@style/TextAppearance.MaterialComponents.Body1"
+              android:text="@string/Lbl_Save"
+              android:textColor="@color/gnt_white"
+              android:textSize="12sp"
+              android:clickable="true"
+              android:layout_marginEnd="30dp"
+              android:layout_marginStart="30dp"
+              android:layout_marginTop="19dp"
+              android:gravity="center"
+              android:layout_marginBottom="10dp" /> 
+			 
+            <QuickDate.Helpers.Ads.TemplateView 
+              android:id="@+id/my_template"
+              android:padding="8dp" 
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_gravity="bottom" 
+              android:visibility="gone"
+              app:gnt_template_type="@layout/gnt_nativecontentad_view"
+              android:layout_alignParentBottom="true"
+              android:layout_centerHorizontal="true" />
+             
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

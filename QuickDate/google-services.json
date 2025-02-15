@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "400536406439",
+    "firebase_url": "https://quickdate-dd061.firebaseio.com",
+    "project_id": "quickdate-dd061",
+    "storage_bucket": "quickdate-dd061.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:400536406439:android:65ffd02ed9976dcc",
+        "android_client_info": {
+          "package_name": "com.quickdatesocial.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "400536406439-k6piig7q4umqmst73umqt73suuv4aqnf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.quickdatesocial.android",
+            "certificate_hash": "6775bca90428b86dbc119f508a61e5de039047c7"
+          }
+        },
+        {
+          "client_id": "400536406439-62rt50pfivif6i3jt97od64h1iverhjv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKVjE5XK8IugH0Wp5xa1MQjnU9xe8J9PU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "400536406439-62rt50pfivif6i3jt97od64h1iverhjv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      },
+      "admob_app_id": "ca-app-pub-5135691635931982~6131426175"
+    }
+  ],
+  "configuration_version": "1"
+}

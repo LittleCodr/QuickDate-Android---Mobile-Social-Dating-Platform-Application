@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/TopLayout"
+    android:background="@drawable/firstbackgroundeffects"
+    android:backgroundTint="@color/accent">
+	<androidx.appcompat.widget.Toolbar
+		android:id="@+id/toolbar"
+		android:layout_width="match_parent"
+		android:layout_height="48dp"
+		app:theme="@style/ToolbarTheme"
+		android:layout_gravity="top"
+		app:layout_collapseMode="pin"
+		app:titleTextAppearance="@style/Toolbar.TitleText"
+		android:background="@android:color/transparent"
+		android:elevation="2dp" >
+	</androidx.appcompat.widget.Toolbar>
+     
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nested_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:scrollbars="none"
+            android:scrollingCache="true"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <LinearLayout
+                android:id="@+id/lyt_form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="0dp">
+                <!--LiveWith Section -->
+                <LinearLayout
+                    android:id="@+id/LayoutLiveWith"
+                    android:paddingTop="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="48dp">
+                    <TextView
+                        android:id="@+id/IconLiveWith"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="#"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textSize="20sp"
+                        android:textColor="?attr/colorSecText"
+                        android:layout_marginStart="5dp" />
+                    <EditText
+                        android:id="@+id/LiveWithEditText"
+                        style="@style/EditTextNormalStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/EditTextStyleOne"
+                        android:layout_alignParentEnd="true"
+                        android:hint="@string/Lbl_ILiveWith"
+                        android:textSize="15sp"
+                        android:layout_marginStart="3dp" />
+                </LinearLayout>
+                <!--Car Section -->
+                <LinearLayout
+                    android:id="@+id/LayoutCar"
+                    android:paddingTop="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="48dp">
+                    <TextView
+                        android:id="@+id/IconCar"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="#"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textSize="20sp"
+                        android:textColor="?attr/colorSecText"
+                        android:layout_marginStart="5dp" />
+                    <EditText
+                        android:id="@+id/CarEditText"
+                        style="@style/EditTextNormalStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/Lbl_Car"
+                        android:textSize="15sp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/EditTextStyleOne"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="3dp" />
+                </LinearLayout>
+                <!--Religion Section -->
+                <LinearLayout
+                    android:id="@+id/LayoutReligion"
+                    android:paddingTop="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="48dp">
+                    <TextView
+                        android:id="@+id/IconReligion"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="#"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textSize="20sp"
+                        android:textColor="?attr/colorSecText"
+                        android:layout_marginStart="5dp" />
+                    <EditText
+                        android:id="@+id/ReligionEditText"
+                        style="@style/EditTextNormalStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/EditTextStyleOne"
+                        android:hint="@string/Lbl_Religion"
+                        android:textSize="15sp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="3dp" />
+                </LinearLayout>
+                <!--Smoke Section -->
+                <LinearLayout
+                    android:id="@+id/LayoutSmoke"
+                    android:paddingTop="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="48dp">
+                    <TextView
+                        android:id="@+id/IconSmoke"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="#"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textSize="20sp"
+                        android:textColor="?attr/colorSecText"
+                        android:layout_marginStart="5dp" />
+                    <EditText
+                        android:id="@+id/SmokeEditText"
+                        style="@style/EditTextNormalStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/Lbl_Smoke"
+                        android:textSize="15sp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/EditTextStyleOne"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="3dp" />
+                </LinearLayout>
+                <!--Drink Section -->
+                <LinearLayout
+                    android:id="@+id/LayoutDrink"
+                    android:paddingTop="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="48dp">
+                    <TextView
+                        android:id="@+id/IconDrink"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="#"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textSize="20sp"
+                        android:textColor="?attr/colorSecText"
+                        android:layout_marginStart="5dp" />
+                    <EditText
+                        android:id="@+id/DrinkEditText"
+                        style="@style/EditTextNormalStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/Lbl_Drink"
+                        android:textSize="15sp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/EditTextStyleOne"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="3dp" />
+                </LinearLayout>
+                <!--Travel Section -->
+                <LinearLayout
+                    android:id="@+id/LayoutTravel"
+                    android:paddingTop="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="48dp">
+                    <TextView
+                        android:id="@+id/IconTravel"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="#"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textSize="20sp"
+                        android:textColor="?attr/colorSecText"
+                        android:layout_marginStart="5dp" />
+                    <EditText
+                        android:id="@+id/TravelEditText"
+                        style="@style/EditTextNormalStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/Lbl_Travel"
+                        android:textSize="15sp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/EditTextStyleOne"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="3dp" />
+                </LinearLayout>
+                <!--Buttons Section -->
+                <LinearLayout
+                    android:paddingTop="5dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/ApplyButton"
+                        android:layout_below="@+id/Resetbutton"
+                        android:background="@drawable/round_button_pressed"
+                        android:layout_height="36dp"
+                        android:layout_width="match_parent"
+                        android:padding="5dp"
+                        style="@style/TextAppearance.MaterialComponents.Body1"
+                        android:text="@string/Lbl_Save"
+                        android:textColor="@color/gnt_white"
+                        android:textSize="12sp"
+                        android:clickable="true"
+                        android:layout_marginEnd="30dp"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="19dp"
+                        android:gravity="center"
+                        android:layout_marginBottom="10dp" />
+                    <View
+	                    android:layout_width="match_parent"
+	                    android:layout_height="40dp"
+	                    android:layout_alignParentBottom="true"
+	                    android:layout_marginEnd="20dp"
+	                    android:layout_marginStart="20dp" /> 
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+	    <LinearLayout
+		    android:id="@+id/bannerContainer"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="bottom"
+		    android:layout_alignParentBottom="true"
+		    android:layout_centerHorizontal="true"  /> 
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</LinearLayout>

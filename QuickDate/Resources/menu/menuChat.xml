@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--For all properties see: http://developer.android.com/guide/topics/resources/menu-resource.html-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <item
+    android:id="@+id/action_copy"
+    android:icon="@xml/ic_content_copy"
+    android:orderInCategory="100"
+    android:title="@string/Lbl_Copy"
+    android:showAsAction="always" />
+
+</menu> 

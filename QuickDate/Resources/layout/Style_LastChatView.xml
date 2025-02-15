@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/main"
+	android:layout_width="match_parent"
+	android:layout_height="70dp"
+	android:clickable="false"
+	android:focusable="false"
+	android:layout_marginTop="0dp"
+	android:orientation="vertical"
+	android:gravity="center_vertical"
+	android:layout_gravity="top|center_vertical"
+	android:background="?attr/selectableItemBackground">
+	
+	<RelativeLayout
+		android:id="@+id/icon_container"
+		android:layout_marginStart="15dp"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerVertical="true"
+		android:orientation="vertical">
+		<RelativeLayout
+			android:id="@+id/lyt_checked"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+			<ImageView
+				android:layout_width="52dp"
+				android:layout_height="52dp"
+				android:src="@xml/shape_circle"
+				android:tint="@color/accent" />
+			<ImageView
+				android:layout_width="25dp"
+				android:layout_height="25dp"
+				android:layout_centerInParent="true"
+				app:srcCompat="@xml/ic_done" />
+		</RelativeLayout>
+		<RelativeLayout
+			android:id="@+id/lyt_image"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+			<ImageView
+				android:id="@+id/ImageAvatar"
+				android:scaleType="centerCrop"
+				android:layout_width="52dp"
+				android:layout_height="52dp"
+				android:focusable="false"
+				android:clickable="false"
+				android:src="@drawable/no_profile_image_circle"  />  
+		</RelativeLayout>
+	</RelativeLayout> 
+	  
+	<RelativeLayout
+		android:layout_toEndOf="@id/icon_container"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_marginStart="12dp"
+		android:layout_marginEnd="6dp"
+		android:layout_marginTop="0dp"
+		android:gravity="center_vertical"
+		android:layout_gravity="center_vertical"
+		android:layout_toStartOf="@+id/Txt_timestamp"
+		android:layout_centerVertical="true"
+		android:orientation="horizontal">
+
+		<TextView
+			android:id="@+id/Txt_Username"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:ellipsize="end"
+			android:lines="1"
+			android:text="test"
+			android:layout_marginStart="4dp"
+			android:drawablePadding="5dp"
+			android:textSize="@dimen/msg_text_primary"
+			android:textStyle="normal"
+			android:clickable="false"
+			android:paddingEnd="10dp"
+			android:focusable="false"
+			android:textFontWeight="600"
+			android:textAlignment="textStart" />
+
+		<TextView
+			android:id="@+id/LastMessages_icon"
+			android:visibility="gone"
+			android:text="I"
+			android:textColor="@color/text_color_in_between"
+			android:layout_marginTop="7dp"
+			android:layout_marginStart="4dp"
+			android:layout_toEndOf="@+id/icon_container"
+			android:layout_below="@+id/Txt_Username"
+			android:layout_width="wrap_content"
+			android:layout_height="14dp" />
+		<TextView
+			android:id="@+id/Txt_LastMessages"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:ellipsize="end"
+			android:lines="1"
+			android:layout_toEndOf="@id/LastMessages_icon"
+			android:layout_below="@id/Txt_Username"
+			android:textColor="@color/text_color_in_between"
+			android:textSize="@dimen/msg_text_secondary"
+			android:layout_marginTop="4.5dp"
+			android:layout_marginStart="4dp"
+			android:focusable="false"
+			android:paddingEnd="10dp"
+			android:layout_marginEnd="10dp"
+			android:clickable="false"
+			android:gravity="start"
+			android:textFontWeight="300"
+			android:text="sssssssss"
+			android:textAlignment="textStart" />
+
+		<TextView
+			android:id="@+id/Txt_timestamp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentEnd="true"
+			android:textColor="@color/text_color_in_between"
+			android:textSize="12dp"
+			android:textStyle="normal"
+			android:textFontWeight="600"
+			android:text="2.0"
+			android:layout_marginTop="0dp"
+			android:layout_marginEnd="15dp"
+			android:focusable="false"
+			android:clickable="false" />
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:layout_below="@+id/Txt_timestamp"
+			android:layout_alignParentEnd="true"
+			android:layout_centerVertical="true"
+			android:gravity="center_vertical"
+			android:layout_gravity="center_vertical"
+			android:layout_marginTop="4.5dp"
+			android:layout_marginEnd="15dp"
+			android:clickable="false"
+			android:focusable="false">
+
+			<ImageView
+				android:layout_width="18dp"
+				android:layout_height="18dp"
+				android:id="@+id/IconCheckRead"
+				android:foregroundGravity="center_horizontal"
+				android:gravity="center"
+				android:src="@drawable/icon_tick_vector"
+				android:tint="@color/accent"
+				android:layout_marginEnd="3dp"
+				android:visibility="gone"
+				android:clickable="false"
+				android:focusable="false" />
+			 
+		</LinearLayout>
+	</RelativeLayout>
+</RelativeLayout>

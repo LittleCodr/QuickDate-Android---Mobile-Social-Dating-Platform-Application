@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:orientation="vertical"
+	android:background="?attr/colorFill"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<androidx.core.widget.NestedScrollView
+		android:id="@+id/nested_scroll_view"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="?attr/colorFill"
+		android:clipToPadding="false"
+		android:scrollbars="none"
+		android:scrollingCache="true"
+		app:layout_behavior="@string/appbar_scrolling_view_behavior">
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:padding="15dp"
+			android:clickable="true"
+			android:focusable="false"
+			android:focusableInTouchMode="true"
+			android:orientation="vertical">
+			<TextView 
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="start"
+				android:textAlignment="textStart"
+				android:layout_marginTop="15dp"
+				android:textStyle="bold"
+				android:text="@string/Lbl_Credits"
+				android:layout_marginStart="10dp"
+				android:textSize="20sp"
+				android:layout_marginBottom="10dp" />
+			<FrameLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+				<LinearLayout 
+					android:layout_width="match_parent"
+					android:layout_height="150dp"
+					android:gravity="center"
+					android:background="@drawable/round_button_gradient"
+					android:orientation="horizontal">
+					<LinearLayout
+						android:orientation="vertical"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:background="@drawable/bg_popularity"
+						android:layout_gravity="start"
+						android:gravity="start">
+
+						<TextView
+							android:id="@+id/mainTitelText"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="16dp"
+							android:layout_marginStart="16dp"
+							android:textSize="18dp"
+							android:textColor="@color/gnt_white"
+							android:text="Your QuickDate Credits Balance" />
+
+						<TextView
+							android:id="@+id/mainText"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="10 Credits"
+							android:layout_marginTop="0dp"
+							android:layout_marginStart="16dp"
+							android:textSize="20sp"
+							android:textStyle="bold"
+							android:textColor="@color/gnt_white"/>
+						 
+					</LinearLayout>
+				</LinearLayout>
+				 
+				<LinearLayout
+					android:layout_marginEnd="20dp"
+					android:layout_marginStart="20dp"
+					android:layout_marginTop="100dp"
+					android:orientation="vertical"
+					android:layout_width="match_parent"
+					android:background="@drawable/EditTextStyleOne"
+					android:backgroundTint="?attr/colorFill"
+					android:layout_height="100dp">
+					<androidx.viewpager.widget.ViewPager
+						android:id="@+id/viewPager"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent" />
+				</LinearLayout>
+			</FrameLayout>
+			<me.relex.circleindicator.CircleIndicator
+				android:id="@+id/indicator" 
+				android:layout_width="match_parent"
+				android:layout_height="10dp"
+				android:gravity="center"
+				android:layout_marginTop="10dp"
+				app:ci_drawable="@drawable/white_radius"
+				app:ci_drawable_unselected="@drawable/grey_radius" />
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" 
+				android:gravity="start"
+				android:textAlignment="textStart"
+				android:layout_marginTop="10dp"
+				android:text="@string/Btn_BuyCredits"
+				android:textSize="16sp"  />
+
+			<androidx.recyclerview.widget.RecyclerView
+				android:id="@+id/recyler"
+				android:layout_marginTop="8dp"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:scrollbars="none"
+				android:layout_marginStart="7dp"
+				android:layout_marginEnd="0dp"
+				android:paddingBottom="8dp" />
+			 
+			<TextView
+				android:id="@+id/skippButton"
+				android:layout_height="48dp"
+				android:layout_width="match_parent"
+				android:text="@string/Btn_SkipCredits"
+				android:textColor="?attr/colorSecText"
+				android:textSize="16sp"
+				android:layout_centerHorizontal="true"
+				android:layout_centerVertical="true"
+				android:clickable="true"
+				android:textAllCaps="false"
+				android:layout_margin="20dp"
+				android:gravity="center"
+				android:elevation="0dp" />
+
+		</LinearLayout>
+	</androidx.core.widget.NestedScrollView>
+</LinearLayout>

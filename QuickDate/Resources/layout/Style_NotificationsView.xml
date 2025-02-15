@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/main"
+	android:layout_width="match_parent"
+	android:layout_height="70dp"
+	android:clickable="false"
+	android:focusable="false"
+	android:layout_marginTop="0dp"
+	android:orientation="vertical"
+	android:gravity="center_vertical"
+	android:layout_gravity="top|center_vertical"
+	android:background="?attr/selectableItemBackground">
+	 
+	<RelativeLayout
+		android:id="@+id/card_pro_pic"
+		android:layout_marginStart="15dp"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerVertical="true"
+		android:orientation="vertical"> 
+		<ImageView
+			android:id="@+id/ImageUser"
+			android:scaleType="centerCrop"
+			android:layout_width="55dp"
+			android:layout_height="55dp"
+			android:focusable="false"
+			android:clickable="false"
+			android:src="@drawable/no_profile_image_circle" />
+		<View
+			android:id="@+id/CircleIcon"
+			android:layout_width="18dp"
+			android:layout_height="18dp"
+			android:layout_alignTop="@id/ImageUser"
+			android:layout_marginBottom="1dp"
+			android:layout_centerVertical="true"
+			android:layout_marginStart="50dp"
+			android:layout_below="@id/ImageAvatar"
+			android:background="@drawable/flat_theme_roundbutton_with_stock" />
+	</RelativeLayout> 
+	  
+	<RelativeLayout
+		android:layout_toEndOf="@id/card_pro_pic"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_marginStart="12dp"
+		android:layout_marginEnd="6dp"
+		android:layout_marginTop="0dp"
+		android:gravity="center_vertical"
+		android:layout_gravity="center_vertical"
+		android:layout_toStartOf="@+id/Txt_timestamp"
+		android:layout_centerVertical="true"
+		android:orientation="horizontal">
+
+		<TextView
+			android:id="@+id/NotificationsName"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:ellipsize="end"
+			android:maxWidth="190dp"
+			android:lines="1"
+			android:text="test"
+			android:layout_marginStart="4dp"
+			android:drawablePadding="5dp"
+			android:textSize="@dimen/msg_text_primary"
+			android:textStyle="normal"
+			android:clickable="false"
+			android:paddingEnd="10dp"
+			android:focusable="false"
+			android:textFontWeight="600"
+			android:textAlignment="textStart" />
+		 
+		<TextView
+			android:id="@+id/NotificationsText"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:ellipsize="end"
+			android:maxWidth="190dp"
+			android:lines="1"
+			android:layout_toEndOf="@id/card_pro_pic"
+			android:layout_below="@id/NotificationsName"
+			android:textColor="@color/text_color_in_between"
+			android:textSize="@dimen/msg_text_secondary"
+			android:layout_marginTop="4.5dp"
+			android:layout_marginStart="4dp"
+			android:focusable="false"
+			android:paddingEnd="10dp"
+			android:layout_marginEnd="10dp"
+			android:clickable="false"
+			android:gravity="start"
+			android:textFontWeight="300"
+			android:text="sssssssss"
+			android:textAlignment="textStart" />
+
+		<TextView
+			android:id="@+id/TimeText"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentEnd="true"
+			android:textColor="@color/text_color_in_between"
+			android:textSize="12dp"
+			android:textStyle="normal"
+			android:textFontWeight="600"
+			android:text="2.0"
+			android:layout_marginTop="0dp"
+			android:layout_marginEnd="15dp"
+			android:focusable="false"
+			android:clickable="false" />
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentEnd="true"
+			android:orientation="horizontal"
+			android:id="@+id/linearLayout1" >
+			<at.markushi.ui.CircleButton
+				android:id="@+id/Add_button" 
+				android:layout_width="35dp"
+				android:layout_height="35dp"
+				app:cb_color="@color/accent"
+				app:cb_pressedRingWidth="1dp" 
+				android:layout_marginEnd="7dp"
+				android:tint="@color/gnt_white"
+				android:src="@drawable/icon_tick_vector" 
+				android:layout_weight="0"
+				android:layout_gravity="center" /> 
+			<at.markushi.ui.CircleButton
+				android:id="@+id/delete_button"
+				android:layout_width="35dp" 
+				android:layout_height="35dp"
+				app:cb_color="@color/Dialog_Btn_color"
+				app:cb_pressedRingWidth="1dp"
+				android:layout_marginEnd="7dp"
+				android:padding="5dp"
+				android:tint="@color/gnt_white"
+				android:src="@drawable/icon_close_vector"
+				android:layout_weight="0"
+				android:layout_gravity="center"
+				android:layout_marginStart="10dp" />
+		</LinearLayout>
+		 
+	</RelativeLayout>
+</RelativeLayout> 

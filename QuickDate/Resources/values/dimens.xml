@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+	<dimen name="design_fab_image_size">15dp</dimen>
+	<dimen name="fab_margin">16dp</dimen>
+	<dimen name="padding_list_row">5dp</dimen>
+	<dimen name="messages_padding_left">72dp</dimen>
+	<dimen name="icon_width_height">40dp</dimen>
+	<dimen name="msg_text_primary">16sp</dimen>
+	<dimen name="msg_text_secondary">14sp</dimen>
+	<dimen name="icon_star">25dp</dimen>
+	<dimen name="icon_text">22dp</dimen>
+	<dimen name="timestamp">12dp</dimen>
+	<dimen name="space">12dp</dimen>
+	<dimen name="circle">250dp</dimen>
+
+	<dimen name="list_item_container_padding">16dp</dimen>
+	<dimen name="list_item_container_padding_small">8dp</dimen>
+
+	<dimen name="list_item_avatar_size_small">24dp</dimen>
+	<dimen name="list_item_avatar_size">40dp</dimen>
+	<dimen name="list_item_avatar_size_large">56dp</dimen>
+	<dimen name="list_item_avatar_size_xlarge">72dp</dimen>
+	<dimen name="list_item_text_margin">3dp</dimen>
+
+	<item name="gnt_medium_template_bottom_weight" format="float" type="dimen">0.4</item>
+	<item name="gnt_text_row_weight" format="float" type="dimen">0.25</item>
+	<item name="gnt_media_view_weight" format="float" type="dimen">1.0</item>
+	<item name="gnt_medium_template_top_weight" format="float" type="dimen">0.2</item>
+	<dimen name="gnt_default_margin">10dp</dimen>
+	<dimen name="gnt_small_margin">5dp</dimen>
+	<dimen name="gnt_text_size_small">12sp</dimen>
+	<dimen name="gnt_text_size_large">15sp</dimen>
+	<dimen name="gnt_ad_indicator_width">25dp</dimen>
+	<dimen name="gnt_ad_indicator_height">20dp</dimen>
+	<dimen name="gnt_ad_indicator_bar_height">30dp</dimen>
+	<dimen name="gnt_ad_indicator_top_margin">0dp</dimen>
+	<dimen name="gnt_ad_indicator_bottom_margin">10dp</dimen>
+	<dimen name="gnt_ad_indicator_text_size">10sp</dimen>
+	<dimen name="gnt_small_cta_button_height">30dp</dimen>
+	<dimen name="gnt_medium_cta_button_height">50dp</dimen>
+	<dimen name="gnt_no_margin">0dp</dimen>
+	<dimen name="gnt_no_size">0dp</dimen>
+
+	<!-- Live Activity -->
+	<dimen name="live_top_layout_height">76dp</dimen>
+	<dimen name="live_leave_btn_size">36dp</dimen>
+	<dimen name="live_leave_btn_icon_size">15dp</dimen>
+	<dimen name="live_top_layout_margin">22dp</dimen>
+	<dimen name="live_name_board_width">186dp</dimen>
+	<dimen name="live_name_board_height">48dp</dimen>
+	<dimen name="live_name_board_icon_size">44dp</dimen>
+	<dimen name="live_name_board_icon_margin">2dp</dimen>
+	<dimen name="live_name_board_fav_icon_margin">6dp</dimen>
+	<dimen name="live_name_board_fav_icon_size">36dp</dimen>
+	<dimen name="live_name_board_radius">36dp</dimen>
+	<dimen name="live_name_text_height">24dp</dimen>
+	<dimen name="live_name_text_margin_left">8dp</dimen>
+	<dimen name="live_bottom_btn_size">44dp</dimen>
+	<dimen name="live_bottom_layout_margin">18dp</dimen>
+	<dimen name="live_bottom_btn_margin">12dp</dimen>
+	<dimen name="live_stat_margin_bottom">68dp</dimen>
+	<dimen name="live_room_bg_icon_size">180dp</dimen>
+	<dimen name="text_size_small">12sp</dimen>
+	<dimen name="text_size_medium">14sp</dimen>
+
+
+
+</resources>

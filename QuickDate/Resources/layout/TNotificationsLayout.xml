@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent" 
+	android:id="@+id/TopLayout"
+	android:background="@drawable/firstbackgroundeffects"
+	android:backgroundTint="@color/accent"
+	android:orientation="vertical" >
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		<androidx.appcompat.widget.Toolbar
+			android:id="@+id/toolbar"
+			android:layout_gravity="top"
+			android:layout_width="match_parent"
+			android:background="@android:color/transparent"
+			android:layout_marginTop="13dp"
+			android:layout_height="48dp"
+			app:layout_collapseMode="pin">
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:weightSum="8"
+				android:orientation="horizontal">
+				<TextView
+					android:id="@+id/Appname"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:text="@string/Lbl_Notifications" 
+					android:textSize="20sp"
+					android:textStyle="bold"
+					android:layout_gravity="start|center"
+					android:layout_marginStart="6dp" />
+			</LinearLayout>
+		</androidx.appcompat.widget.Toolbar> 
+		<com.google.android.material.tabs.TabLayout
+			android:id="@+id/TopBar"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			app:tabMode="scrollable"
+			app:tabGravity="center"
+			app:tabIndicatorHeight="0dp"
+			app:tabSelectedTextColor="@color/accent"
+			android:background="@android:color/transparent"
+			app:tabTextColor="@color/text_color_all"
+			app:tabTextAppearance="@style/tab_style_ProfileTheme"
+			app:tabIndicatorColor="@color/accent" />
+	</LinearLayout>
+	<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+		android:id="@+id/swipeRefreshLayout"
+		app:layout_behavior="@string/appbar_scrolling_view_behavior"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_alignParentTop="false"
+			android:layout_marginTop="2dp">
+			<androidx.recyclerview.widget.RecyclerView
+				app:layout_behavior="@string/appbar_scrolling_view_behavior"
+				android:id="@+id/NotifcationRecyler"
+				android:layout_marginTop="2dp"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:scrollbars="vertical"
+				android:paddingBottom="70dp"
+				android:clipToPadding="false" />
+			<ViewStub
+				android:id="@+id/viewStub"
+				android:inflatedId="@+id/subView"
+				android:layout_marginTop="70dp"
+				android:layout="@layout/EmptyStateLayout"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent" />
+		</RelativeLayout>
+	</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</LinearLayout>

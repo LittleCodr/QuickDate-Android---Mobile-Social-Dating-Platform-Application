@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:clipToPadding="false"
+	tools:orientation="vertical"
+	tools:parentTag="android.widget.LinearLayout">
+
+	<ImageView
+		android:id="@+id/arrow_one"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:layout_marginBottom="-15dp"
+		android:alpha="0"
+		android:tint="#4CAF50"
+		android:src="@drawable/icon_arrow_up_vector"
+		tools:alpha="1" />
+
+	<ImageView
+		android:id="@+id/arrow_two"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:layout_marginBottom="-15dp"
+		android:alpha="0"
+		android:tint="#4CAF50"
+		android:src="@drawable/icon_arrow_up_vector"
+		tools:alpha="1" />
+
+	<ImageView
+		android:id="@+id/arrow_three"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal" 
+		android:layout_marginBottom="-15dp"
+		android:alpha="0"
+		android:tint="#4CAF50"
+		android:src="@drawable/icon_arrow_up_vector"
+		tools:alpha="1" />
+
+	<ImageView
+		android:id="@+id/arrow_four"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:layout_marginBottom="10dp"
+		android:alpha="0"
+		android:tint="#4CAF50"
+		android:src="@drawable/icon_arrow_up_vector"
+		tools:alpha="1" />
+
+	<TextView
+		android:id="@+id/swipe_up_text"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:layout_marginBottom="19dp"
+		android:shadowColor="#000000"
+		android:shadowDx="2"
+		android:shadowDy="2"
+		android:shadowRadius="4"
+		android:text="@string/Lbl_call_swipe_up_to_answer"
+		android:textColor="#4CAF50"
+		android:textStyle="italic" />
+
+	<ImageView
+		android:id="@+id/answer"
+		android:layout_width="56dp"
+		android:layout_height="56dp"
+		android:layout_gravity="center_horizontal"
+		android:background="@drawable/shape_circle_white"
+        android:backgroundTint="@color/gnt_white"
+		android:elevation="2dp"
+		android:padding="12dp"
+        android:tint="@color/accent"
+		android:src="@drawable/icon_call_answer_vector" />
+
+	<TextView
+		android:id="@+id/swipe_down_text"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:layout_marginTop="16dp"
+		android:shadowColor="#000000"
+		android:shadowDx="2"
+		android:shadowDy="2"
+		android:shadowRadius="4"
+		android:text="@string/Lbl_call_swipe_down_to_reject"
+		android:textColor="#d50000"
+		android:textStyle="italic" />
+	
+</merge>

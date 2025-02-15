@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorFill" >
+    <androidx.appcompat.widget.Toolbar
+	    android:id="@+id/toolbar"
+	    android:layout_width="match_parent"
+	    android:layout_height="48dp"
+	    app:theme="@style/ToolbarTheme"
+	    android:layout_gravity="top"
+	    app:layout_collapseMode="pin"
+	    android:elevation="2dp"
+	    app:titleTextAppearance="@style/Toolbar.TitleText"
+	    android:background="?attr/colorFill" >
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <androidx.appcompat.widget.SearchView
+          android:id="@+id/searchView"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:iconifiedByDefault="false"
+          android:editable="false"
+          android:clickable="true"
+          android:focusable="false"
+          android:layout_weight="15"
+          android:queryHint="Search"
+          android:layout_gravity="start|center"
+          android:layout_marginStart="-13dp" />
+        <TextView
+          android:id="@+id/toolbar_title"
+          android:layout_width="40dp"
+          android:layout_height="48dp"
+          android:text="IC"
+          android:visibility="gone"
+          android:textSize="20sp"
+          android:gravity="center|end"
+          android:layout_gravity="center|end"
+          android:paddingEnd="10dp" />
+      </LinearLayout>  
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <FrameLayout
+            android:id="@+id/map"
+            android:layout_marginTop="48dp"
+            android:layout_marginBottom="48dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="?attr/colorDivider" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="?attr/colorFill"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:id="@+id/map_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:orientation="horizontal"
+                android:padding="5dp">
+                <TextView
+                    android:id="@+id/map_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="19sp"
+                    android:textColor="@color/primary"
+                    android:layout_marginEnd="8dp"
+                    android:textStyle="bold"
+                    android:text="IC" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Lbl_MyLocation"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+                    
+                    android:textStyle="normal" />
+            </LinearLayout>
+            <View
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="0dp" />
+            <LinearLayout
+              android:id="@+id/list_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="5dp">
+                <TextView
+                   android:id="@+id/list_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="19sp"
+                    android:textColor="@color/primary"
+                    android:layout_marginEnd="8dp"
+                    android:textStyle="bold"
+                    android:text="IC" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Lbl_NearBy"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+                    
+                    android:textStyle="normal" />
+            </LinearLayout>
+        </LinearLayout> 
+    </LinearLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+      	style="@style/Widget.MaterialComponents.FloatingActionButton"
+        android:id="@+id/add_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="15dp"
+        android:clickable="true"
+        app:tint="@color/gnt_white"
+        app:backgroundTint="@color/primary" 
+        app:elevation="2dp"
+        app:fabSize="normal"
+        app:rippleColor="@color/primary"
+        app:srcCompat="@drawable/icon_add_vector" />
+</RelativeLayout>

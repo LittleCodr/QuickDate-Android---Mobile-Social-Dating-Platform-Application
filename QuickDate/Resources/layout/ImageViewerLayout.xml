@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:id="@+id/main"
+    android:orientation="vertical">
+    <it.sephiroth.android.library.imagezoom.ImageViewTouch
+        android:id="@+id/imageview"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center_vertical"
+        android:adjustViewBounds="true" 
+        android:layout_gravity="center_vertical"
+        android:layout_width="match_parent" /> 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:contentInsetStartWithNavigation="0dp"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:titleTextAppearance="@style/Toolbar.TitleText">  
+	    <ImageView
+		    android:id="@+id/moreButton"
+		    android:background="@drawable/custom_ripple"
+		    android:layout_gravity="end"
+		    android:rotation="90"
+		    android:layout_marginEnd="5dp"
+		    android:tint="#ffffff"
+		    android:src="@drawable/icon_more_dots_vector"
+		    android:layout_centerVertical="true"
+		    android:layout_width="20dp"
+		    android:layout_height="20dp" /> 
+    </androidx.appcompat.widget.Toolbar>
+</RelativeLayout>

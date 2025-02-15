@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainliner_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:clickable="true"
+    android:background="?android:selectableItemBackground"
+    android:paddingBottom="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    android:paddingTop="5dp"
+    android:orientation="horizontal">
+    <RelativeLayout
+        android:id="@+id/Image_container"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/Image"
+            android:scaleType="centerCrop"
+            android:layout_width="140dp"
+            android:layout_height="130dp"
+            android:focusable="false"
+            android:clickable="false"
+            android:src="@drawable/ImagePlacholder"
+            android:focusableInTouchMode="false" />
+        <TextView
+            android:id="@+id/Category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/gnt_white"
+            android:textSize="12dp"
+            android:ellipsize="none"
+            android:textStyle="normal"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:focusable="false"
+            android:clickable="false"
+            android:layout_alignParentBottom="true"
+            android:translationY="-3dp"
+            android:background="@xml/rounded_corner" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/info_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:orientation="vertical"
+        android:paddingStart="8dp"
+        android:paddingEnd="7dp"
+        android:focusable="false"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="6">
+        <TextView
+            android:id="@+id/Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:layout_marginTop="1dp"
+            android:lines="3"
+            android:layout_marginEnd="3dp"
+            android:textStyle="bold"
+            
+            android:textSize="14dp" />
+        <TextView
+            android:id="@+id/card_dist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#9e9e9e"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="3dp"
+            android:textSize="10sp" />
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="none"
+            android:lines="2"
+            android:textColor="?attr/colorSecText"
+            android:textSize="12dp"
+            android:layout_marginTop="1dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp" />
+        <TextView
+            android:id="@+id/View_more"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="none"
+            android:lines="1"
+            android:text="@string/Lbl_ReadMore"
+            android:textColor="@color/accent"
+            android:textSize="12dp"
+            android:layout_marginTop="10dp"
+            android:focusable="false"
+            android:clickable="false" />
+    </LinearLayout>
+</LinearLayout>

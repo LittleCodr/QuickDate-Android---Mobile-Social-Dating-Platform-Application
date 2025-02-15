@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/TopLayout"
+    android:background="@drawable/firstbackgroundeffects"
+	android:backgroundTint="@color/accent"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        app:theme="@style/ToolbarTheme"
+        android:layout_gravity="top"
+        app:layout_collapseMode="pin"
+        android:elevation="2dp"
+        app:titleTextAppearance="@style/Toolbar.TitleText"
+        android:background="@android:color/transparent" />
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nested_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:scrollingCache="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/InviteFriends" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Lbl_ShareTheLove"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+                 />
+            <TextView
+                android:id="@+id/subTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Share the QuickDate by inviting your friends using these"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
+                android:textColor="#757575" />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="5dp" />
+            <RelativeLayout
+                android:id="@+id/copyLayouts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="?attr/selectableItemBackground"
+                android:gravity="start"
+                android:padding="5dp">
+                <RelativeLayout
+                    android:id="@+id/copyimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"> 
+                    <TextView
+                        android:id="@+id/IconCopy"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerVertical="true" 
+                        android:text="0"
+                        android:textSize="25sp"
+                        android:backgroundTint="#8e24aa"
+						android:background="@drawable/Shape_Circle_White"
+                        android:textColor="@color/gnt_white"
+                        android:gravity="center"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginBottom="25dp"
+                        android:layout_marginStart="5dp" />
+                </RelativeLayout>
+                <TextView
+                    android:layout_toEndOf="@+id/copyimage"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/Lbl_CopeLinkToProfile"
+                    
+                    android:textSize="14sp" />
+                <TextView
+					android:id="@+id/iconGo1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="?attr/colorSecText"
+                    android:text="&gt;"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentEnd="true"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/textLayouts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="?attr/selectableItemBackground"
+                android:gravity="start"
+                android:padding="5dp">
+                <RelativeLayout
+                    android:id="@+id/textInviteimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"> 
+                    <TextView
+                        android:id="@+id/IconTextInvite"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerVertical="true" 
+                        android:text="0"
+                        android:textSize="25sp"
+                        android:backgroundTint="#3949ab"
+                        android:background="@drawable/Shape_Circle_White" 
+                        android:textColor="@color/gnt_white"
+                        android:gravity="center|center_horizontal"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginBottom="25dp"
+                        android:layout_marginStart="5dp" />
+                </RelativeLayout>
+                <TextView
+                    android:layout_toEndOf="@+id/textInviteimage"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/Lbl_TextInvite"
+                    
+                    android:textSize="14sp" />
+                <TextView
+					android:id="@+id/iconGo2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="?attr/colorSecText"
+                    android:text="&gt;"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentEnd="true"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/socialLayouts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="?attr/selectableItemBackground"
+                android:gravity="start"
+                android:padding="5dp">
+                <RelativeLayout
+                    android:id="@+id/socialInviteimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"> 
+                    <TextView
+                        android:id="@+id/IconSocialInvite"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerVertical="true" 
+                        android:text="0"
+                        android:textSize="25sp"
+                        android:backgroundTint="#1E88E5"
+                        android:background="@drawable/Shape_Circle_White" 
+                        android:textColor="@color/gnt_white"
+                        android:gravity="center|center_horizontal"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginBottom="25dp"
+                        android:layout_marginStart="5dp" />
+                </RelativeLayout>
+                <TextView
+                    android:layout_toEndOf="@+id/socialInviteimage"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/Lbl_SocialMediaInvite"
+                    
+                    android:textSize="14sp" />
+                <TextView
+					android:id="@+id/iconGo3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="?attr/colorSecText"
+                    android:text="&gt;"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentEnd="true"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="15dp" />
+			<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent" >
+            <com.google.android.gms.ads.admanager.AdManagerAdView
+            android:id="@+id/multiple_ad_sizes_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"  
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="bottom"
+            android:clickable="true"
+            app:adSize="MEDIUM_RECTANGLE,120x20,250x250,320x100,SMART_BANNER"
+            app:adUnitId="@string/banner_multiple_ad_sizes_id" />
+		</RelativeLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<resources>
+
+	<style name="SplashScreenTheme" parent="Theme.SplashScreen">
+		<!--drawable/splashscreen >> from image | drawable/splash From xml logo -->
+		<!--<item name="android:windowBackground">@drawable/splashscreen</item>-->
+		<item name="android:windowBackground">@drawable/splash</item>
+		
+		<!--<item name="windowSplashScreenBackground">@color/ic_launcher_background</item>
+		<item name="windowSplashScreenAnimatedIcon">@mipmap/icon_round</item>-->
+		<item name="windowSplashScreenAnimationDuration">1000</item>
+		<item name="postSplashScreenTheme">@style/MyTheme</item>
+
+		<item name="colorPrimary">@color/primary</item>
+		<item name="colorPrimaryDark">@color/primaryDark</item>
+		<item name="colorAccent">@color/accent</item>
+		<item name="android:statusBarColor">@color/ic_launcher_background</item>
+	</style>
+
+</resources>

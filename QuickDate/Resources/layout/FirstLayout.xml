@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	 android:id="@+id/TopLayout"
+	android:background="@drawable/firstbackgroundeffects"
+	android:backgroundTint="@color/accent"
+	android:orientation="vertical">
+	<androidx.core.widget.NestedScrollView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:scrollbars="none"
+		android:scrollingCache="true"
+		app:layout_behavior="@string/appbar_scrolling_view_behavior">
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical">
+			 
+			<FrameLayout
+				android:layout_width="match_parent"
+				android:layout_gravity="top"
+				android:layout_height="300dp">
+
+				<ImageView
+					android:layout_width="310dp"
+					android:layout_height="264dp"
+					android:layout_gravity="center"
+					android:layout_margin="19dp"
+					android:gravity="center"
+					android:alpha=".3"
+					android:src="@drawable/hearteffects"/>
+
+				<ImageView
+					android:layout_width="match_parent"
+					android:layout_height="246dp"
+					android:layout_margin="15dp"
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:src="@drawable/TitileImages"/>
+
+			</FrameLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_gravity="bottom"
+				android:layout_marginEnd="20dp"
+				android:layout_marginStart="20dp"
+				android:layout_marginBottom="20dp"
+				android:orientation="vertical">
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/Lbl_FirstHeader"
+					android:gravity="center"
+					android:layout_marginTop="25dp"
+					android:layout_centerHorizontal="true"
+					android:textSize="24sp"
+					android:textStyle="bold"/>
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/Lbl_FirstSubHeader"
+					android:gravity="center"
+					android:layout_marginTop="10dp"
+					android:layout_centerHorizontal="true"
+					android:textSize="16sp" />
+
+				<androidx.appcompat.widget.AppCompatButton
+					android:id="@+id/LoginButton"
+					style="?android:attr/borderlessButtonStyle"
+					android:layout_width="match_parent"
+					android:layout_height="56dp"
+					android:layout_marginTop="40dp"
+					android:background="@drawable/round_button_gradient"
+					android:text="@string/Lbl_Login"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:textColor="@color/gnt_white"
+					android:textSize="20sp"
+					android:textStyle="bold"/>
+				 
+				<androidx.appcompat.widget.AppCompatButton
+					android:id="@+id/RegisterButton"
+					style="?android:attr/borderlessButtonStyle"
+					android:layout_width="match_parent"
+					android:layout_height="56dp"
+					android:layout_marginTop="15dp"
+					android:layout_marginBottom="5dp"
+					android:backgroundTint="?attr/colorFill"
+					android:background="@drawable/round_button_pressed"
+					android:text="@string/Lbl_Register"
+					android:textColor="@color/primary"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:textSize="20sp"
+					android:textStyle="bold" />
+				   
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/Lbl_FirstFooter"
+					android:gravity="center"
+					android:layout_marginTop="16dp"
+					android:textSize="14sp"
+					android:layout_marginBottom="45dp" />
+
+			</LinearLayout>
+
+		</LinearLayout>
+	</androidx.core.widget.NestedScrollView>
+</LinearLayout>

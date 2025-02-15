@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <item
+    android:id="@+id/action_share"
+    android:icon="@xml/ic_share"
+    android:orderInCategory="100"
+    android:title="@string/Lbl_Share"
+    app:showAsAction="always" />
+
+  <item
+    android:id="@+id/action_copy"
+    android:icon="@xml/ic_content_copy"
+    android:orderInCategory="100"
+    android:title="@string/Lbl_CopyLink"
+    app:showAsAction="always" />
+  
+</menu>

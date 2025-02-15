@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingStart="1dp"
+    android:paddingEnd="1dp"
+    android:minHeight="100dp"
+    android:paddingBottom="1dp"
+    android:paddingTop="1dp"
+    android:background="?attr/selectableItemBackground"
+    android:gravity="center|center_horizontal"
+    android:foregroundGravity="center">
+    <FrameLayout
+        android:id="@+id/viewfrm"
+        android:layout_centerVertical="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foreground="?attr/selectableItemBackground">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card"
+            android:layout_gravity="fill"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardBackgroundColor="?attr/colorFill"
+            app:cardCornerRadius="24dp"
+            android:layout_margin="6dp"
+            app:cardElevation="0dp">
+            <ImageView
+                android:id="@+id/Image"
+                android:transitionName="sharedImage"
+                android:scaleType="centerCrop"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:focusable="true"
+                android:clickable="false"
+                android:src="@drawable/imageplacholder"
+                android:gravity="center"
+                android:layout_centerVertical="false" />
+        </androidx.cardview.widget.CardView>
+      <at.markushi.ui.CircleButton
+        android:id="@+id/removeButton"
+        android:layout_marginTop="5dp"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        app:cb_color="@color/primary"
+        android:elevation="5dp"
+        app:cb_pressedRingWidth="1dip"
+		android:tint="@color/gnt_white"
+        android:src="@drawable/icon_close_vector"
+        android:layout_marginStart="5dp" />
+    </FrameLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/playIcon"
+        android:textSize="26sp"
+        android:text="P"
+        android:textColor="@color/gnt_white"
+        android:focusable="false"
+        android:clickable="false"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="3dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+</RelativeLayout>

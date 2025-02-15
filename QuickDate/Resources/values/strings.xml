@@ -1,0 +1,970 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!--Notes :-->
+	<!-- - If the text is marked ' Please replace with the symbol &apos; and add at the beginning and end of the sentence "
+        Example: Let's get started! >> "Let&apos;s get started!"  -->
+	<!-- - If the text is marked & Please replace with the symbol &amp; 
+        Example. Movies & Animation >> Movies &amp; Animation   -->
+
+	<!--Range seeker-->
+	<string name="demo_min_label">Min</string>
+	<string name="demo_max_label">Max</string>
+	<!--===============================================================-->
+
+	<!--most used-->
+	<string name="video">Video</string>
+	<string name="audio">Audio</string>
+	<string name="image">Image</string>
+	<string name="text">Text</string>
+	<string name="retry">Retry</string>
+	<string name="Lbl_Empty">Empty</string>
+	<string name="Lbl_Loading">Loading</string>
+	<string name="Lbl_Comment">Comment</string>
+	<string name="Lbl_Videos">Videos</string>
+	<string name="Lbl_Views">Views</string>
+	<string name="Lbl_aboutMe">About Me</string>
+	<string name="Lbl_About">About</string>
+	<string name="Lbl_Error">Error</string>
+	<string name="Lbl_Ok">OK</string>
+	<string name="Lbl_Security">Security</string>
+	<string name="Lbl_Done">Done</string>
+	<string name="Lbl_Deleted">Deleted</string>
+	<string name="Lbl_Delete">Delete</string>
+	<string name="Lbl_Submit">Submit</string>
+	<string name="Lbl_Cancel">Cancel</string>
+	<string name="Lbl_Yes">Yes</string>
+	<string name="Lbl_No">No</string>
+	<string name="Lbl_Warning">Warning</string>
+	<string name="Lbl_Changed">Changed</string>
+	<string name="Lbl_Crop">Crop</string>
+	<string name="Lbl_Report">Report</string>
+	<string name="Lbl_Quality">Quality</string>
+	<string name="Lbl_Help_feedback">Help &amp; Feedback</string>
+	<string name="Lbl_Make_video_offline">Make video offline</string>
+	<string name="Lbl_Share">Share</string>
+	<string name="Lbl_InviteSMSText_1">Hi let is meet on</string>
+	<string name="Lbl_InviteSMSText_2">for your smart phone</string>
+	<string name="Lbl_Success">Success</string>
+	<string name="Lbl_Offline_Mode">Offline Mode</string>
+	<string name="Lbl_Cover">Cover</string>
+	<string name="Lbl_Avatar">Avatar</string>
+	<string name="Lbl_Close">Close</string>
+	<string name="Lbl_With">With</string>
+	<string name="Lbl_At">At</string>
+	<string name="Lbl_SelectPictures">Select Pictures</string>
+	<string name="Lbl_SelectImage">Select Image</string>
+	<string name="Lbl_SelectFile">Select File</string>
+	<string name="Lbl_SelectGif">Select Gif</string>
+	<string name="Lbl_Unknown">Unknown</string>
+	<string name="Lbl_ReadMore">Read More</string>
+	<string name="Lbl_ReadLess">Read Less</string>
+	<string name="Lbl_Description">Description</string>
+	<string name="Lbl_Published_on">Published on</string>
+	<string name="Lbl_I_agree_to_the">I agree to the</string>
+	<string name="Lbl_Last_seen">Last seen</string>
+	<string name="Lbl_Create_Account">Create Account</string>
+	<string name="Lbl_SignUp">Sign Up</string>
+	<string name="Lbl_Like">Like</string>
+	<string name="Lbl_Create">Create</string>
+	<string name="Lbl_Send">Send</string>
+	<string name="Lbl_Male">Male</string>
+	<string name="Lbl_Female">Female</string>
+	<string name="Lbl_Comments">Comments</string>
+	<string name="Lbl_Save">Save</string>
+	<string name="Lbl_Country">Country</string>
+	<string name="Lbl_Settings">Settings</string>
+	<string name="Lbl_Send_to">Send to</string>
+	<string name="Lbl_Copy">Copy</string>
+	<string name="Lbl_Type">Type</string>
+	<string name="Lbl_Remember">Remember</string>
+	<string name="Lbl_Online">Online</string>
+	<!--===============================================================-->
+
+	<!-- First Page-->
+	<string name="Lbl_FirstHeader">Discover Your Dream Partner</string>
+	<string name="Lbl_FirstSubHeader">Swipe right to like someone and if you both like each others? <font color='@color/primary'>its a match</font></string>
+	<string name="Lbl_FirstFooter">Flirt, Chat and Meet people around you!</string>
+	<!--===============================================================-->
+
+	<!--Login && Register -->
+	<string name="Lbl_FirstName">First Name</string>
+	<string name="Lbl_LastName">Last Name</string>
+	<string name="Lbl_Username">Username</string>
+	<string name="Lbl_Email">Email</string>
+	<string name="Lbl_Login">Login</string>
+	<string name="Lbl_Register">Register</string>
+	<string name="Lbl_SignIn">Sign in</string>
+	<string name="Lbl_DontHaveAnAccount">"Don&apos;t Have an account?"</string>
+	<string name="Lbl_Or">OR</string>
+	<string name="Lbl_Please_write_your_email">Please write your email</string>
+	<string name="Lbl_Null_Data_User">Null data user</string>
+	<string name="Lbl_Create_An_Account">Create An Account</string>
+	<string name="Lbl_By_registering_you_agree_to_our">By registering you agree to our</string>
+	<string name="Lbl_Terms_of_service">Terms of service</string>
+	<string name="Lbl_Already_Have_an_Account">Already Have an Account</string>
+	<string name="Lbl_Error_Register_password">Register Not Correct, error Password</string>
+	<string name="Lbl_Error_Login">Login Not Correct, error Username Or Password</string>
+	<!--===============================================================-->
+
+	<!-- Password-->
+	<string name="Lbl_Password">Password</string>
+	<string name="Lbl_ConfirmPassword">Confirm Password</string>
+	<string name="Lbl_Forget_password">Forgot password</string>
+	<string name="Lbl_Forgot_your_password">Forgot password?</string>
+	<string name="Lbl_Forgot_your_password_DontWorry">"Don&apos;t worry type your email here and we will recover it for you."</string>
+	<string name="Lbl_Change_Password">Change Password</string>
+	<string name="Lbl_Current_Password">Current Password</string>
+	<string name="Lbl_New_Password">New password</string>
+	<string name="Lbl_Repeat_password">Repeat password</string>
+	<string name="Lbl_Your_password_dont_match">Your password does not match</string>
+	<string name="Lbl_Enter_Password">Enter your password here</string>
+	<string name="Lbl_Change_your_password">Change your password</string>
+	<string name="Lbl_Please_enter_your_email_address">Please enter your email address</string>
+	<string name="Lbl_We_will_send_you_link_to_reset_password">We will send you a link to reset password.</string>
+	<string name="Lbl_If_you_forgot_your_password">If you forgot your password, you can reset it from here.</string>
+	<string name="Lbl_Please_confirm_your_password">Error, Please confirm your password</string>
+	<!--===============================================================-->
+
+	<!--WalkTroutPage-->
+	<string name="Lbl_FinishButton_WalkTroutPage">Get Started</string>
+	<string name="Lbl_Title_page1">Swipe Cards</string>
+	<string name="Lbl_Description_page1">Swipe cards right and left if you like or dislike someone</string>
+	<string name="Lbl_Title_page2">Search Nearby</string>
+	<string name="Lbl_Description_page2">Connect With Local Singles &amp; Start Your Online Dating Adventure!</string>
+	<string name="Lbl_Title_page3">Chat</string>
+	<string name="Lbl_Description_page3">Connect with like minded people and exchange your love</string>
+	<!--===============================================================-->
+
+	<!--Profile-->
+	<string name="Lbl_MyProfile">My Profile</string>
+	<string name="Lbl_Profile">Profile</string>
+	<string name="Lbl_Interest">Interest</string>
+	<string name="Lbl_Interests">Interests</string>
+	<string name="Lbl_DefaultAbout">Hi there i am using</string>
+	<string name="Lbl_CopeLinkToProfile">Copy Profile Link</string>
+	<string name="Lbl_EnterTextInterest">Enter text a tag, then hit ,</string>
+	<string name="Lbl_Cm">cm</string>
+	<string name="Lbl_BodyType">Body Type</string>
+	<string name="Lbl_ChooseHairColor">Choose your Hair Color</string>
+	<string name="Lbl_ChooseWorkStatus">Choose your Work status</string>
+	<string name="Lbl_ChooseRelationshipStatus">Choose your Relationship status</string>
+	<string name="Lbl_ChooseLanguage">Choose your Preferred Language</string>
+	<string name="Lbl_PhoneNumber">Phone Number</string>
+	<string name="Lbl_ChooseYourCountry">Choose your country</string>
+
+	<string name="Lbl_FavoriteInfo">Favorite Info</string>
+	<string name="Lbl_Music">Music</string>
+	<string name="Lbl_Dish">Dish</string>
+	<string name="Lbl_Song">Song</string>
+	<string name="Lbl_Hobby">Hobby</string>
+	<string name="Lbl_City">City</string>
+	<string name="Lbl_Sport">Sport</string>
+	<string name="Lbl_Book">Book</string>
+	<string name="Lbl_Movie">Movie</string>
+	<string name="Lbl_Color">Color</string>
+	<string name="Lbl_TvShow">Tv Show</string>
+
+	<string name="Lbl_LifeStyleInfo">Life Style Info</string>
+	<string name="Lbl_ILiveWith">I Live With</string>
+	<string name="Lbl_LiveWith">Live With</string>
+	<string name="Lbl_Car">Car</string>
+	<string name="Lbl_Religion">Religion</string>
+	<string name="Lbl_Smoke">Smoke</string>
+	<string name="Lbl_Drink">Drink</string>
+	<string name="Lbl_Travel">Travel</string>
+
+	<string name="Lbl_EditLooksInfo">Edit Looks Info</string>
+	<string name="Lbl_Ethnicity">Ethnicity</string>
+	<string name="Lbl_Body">Body</string>
+	<string name="Lbl_Height">Height</string>
+	<string name="Lbl_HairColor">Hair Color</string>
+
+	<string name="Lbl_PersonalityInfo">Personality Info</string>
+	<string name="Lbl_Character">Character</string>
+	<string name="Lbl_Pets">Pets</string>
+	<string name="Lbl_Friends">Friends</string>
+	<string name="Lbl_Children">Children</string>
+
+	<string name="Lbl_EditProfileInfo">Edit Profile Info</string>
+	<string name="Lbl_Birthday">Birthday</string>
+	<string name="Lbl_Language">Language</string>
+	<string name="Lbl_Relationship">Relationship</string>
+	<string name="Lbl_WorkStatus">WorkStatus</string>
+	<string name="Lbl_Education">Education</string>
+	<string name="Lbl_EducationLevel">Education Level</string>
+
+	<string name="Lbl_Upgrade">Upgrade</string>
+	<string name="Lbl_BoostMe">Boost Me</string>
+	<string name="Lbl_EditProfile">Edit Profile</string>
+	<string name="Lbl_NeedHelp">Need Help?</string>
+	<string name="Lbl_ContactUs_Privacy">Faq, contact us, privacy</string>
+	<string name="Lbl_YourBoostExpireInMinutes">Your boost will expire in Minutes</string>
+	<!--===============================================================-->
+
+	<!--Edit My Profile-->
+	<string name="Lbl_ProfileCompletion">Profile Completion</string>
+	<string name="Lbl_ProfileInfo">Profile Info</string>
+	<string name="Lbl_AddWordsAbout">Add a few words about yourself</string>
+	<string name="Lbl_Name">Name</string>
+	<string name="Lbl_Gender">Gender</string>
+	<string name="Lbl_PreferredLanguage">Preferred Language</string>
+	<string name="Lbl_RelationshipStatus">Relationship Status</string>
+	<string name="Lbl_Looks">Looks</string>
+	<string name="Lbl_Personality">Personality</string>
+	<string name="Lbl_Lifestyle">Lifestyle</string>
+	<string name="Lbl_Favourites">Favourites</string>
+	<string name="Lbl_MusicGenre">Music Genre</string>
+	<!--===============================================================-->
+
+	<!--User Profile-->
+	<string name="Lbl_WorkAndEducation">Work and Education</string>
+	<string name="Lbl_Languages">Languages</string>
+	<string name="Lbl_SocialInfo">Social Info</string>
+	<string name="Lbl_Gifts">Gifts</string>
+	<string name="Lbl_SendGiftsAndChat">Send a gift and start chatting now</string>
+	<string name="Lbl_SendGifts">Send Gift</string>
+	<string name="Lbl_IAm">"I&apos;m"</string>
+	<string name="Lbl_IAm_A">"I&apos;m a"</string>
+	<string name="Lbl_person">person</string>
+	<string name="Lbl_IHave">I have</string>
+	<string name="Lbl_Hair">hair</string>
+	<string name="Lbl_personAnd_IHave">person and I have</string>
+	<string name="Lbl_My_plans_for_children">My plans for children</string>
+	<string name="Lbl_ILiveAlone">I live alone</string>
+	<string name="Lbl_ILive">I live</string>
+	<string name="Lbl_IDontSmoke">"I don&apos;t smoke"</string>
+	<string name="Lbl_IDontDrink">"I don&apos;t drink"</string>
+	<string name="Lbl_And">and</string>
+	<string name="Lbl_tall">tall</string>
+	<string name="Lbl_NoDescription">No Description</string>
+	<!--===============================================================-->
+
+	<!--Time-->
+	<string name="Lbl_justNow">Just now</string>
+	<string name="Lbl_hours">Hours ago</string>
+	<string name="Lbl_days">Days</string>
+	<string name="Lbl_month">Month ago</string>
+	<string name="Lbl_minutes">Minutes ago</string>
+	<string name="Lbl_seconds">Seconds ago</string>
+	<string name="Lbl_year">Year ago</string>
+	<string name="Lbl_CutHours">H</string>
+	<string name="Lbl_CutDays">D</string>
+	<string name="Lbl_CutMonth">M</string>
+	<string name="Lbl_CutMinutes">Min</string>
+	<string name="Lbl_CutSeconds">Sec</string>
+	<string name="Lbl_CutYear">Y</string>
+	<string name="Lbl_about_minute">about a minute ago</string>
+	<string name="Lbl_about_hour">about an hour ago</string>
+	<string name="Lbl_yesterday">yesterday</string>
+	<string name="Lbl_about_month">about a month ago</string>
+	<string name="Lbl_about_year">about a year ago</string>
+	<!--===============================================================-->
+
+	<!--Toast && Messages-->
+	<string name="Lbl_Permission_is_denied">"Sorry: You cannot proceed with your action if you don&apos;t allow"</string>
+	<string name="Lbl_something_went_wrong">Check your credentials something went wrong</string>
+	<string name="Lbl_CheckYourInternetConnection">Please check your internet connection</string>
+	<string name="Lbl_VerificationFailed">Verification failed</string>
+	<string name="Lbl_You_will_be_logged">You will be logged out now, see you later</string>
+	<string name="Lbl_Are_you_logout">Are you sure you went to log out?</string>
+	<string name="Lbl_Text_copied">Text copied to clipboard</string>
+	<string name="Lbl_Text_report">It has been sent reporting</string>
+	<string name="Lbl_PleaseAddPhoneNumberCorrectly">Please add the phone number correctly</string>
+	<!--===============================================================-->
+
+	<!--Error-->
+	<string name="Lbl_Error_Code">Error Code</string>
+	<string name="Lbl_Please_check_your_details">Error, Please check your details</string>
+	<string name="Lbl_Please_enter_your_data">Error, Please enter your data</string>
+	<string name="Lbl_IsEmailValid">Error, Please Write your full email address</string>
+
+	<!--Error Login-->
+	<string name="Lbl_Error_1">User name cannot be empty</string>
+	<string name="Lbl_Error_2">Password cannot be empty</string>
+	<string name="Lbl_Error_3">Could not save session</string>
+	<string name="Lbl_Error_4">User Not Exist</string>
+	<string name="Lbl_Error_5">Wrong password</string>
+
+	<!--Error Register-->
+	<string name="Lbl_Error_6">User data unset</string>
+	<string name="Lbl_Error_7">User name cannot be empty</string>
+	<string name="Lbl_Error_8">Username must be between 5 / 32</string>
+	<string name="Lbl_Error_9">Invalid username characters</string>
+	<string name="Lbl_Error_10">Email cannot be empty</string>
+	<string name="Lbl_Error_11">This e-mail is invalid</string>
+	<string name="Lbl_Error_12">Password cannot be empty</string>
+	<string name="Lbl_Error_13">Password is too short</string>
+	<string name="Lbl_Error_14">User Name Exists</string>
+	<string name="Lbl_Error_15">Email Already Exists</string>
+	<string name="Lbl_Error_16">Registration Failed</string>
+	<string name="Lbl_Error_17">Could not send verification email</string>
+	<string name="Lbl_Error_18">Error: an unknown error occurred. Please try again later</string>
+
+	<!--Error Reset Password-->
+	<string name="Lbl_Error_21">No user email  sent</string>
+	<string name="Lbl_Error_22">E-mail is not exists</string>
+	<!--===============================================================-->
+
+	<!--Fragment-->
+	<string name="Lbl_Notifications">Notifications</string>
+	<string name="Lbl_Trending">Trending</string>
+	<string name="Lbl_Search">Search</string>
+	<string name="Lbl_More">More</string>
+	<string name="Lbl_Users">Users</string>
+	<string name="Lbl_Cards">Cards</string>
+	<string name="Lbl_messages">Messages</string>
+	<!--===============================================================-->
+
+	<!--Tab-->
+	<string name="Lbl_Find_Match">Find a Match</string>
+	<string name="Lbl_Matches">Matches</string>
+	<string name="Lbl_Visits">Visits</string>
+	<string name="Lbl_Likes">Likes</string>
+	<!--===============================================================-->
+
+	<!--Button-->
+	<string name="Btn_GetPremium">Get premium</string>
+	<string name="Btn_BuyCredits">Buy Credits</string>
+	<string name="Btn_SkipCredits">Skip Credits</string>
+	<string name="Btn_Continue">Continue</string>
+	<string name="Btn_Paypal">Paypal</string>
+	<string name="Btn_SkipPremium">Skip Premium</string>
+	<string name="Btn_NoOtherTime">No, Other Time</string>
+	<string name="Btn_GooglePlay">Google Play</string>
+	<!--===============================================================-->
+
+	<!--Refresh-->
+	<string name="Lbl_PullToRefresh">Pull To Refresh</string>
+	<string name="Lbl_RefreshMyNewsFeed">Update latest users</string>
+	<string name="Lbl_Refreshing">Refreshing</string>
+	<!--===============================================================-->
+
+	<!--Notifications-->
+	<string name="Lbl_VisitYou">Visit you</string>
+	<string name="Lbl_LikeYou">Like you</string>
+	<string name="Lbl_DislikeYou">Dislike you</string>
+	<string name="Lbl_SendGiftToYou">Send gift to you</string>
+	<string name="Lbl_YouGotMatch">You got a new match, click to view!</string>
+	<string name="Lbl_MessageNotifications">sent you message!</string>
+	<string name="Lbl_ApproveReceipt">We approved your bank transfer of</string>
+	<string name="Lbl_DisapproveReceipt">We have rejected your bank transfer, please contact us for more details.</string>
+	<string name="Lbl_AcceptChatRequest">accepted your message request!</string>
+	<string name="Lbl_DeclineChatRequest">declined your message request!</string>
+	<!--===============================================================-->
+
+	<!--Location-->
+	<string name="Lbl_Location">Location</string>
+	<string name="Lbl_Use_Location">Use Location?</string>
+	<string name="Lbl_GPS_is_disabled">GPS is disabled.Do you want to enable GPS</string>
+	<string name="Lbl_Error_LocationChanged">Unable to determine your location. Try again in a short while.</string>
+	<string name="Lbl_AddLocation">Add Location</string>
+	<!--===============================================================-->
+
+	<!--Filter-->
+	<string name="Lbl_Filter">Filter</string>
+	<string name="Lbl_StartTyping">Start Typing</string>
+	<string name="Lbl_WhoAreYouLookingFor">Who are you looking for?</string>
+	<string name="Lbl_Boys">Boys</string>
+	<string name="Lbl_Girls">Girls</string>
+	<string name="Lbl_Both">Both</string>
+	<string name="Lbl_Age">Age Diffrent</string>
+	<string name="Lbl_OnlineNow">Online Now</string>
+	<string name="Lbl_ResetFilter">Reset Filter</string>
+	<string name="Lbl_ApplyFilter">Apply filters</string>
+	<string name="Lbl_NearBy">Near By</string>
+	<!--===============================================================-->
+
+	<!--Add Photo-->
+	<string name="Lbl_AddPhoto">Add Photo</string>
+	<string name="Lbl_Title_AddPhoto">Add a photo to receive feed back!</string>
+	<string name="Lbl_SubTitle_AddPhoto">Now your profile is not interesting to anyone :-(</string>
+	<string name="Lbl_IWill_AddPhoto_Later">I Will Add the photo Later</string>
+	<!--===============================================================-->
+
+	<!--Dialog : Gift && AddCredits -->
+	<string name="Lbl_countCartGift">Wanna get more? get premium! OR get new stickers for</string>
+	<string name="Lbl_TermsAndConditions">Terms and conditions</string>
+	<!--===============================================================-->
+
+	<!--Dialog : MatchFound -->
+	<string name="Lbl_Title_Match">Its a Match</string>
+	<string name="Lbl_YouAnd">You and</string>
+	<string name="Lbl_SubTitle_Match">"liked each other. Say &apos;Hello&apos;"</string>
+	<string name="Lbl_NotNow">Not Now</string>
+	<string name="Lbl_StartChat">Start Chat</string>
+	<!--===============================================================-->
+
+	<!--Dialog : SkipTutorial -->
+	<string name="Lbl_Title_Skip">"Let&apos;s Easy"</string>
+	<string name="Lbl_SubTitle_Skip">If you like this person and keep in touch, Swipe Right</string>
+	<string name="Lbl_SkipTutorial">Skip Tutorial</string>
+	<string name="Lbl_Next">Next</string>
+	<string name="Lbl_Finish">Finish</string>
+	<string name="Lbl_SubTitle_Finish">"If you dislike this person and you don&apos;t want to keep in touch Swipe Left"</string>
+	<!--===============================================================-->
+
+	<!--message-->
+	<string name="Lbl_Messenger">Messenger</string>
+	<string name="Lbl_Message">Message</string>
+	<string name="Lbl_Chats">Chats</string>
+	<string name="Lbl_Write_your_message">Write your message</string>
+	<string name="Lbl_Clear_chat">Clear chat</string>
+	<string name="Lbl_SendImageFile">Photo</string>
+	<string name="Lbl_SendStickerFile">Sticker</string>
+	<string name="Lbl_SendGifFile">Gif</string>
+	<string name="Lbl_SendMessage">Send you a message</string>
+	<!--===============================================================-->
+
+	<!--Empty State Inflater-->
+	<string name="Lbl_NoConnection_TitleText">No Internet Available</string>
+	<string name="Lbl_NoConnection_DescriptionText">We could not establish a connection with our servers please try again later.</string>
+	<string name="Lbl_NoConnection_Button">Try Again</string>
+
+	<string name="Lbl_NoSearchResult_TitleText">Sad no result!</string>
+	<string name="Lbl_NoSearchResult_DescriptionText">We cannot find the keyword you are searching form maybe a little spelling mistake ?</string>
+	<string name="Lbl_NoSearchResult_Button">Search Random</string>
+
+	<string name="Lbl_SomThingWentWrong_TitleText">Something Went Wrong</string>
+	<string name="Lbl_SomThingWentWrong_DescriptionText">Server respond</string>
+	<string name="Lbl_SomThingWentWrong_Button">Try Again</string>
+
+	<string name="Lbl_NoNotification_TitleText">No Notifications Yet</string>
+	<string name="Lbl_NoNotification_DescriptionText">We will display once you get your first activity here</string>
+
+	<string name="Lbl_NoMessage_TitleText">No More Messages</string>
+	<string name="Lbl_NoMessage_DescriptionText">No conversations yet in</string>
+
+	<string name="Lbl_NoMoreUsers">No more users to show</string>
+
+	<string name="Lbl_NoBlockUsers">There are no users</string>
+	<!--===============================================================-->
+
+	<!--Favorite-->
+	<string name="Lbl_UnFavorite">UnFavorite</string>
+	<string name="Lbl_Favorite">Favorite</string>
+	<string name="Lbl_DisplayAllFavorite">Display all your favorite users</string>
+	<string name="Lbl_AddedFavorite">User added to favorites</string>
+	<string name="Lbl_RemovedFavorite">User removed from favorites</string>
+	<!--===============================================================-->
+
+	<!--Settings-->
+	<string name="Lbl_General">General</string>
+	<string name="Lbl_MyAccount">My Account</string>
+	<string name="Lbl_SocialLinks">Social Links</string>
+	<string name="Lbl_OnlineChat">"Show when you&apos;re active"</string>
+	<string name="Lbl_Privacy">Privacy</string>
+	<string name="Lbl_PSearchEngines">Show my profile on search engines?</string>
+	<string name="Lbl_PRandomUsers">Show my profile in random users?</string>
+	<string name="Lbl_PFindMatchPage">Show my profile in find match page?</string>
+	<string name="Lbl_Storage">Storage</string>
+	<string name="Lbl_ClearCache">Clear Cache</string>
+	<string name="Lbl_Support">Support</string>
+	<string name="Lbl_Help">Help</string>
+	<string name="Lbl_ReportProblem">Report</string>
+	<string name="Lbl_DeleteAccount">Delete Account</string>
+	<string name="Lbl_Logout">Logout</string>
+	<!--===============================================================-->
+
+	<!--Invite Friends-->
+	<string name="Lbl_InviteFriends">Invite Friends</string>
+	<string name="Lbl_ContactsPhone">Contacts Phone</string>
+	<string name="Lbl_ShareThe">Share the</string>
+	<string name="Lbl_byInvitingFriends">by inviting your friends using these</string>
+	<string name="Lbl_ShareTheLove">Share The Love</string>
+	<string name="Lbl_TextInvite">Text Invite</string>
+	<string name="Lbl_SocialMediaInvite">Social Media Invite</string>
+	<string name="Lbl_InviteFriendsToTheApp">Invite Friends to the app</string>
+	<!--===============================================================-->
+
+	<!--Social Links-->
+	<string name="Lbl_Facebook">Facebook</string>
+	<string name="Lbl_Twitter">Twitter</string>
+	<string name="Lbl_GooglePlus">Google Plus</string>
+	<string name="Lbl_Instagram">Instagram</string>
+	<string name="Lbl_LinkedIn">LinkedIn</string>
+	<string name="Lbl_Website">Website</string>
+	<!--===============================================================-->
+
+	<!--Block Users-->
+	<string name="Lbl_BlockedUsers">Blocked Users</string>
+	<string name="Lbl_Block">Block</string>
+	<string name="Lbl_Blocked_successfully">blocked successfully</string>
+	<string name="Lbl_Unblock_successfully">Unblock successfully</string>
+	<string name="Lbl_DoYouWantUnblock">Do you want to unblock this user</string>
+	<!--===============================================================-->
+
+	<!--Delete Account-->
+	<string name="Lbl_Are_you_DeleteAccount">Are you sure you want to delete the account from</string>
+	<string name="Lbl_Your_account_was_successfully_deleted">Your account was successfully deleted</string>
+	<string name="Lbl_Error_Terms">You can not access your disapproval of the Terms and Conditions</string>
+	<string name="Lbl_RemoveAccount">Remove Account</string>
+	<string name="Lbl_IWantToDelete1">Yes, I want to delete</string>
+	<string name="Lbl_IWantToDelete2">permanently from</string>
+	<string name="Lbl_IWantToDelete3">Account.</string>
+	<!--===============================================================-->
+
+	<!--Increase Popularity-->
+	<string name="Lbl_IncreasePopularity">Increase Popularity</string>
+	<string name="Lbl_YourPopularity">Your Popularity</string>
+	<string name="Lbl_VeryLow">Very low</string>
+	<string name="Lbl_Credits">Credits</string>
+	<string name="Lbl_VisitsMain">Promote your profile by get more visits, for 5 Minutes</string>
+	<string name="Lbl_VisitsCost">Get x10 Visits</string>
+	<string name="Lbl_MatchesMain">Shown more and rise up at the same time, for 4 Minutes</string>
+	<string name="Lbl_MatchesCost">Get x3 Matches</string>
+	<string name="Lbl_LikesMain">"Tell everyone you&apos;re online and be seen by users who want to chat, for 5 Minutes"</string>
+	<string name="Lbl_LikesCost">Get x4 Likes</string>
+	<string name="Lbl_IncreaseStarted">Increase started</string>
+	<!--===============================================================-->
+
+	<!--About App-->
+	<string name="Lbl_PrivacyPolicy">Privacy Policy</string>
+	<string name="Lbl_TermsOfUse">Terms of use</string>
+	<string name="Lbl_Version">Version</string>
+	<string name="Lbl_Changelog">Changelog</string>
+	<string name="Lbl_RateOurApp">Rate our App</string>
+	<string name="Lbl_AboutUs">About Us</string>
+	<!--===============================================================-->
+
+	<!--Payment Card Details-->
+	<string name="Lbl_Expire">Expire</string>
+	<string name="Lbl_CVV">CVV</string>
+	<string name="Lbl_YourName">Your Name</string>
+	<string name="Lbl_CreditCardNumber">Credit card number</string>
+	<string name="Lbl_NameOfCard">Name on card</string>
+	<string name="Lbl_OrUsing">Or using</string>
+	<string name="Lbl_PleaseVerifyDataCard">Please verify that the entered data is correct</string>
+	<string name="Lbl_ErrorConnectionSystemStripe">There is an error in the electronic payment system, Please check the maintenance department and thank you</string>
+	<string name="Lbl_Canceled">Canceled</string>
+	<string name="Lbl_Invalid">Invalid</string>
+	<!--===============================================================-->
+
+	<!--Credit Window-->
+	<string name="Lbl_DescriptionCredits1">Boost your profile</string>
+	<string name="Lbl_DescriptionCredits2">Highlight your messages</string>
+	<string name="Lbl_DescriptionCredits3">Send a gift</string>
+	<string name="Lbl_DescriptionCredits4">Get seen 100x in Discover</string>
+	<string name="Lbl_DescriptionCredits5">Put yourself First in Search</string>
+	<string name="Lbl_DescriptionCredits6">Get additional Stickers</string>
+	<string name="Lbl_DescriptionCredits7">Double your chances for a friendship</string>
+	<string name="Lbl_Your">Your</string>
+	<string name="Lbl_CreditsBalance">Credits balance</string>
+	<!--===============================================================-->
+
+	<!--Upgrade Premium-->
+	<string name="Lbl_UpgradePremium">Upgrade To Premium</string>
+	<string name="Lbl_UpgradePremiumMainText">Activating Premium will help you meet more people, faster.</string>
+	<string name="Lbl_SeeMoreStickers">See more stickers on chat</string>
+	<string name="Lbl_ShowInPremium">Show in Premium bar</string>
+	<string name="Lbl_SeeLikesNotifications">See likes notifications</string>
+	<string name="Lbl_GetDiscountBuyBoostMe">Get discount when buy boost me</string>
+	<string name="Lbl_DisplayFirstInFindMatches">Display first in find matches</string>
+	<string name="Lbl_DisplayFirstInRandomUsers">Display on top in random users</string>
+	<string name="Lbl_AddMe">Add Me</string>
+
+	<string name="Lbl_Normal">Normal</string>
+	<string name="Lbl_Weekly">Weekly</string>
+	<string name="Lbl_Monthly">Monthly</string>
+	<string name="Lbl_Yearly">Yearly</string>
+	<string name="Lbl_Lifetime">Lifetime</string>
+	<string name="Lbl_PayOnesAccessForEver">Pay ones access for ever</string>
+	<!--===============================================================-->
+
+	<!-- Verification Code Number-->
+	<string name="Lbl_Verification">Verification</string>
+	<string name="Lbl_VerificationText">OTP has been sent to you on your mobile phone. Please enter it below</string>
+	<string name="Btn_Verify">Verify</string>
+	<string name="Lbl_CodeNotCorrect">Please type the correct code number</string>
+	<string name="Lbl_TheNumber">The number</string>
+	<string name="Lbl_ISNotValidNumber">is not a valid phone number</string>
+	<string name="Lbl_VerifyYourNumber">Verify Your Number</string>
+	<string name="Lbl_PleaseEnterYourMobileNumber">Please enter your mobile number to receive a verification code. Carrier rates may apply</string>
+	<!--===============================================================-->
+
+	<!-- Verification Code Number-->
+	<string name="Lbl_CheckYourEmail">Check your email</string>
+	<string name="Lbl_WeSentEmailTo">"We sent email to @.\nEnter the 4-digit code to reset your password."</string>
+	<string name="Lbl_ActivationSent">Activation Email Sent</string>
+	<string name="Lbl_PleaseTypeEmail">Please type email of account you want to recover.</string>
+	<string name="Lbl_YouWillGetCode">You will get 4-digit recovery code</string>
+	<!--===============================================================-->
+
+	<!-- 1.2.2 Version-->
+	<string name="Lbl_ViewProfile">View Profile</string>
+
+	<!-- Verification Code Number-->
+	<string name="Lbl_VerificationText1">To log in, you need to verify your identity.</string>
+	<string name="Lbl_VerificationText2">We have sent you the confirmation code to your email address.</string>
+	<string name="Lbl_AddCode">Add code number</string>
+	<string name="Lbl_ResetPassword">Reset password</string>
+	<string name="Btn_ResendEmail">Resend Email</string>
+
+	<!--Call-->
+	<string name="Lbl_Select_contact">Select contact</string>
+	<string name="Lbl_Phone">Phone</string>
+	<string name="Lbl_Web">Web</string>
+	<string name="Lbl_Calling">Calling...</string>
+	<string name="Lbl_Waiting_to_connect">Waiting to connect...</string>
+	<string name="Lbl_Faild_to_connect">Failed to connect !!</string>
+	<string name="Lbl_No_respond_from_the_user">No response from the user</string>
+	<string name="Lbl_The_user_declinde_your_call">The user declined your call</string>
+	<string name="Lbl_Lost_his_connection">Lost his connection</string>
+	<string name="Lbl_Lost_Connection">Lost Connection</string>
+
+	<string name="Lbl_Calls">Calls</string>
+	<string name="Lbl_Empty_calls">No calls</string>
+	<string name="Lbl_Start_calls">Start a new call from your friends list, by pressing the button at the bottom of the screen.</string>
+
+	<string name="Lbl_Notification_of_Messages">Notification of Messages</string>
+
+	<string name="Lbl_Dismiss">Dismiss</string>
+	<string name="Lbl_Answer">Answer</string>
+	<string name="Lbl_Clear_call_log">Clear call log</string>
+	<string name="Lbl_Answered_call">Answered call</string>
+	<string name="Lbl_Missed_call">Missed call</string>
+	<string name="Lbl_Declined_call">Declined call</string>
+	<string name="Lbl_Waiting_for_answer">Waiting for answer</string>
+	<string name="Lbl_Need_Camera">Need Camera and Microphone permissions to call.</string>
+	<string name="Lbl_Room_Disconnected">User Disconnected.</string>
+	<string name="Lbl_Connected">Connected</string>
+	<string name="Lbl_User_Lost_Connection">User Lost Connection</string>
+	<string name="Lbl_Calling_video">Calling video</string>
+
+	<string name="Lbl_Call">Call</string>
+	<string name="Lbl_Select_Type_Call">Select Type Call ?</string>
+	<string name="Lbl_Voice_call">Voice call</string>
+	<string name="Lbl_Video_call">Video call</string>
+	<string name="Lbl_Muted_his_video">Muted his video</string>
+	<string name="Lbl_is_calling_you">is calling you</string>
+
+	<!-- 1.4 Version-->
+	<!--===============================================================-->
+	<string name="Lbl_loadMore">Load more</string>
+	<string name="press_again_exit">Press again to exit</string>
+	<string name="Lbl_CopyLink">Copy Link</string>
+
+	<string name="Lbl_BagOfCredits">Bag of Credits</string>
+	<string name="Lbl_BoxOfCredits">Box of Credits</string>
+	<string name="Lbl_ChestOfCredits">Chest of Credits</string>
+
+	<string name="Lbl_AreYouSureDeleteMessages">Are you sure you want to delete messages?</string>
+	<string name="Lbl_MessageCall1">"Can&apos;t Talk Now, What&apos;s Up?"</string>
+	<string name="Lbl_MessageCall2">"I&apos;ll Call You Right Back"</string>
+	<string name="Lbl_MessageCall3">"I&apos;ll Call You Later"</string>
+	<string name="Lbl_MessageCall4">"Can&apos;t talk now.call me later"</string>
+	<string name="Lbl_MessageCall5">Custom message..</string>
+
+	<!--Article-->
+	<string name="Lbl_ExploreArticle">Explore Articles</string>
+	<string name="Lbl_Empty_Article">No articles</string>
+	<string name="Lbl_Start_Article">There are no articles available</string>
+	<string name="Lbl_Blogs">Blogs</string>
+	<string name="Lbl_ReadTheLatestArticles">Read the latest articles</string>
+	<string name="Lbl_NoMoreArticles">No more articles found</string>
+
+	<string name="Lbl_BankTransfer">Bank Transfer</string>
+	<string name="Lbl_YourWasReceiptSuccessfullyUploaded">Your Was Receipt Successfully Uploaded</string>
+	<string name="Lbl_Note">Note:</string>
+	<string name="Lbl_short_Note1">Please transfer the amount of</string>
+	<string name="Lbl_short_Note2">to this bank account to purchase</string>
+	<string name="Lbl_short_Note3">Plan Premium Membership</string>
+	<string name="Lbl_long_Note">In order to confirm the bank transfer, you will need to upload a receipt or take a screenshot of your transfer within 1 day from your payment date. If a bank transfer is made but no receipt is uploaded within this period, your order will be cancelled. We will verify and confirm your receipt within 3 working days from the date you upload it.</string>
+
+
+	<string name="Lbl_AccountNumber">Account Number / IBAN</string>
+	<string name="Lbl_AccountName">Account name</string>
+	<string name="Lbl_RoutingCode">Routing code</string>
+
+	<string name="Lbl_CreditCard">Credit Card</string>
+	<string name="Lbl_Basics">Basics</string>
+	<string name="Lbl_Background">Background</string>
+
+	<string name="Lbl_ToHeight">Height To</string>
+	<string name="Lbl_FromHeight">From Height</string>
+	<string name="Lbl_ErrorPleaseSelectImage">Error, please select image</string>
+
+	<!-- 1.4.3 Version-->
+	<!--===============================================================-->
+	<string name="Lbl_Finding_your_Location">Finding your Location…</string>
+	<string name="Lbl_SearchForPlace">Search for place</string>
+	<string name="Lbl_Error_DisplayAddress">Unable to determine the address. Try again in a few minutes.</string>
+	<string name="Lbl_Title_Location">My Position</string>
+	<string name="Lbl_Snippet_Location">"This is my device\'s position"</string>
+	<string name="Lbl_MyLocation">My Location</string>
+	<string name="Lbl_Default">Default</string>
+	<string name="Lbl_HotORNot">Hot OR Not</string>
+	<string name="Lbl_ViewMore">View More</string>
+
+	<!-- 1.5 Version-->
+	<!--===============================================================-->
+	<string name="Lbl_Camera_Not_Available">Is Camera Not Available.</string>
+	<string name="Lbl_TheFilesWillBeDeleted">The files will be deleted. Are you sure?</string>
+	<string name="Lbl_FilesAreNowDeleted">Files are now deleted</string>
+
+	<!--My Affiliates-->
+	<string name="Lbl_MyAffiliates">My Affiliates</string>
+	<string name="Lbl_EarnUpTo">Earn up to</string>
+	<string name="Lbl_forEachUserYourReferToUs">for each user your refer to us</string>
+	<string name="Lbl_ShareTo">Share to</string>
+
+	<!--Manage Sessions-->
+	<string name="Lbl_ManageSessions">Manage Sessions</string>
+	<string name="Lbl_Empty_Sessions">No sessions !!</string>
+	<string name="Lbl_Browser">Browser</string>
+	<string name="Lbl_IpAddress">IP Address</string>
+	<string name="Lbl_AreYouSureLogoutFromThisDevice">Are you sure you want to log out from this device?</string>
+
+	<!--TwoFactor-->
+	<string name="Lbl_TwoFactor">Two-factor authentication</string>
+	<string name="Lbl_Describe_TwoFactor">"Turn on 2-step login to level-up your account&apos;s security, Once turned on, you&apos;ll use both your password and a 6-digit security code sent to your phone or email to log in."</string>
+	<string name="Lbl_ConfirmationEmail_TwoFactor">We have sent an email that contains the confirmation code to enable Two-factor authentication.</string>
+	<string name="Lbl_ConfirmationEmailSent">A confirmation email has been sent.</string>
+	<string name="Lbl_ConfirmationCode">Confirmation code</string>
+	<string name="Lbl_ConfirmationCodeSent">confirmation code sent</string>
+	<string name="Lbl_TwoFactorOn">two factor on</string>
+	<string name="Lbl_Enable">Enable</string>
+	<string name="Lbl_Disable">Disable</string>
+
+	<!--Withdrawals-->
+	<string name="Lbl_Withdrawals">Withdrawals</string>
+	<string name="Lbl_PayPalEmail">PayPal E-mail</string>
+	<string name="Lbl_Amount">Amount</string>
+	<string name="Lbl_MyBalance">MY BALANCE</string>
+	<string name="Lbl_CantRequestWithdrawals">You can not request this amount that is not commensurate with your current balance</string>
+	<string name="Lbl_RequestSentWithdrawals">Your withdrawal request has been successfully sent</string>
+	<string name="Lbl_PaymentHistory">Payment history</string>
+	<string name="Lbl_Requested">Requested</string>
+	<string name="Lbl_Status">Status</string>
+	<string name="Lbl_PendingReview">Pending review</string>
+	<string name="Lbl_Approved">Approved</string>
+	<string name="Lbl_Declined">Declined</string>
+
+	<!--Login WoWonder-->
+	<string name="Lbl_LoginWith">Login With</string>
+	<string name="Lbl_ErrorLogin_3">Incorrect username or password</string>
+	<string name="Lbl_ErrorLogin_4">Username not found</string>
+	<string name="Lbl_ErrorLogin_5">Password is incorrect</string>
+	<string name="Lbl_ErrorLogin_6">You cannot perform the registration process, please try again later or contact us</string>
+	<string name="Lbl_ContinueAs">Continue As</string>
+
+	<!--SearchFilter-->
+	<string name="Lbl_Distance">Distance</string>
+	<string name="Lbl_distance_away">a distance away</string>
+	<string name="Lbl_km">km</string>
+
+	<!--Media Files-->
+	<string name="Lbl_MediaFiles">Media Files</string>
+	<string name="Lbl_SeeMoreMedia">Display more media</string>
+	<string name="Lbl_AskDeleteFile">Do you want to delete this file?</string>
+	<string name="Lbl_ChooseTheFileType">Choose the file type</string>
+	<string name="Lbl_ImageGallery">Image Gallery</string>
+	<string name="Lbl_VideoGallery">Video Gallery</string>
+	<string name="Lbl_RecordVideoFromCamera">Record video from camera</string>
+	<string name="Lbl_TakeImageFromCamera">Take a picture from the camera</string>
+	<string name="Lbl_Empty_Media">No Media</string>
+
+	<!--Friends-->
+	<string name="Lbl_AddFriend">Add Friend</string>
+	<string name="Lbl_UnFriend">UnFriend</string>
+	<string name="Lbl_Requests">Requests</string>
+	<string name="Lbl_DisplayAllFriends">Display list of your friends.</string>
+	<string name="Lbl_Empty_FriendsRequests">No New Requests</string>
+	<string name="Lbl_NoFriendsRequests">"When people send you friend requests, they&apos;ll appear here."</string>
+	<string name="Lbl_DeclineRequest">Decline request</string>
+	<string name="Lbl_AcceptRequest">Accept request</string>
+	<string name="Lbl_FriendRequest">Friend Request</string>
+	<string name="Lbl_View_All_FriendRequest">View all friends Requests</string>
+	<string name="Lbl_TheRequestSent">The request has been sent, wait for approval</string>
+	<string name="Lbl_TheFriendshipCanceled">The friendship has been canceled</string>
+
+	<!--Theme-->
+	<string name="Lbl_Display">Display</string>
+	<string name="Lbl_Theme">Theme</string>
+	<string name="Lbl_Night_Mode">Night Mode</string>
+	<string name="Lbl_Light">Light</string>
+	<string name="Lbl_Dark">Dark</string>
+	<string name="Lbl_SetByBattery">Set by Battery Saver</string>
+
+	<string name="Lbl_ThisUserHasBeenLiked">This user has been liked</string>
+	<string name="Lbl_ThisUserHasBeenDisliked">This user has been disliked</string>
+
+	<!-- 1.6 Version-->
+	<!--===============================================================-->
+	<string name="Lbl_I_Desliked">People I DisLiked</string>
+	<string name="Lbl_I_Desliked_desc">Display users i didnt like them.</string>
+	<string name="Lbl_I_Liked">People I Liked</string>
+	<string name="Lbl_I_Liked_desc">Display users i give them a like.</string>
+	<string name="Lbl_your_are_premium">Your are Premium user</string>
+	<string name="Lbl_Renew">Renew</string>
+
+	<string name="Lbl_UnLiked">Un Liked</string>
+	<string name="Lbl_UnDisliked">Un Disliked</string>
+	<string name="Lbl_FriendRequestYou">requested to be a friend with you.</string>
+	<string name="Lbl_FriendRequestAccepted">is now in your friend list.</string>
+	<string name="Lbl_ProUser">Pro User</string>
+	<string name="Lbl_ExpirationDate">Expiration Date</string>
+
+
+	<string name="Lbl_ErrorMaxSwaps">You have exceeded the maximum of likes or swipes per this day</string>
+	<string name="Lbl_ErrorNotHaveCredit">Sorry, you cannot send the gift because there is not enough credit</string>
+	<string name="Lbl_ErrorLimitOfMediaUploads">Sorry, You Have Reached The Limit Of Media Uploads.</string>
+	<string name="Lbl_Empty_GetPremium">Get premium to view who liked you!</string>
+	<string name="Lbl_GetPremiumMainText">Get a premium in order to enjoy many advantages</string>
+	<string name="Lbl_UploadedSuccessfullyWithReviewed">Uploaded successfully, file will be reviewed</string>
+	<string name="Lbl_UploadedSuccessfully">Uploaded successfully</string>
+	<string name="Lbl_ErrorMaxChatLimit">You have exceeded the maximum of chat limit, get premium to continue with the chat</string>
+
+	<!-- 1.7 Version-->
+	<!--===============================================================-->
+	<!--UpdateManagerApp-->
+	<string name="Lbl_ThereIsNewUpdate">There is a new update</string>
+	<string name="Lbl_DiscoverNewVersion">Discover new version</string>
+	<string name="Lbl_Current">Current</string>
+	<string name="Lbl_Update">Update</string>
+
+	<!--InAppReview-->
+	<string name="Lbl_Rate">Rate</string>
+	<string name="Lbl_RateOurAppContent">If you love our app, please take a moment to rare it.</string>
+
+	<!-- 1.9 Version-->
+	<!--===============================================================-->
+	<string name="Lbl_SuccessfullyUpdated">Successfully updated</string>
+	<string name="Lbl_SuccessfullyUpgraded">Successfully Upgraded</string>
+	<string name="Lbl_PaymentSuccessfully">Payment was successful</string>
+	<string name="Lbl_SentSuccessfully">Sent successfully</string>
+	<string name="Lbl_Check">Check</string>
+	<string name="Lbl_ProfileOn">profile on</string>
+
+	<!-- 2.1 Version-->
+	<!--===============================================================-->
+	<string name="Lbl_Error_IsUserYearsOld">Sorry, registration cannot be made due to the non-compliance with the age requirements of over 18 years</string>
+
+	<!-- 2.3 Version-->
+	<!--===============================================================-->
+	<string name="Lbl_Transactions">Transactions</string>
+	<string name="Lbl_Empty_Transactions">No Transactions</string>
+	<string name="Lbl_Pro">Pro</string>
+	<string name="Lbl_Please_wait">Please wait…</string>
+	<string name="Lbl_AddCommentHere">Add a comment here</string>
+	<string name="Lbl_Payment">Payment</string>
+
+	<!--Live Video Agora-->
+	<string name="Lbl_Live">Live</string>
+	<string name="Lbl_CreateLiveVideo">Create Live Video</string>
+	<string name="Lbl_IsLiveNow">is live now</string>
+	<string name="Lbl_AddLiveVideoContext">Add live video context</string>
+	<string name="Lbl_PleaseEnterLiveStreamName">Please enter live stream name</string>
+	<string name="Lbl_Go_Live">Go Live</string>
+	<string name="Lbl_GetReady">Get ready</string>
+	<string name="Lbl_JoiningStream">Joining Stream</string>
+	<string name="Lbl_LiveStreamHasEnded">Your live stream has ended</string>
+	<string name="Lbl_LiveStreamShareSuccess">Thanks, we hope to see you again</string>
+	<string name="Lbl_StartedBroadcastingLive">started broadcasting live</string>
+	<string name="Lbl_StreamHasEnded">stream has ended.</string>
+	<string name="Lbl_LiveStreamer_alert_title">Ready to stop live streaming?</string>
+	<string name="Lbl_LiveStreamer_alert_message">"Tap &apos;Yes&apos; to end your stream or &apos;No&apos; to continue"</string>
+	<string name="Lbl_LiveViewer_alert_title">Ready to stop watching?</string>
+	<string name="Lbl_LiveViewer_alert_message">"Tap &apos;Yes&apos; to exit live stream or &apos;No&apos; to keep watching"</string>
+	<string name="Lbl_YourLiveStreamHasEnded">Your live stream has ended</string>
+	<string name="Lbl_LiveStreamer_End_title">Thanks, we hope to see you again</string>
+	<string name="Lbl_LiveViewer_End_title">Start your own live stream now</string>
+
+	<!-- 2.4 Version-->
+	<!--===============================================================-->
+	<string name="Lbl_ThisFileIsPrivate">This file is private</string>
+
+	<!-- 2.5 Version-->
+	<!--===============================================================-->
+	<string name="Lbl_PConfirmFollowers">Confirm request when someone request to be a friend with you?</string>
+
+	<!-- 2.6 Version-->
+	<!--===============================================================-->
+	<string name="Lbl_call_swipe_up_to_answer">Swipe up to answer</string>
+	<string name="Lbl_call_swipe_down_to_reject">Swipe down to reject</string>
+ 
+	<!-- 2.7 Version-->
+	<!--===============================================================-->
+	<string name="Lbl_Duration">Duration</string>
+	<string name="Lbl_Accept">Accept</string>
+	<string name="Lbl_SelectYourPaymentMethod">Select Your Payment Method</string>
+	<string name="Lbl_Bank">Bank</string>
+	<string name="Lbl_RazorPay">RazorPay</string>
+	<string name="Lbl_PaySera">Paysera</string>
+	<string name="Lbl_PayStack">Paystack</string>
+	<string name="Lbl_AuthorizeNet">AuthorizeNet</string>
+	<string name="Lbl_SecurionPay">SecurionPay</string>
+	<string name="Lbl_IyziPay">IyziPay</string>
+	<string name="Lbl_CashFree">Cashfree</string>
+	<string name="Lbl_AamarPay">AamarPay</string>
+	<string name="Lbl_GooglePay">Google Pay</string>
+	<string name="Lbl_PayNow">Pay Now</string>
+	<string name="Lbl_PayWith">Pay With</string>
+	<string name="Lbl_Processing">Processing...</string>
+	<string name="Lbl_PleaseEnterName">Error, Please enter Name</string>
+	<string name="Lbl_ErrorConnectionPayment">"It&apos;s not available right now, please try again later"</string>
+	<string name="Lbl_WithdrawMethod">Withdraw Method</string>
+	<string name="Lbl_SwiftCode">Swift Code</string>
+	<string name="Lbl_Address">Address</string>
+	<string name="Lbl_ThereIsNoBalance">There Is No Balance</string>
+
+	<!-- 2.8 Version-->
+	<!--===============================================================-->
+	<string name="Lbl_WelcomeTo">Welcome To</string>
+	<string name="Lbl_LoginHeader">Login to continue finding partner.</string>
+	<string name="Lbl_RegisterHeader">Register to continue finding partner.</string>
+	<string name="Lbl_FullName">Full Name</string>
+	<string name="Lbl_NotAMember">Not a member?</string>
+	<string name="Lbl_RegisterNow">Register Now</string>
+	<string name="Lbl_LoginNow">Login Now</string>
+	<string name="Lbl_continueWith">continue with</string>
+	<string name="Lbl_Google">Google</string>
+	<string name="Lbl_Explore">Explore</string>
+	<string name="Lbl_ViewAll">View All</string>
+	<string name="Lbl_Popularity">Popularity</string>
+	<string name="Lbl_MoreInfo">More info</string>
+	<string name="Lbl_WhyChoosePremiumMembership">Why Choose Premium Membership?</string>
+	<string name="Lbl_CreateUnlimitedVideoAndAudioCalls">Create unlimited video and audio calls</string>
+	<string name="Lbl_FindPotentialMatchesByCountry">Find potential matches by country</string>
+
+	<!-- 2.9 Version-->
+	<!--===============================================================-->
+	<string name="Lbl_EndToEndEncrypted">End-to-end encrypted</string>
+	<string name="Lbl_Flip">Flip</string>
+	<string name="Lbl_StopVideo">Stop Video</string>
+	<string name="Lbl_Mute">Mute</string>
+	<string name="Lbl_EndCall">End Call</string>
+	<string name="Lbl_Speaker">Speaker</string>
+
+	<!-- 3.0 Version-->
+	<!--===============================================================-->	
+	<string name="Lbl_Skip">Skip</string> 
+	<string name="Lbl_DeleteAllChat">Delete all chats</string> 
+	<string name="Lbl_MessagesRequests">Messages Requests</string> 
+
+	<!-- 3.1 Version-->
+	<!--===============================================================-->	
+	<string name="Lbl_FlutterWave">FlutterWave</string>
+ 
+	<!-- 3.2 Version-->
+	<!--===============================================================-->
+	<string name="Lbl_ErrorCall_Message">There was a connection error, please try again later.</string>
+	<string name="Lbl_ErrorCall_Code">Error call code :</string>
+	<string name="Lbl_ContactUs">Contact Us</string>
+
+	<!-- 3.3 Version-->
+	<!--===============================================================-->
+	<string name="Lbl_Other">Other</string>
+	<string name="Lbl_Email_Has_Been_Send">Email Has Been Send</string>
+	<string name="Lbl_Decline">Decline</string>
+	<string name="Lbl_HangUp">Hang up</string>
+	
+	<!-- 3.4 Version-->
+	<!--===============================================================-->
+	<string name="Lbl_Display_your_app_Language">Display your app Language</string>
+	<string name="Lbl_PointsAdded">Points added</string>
+	
+	<!-- V3.6 String translate -->
+	<!--===============================================================-->
+	<string name="Lbl_ErrorLive_Code">Error live code :</string>
+
+</resources>

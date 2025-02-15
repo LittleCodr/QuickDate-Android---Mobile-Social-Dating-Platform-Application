@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools">
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="10dp">
+		 
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:weightSum="10"
+			android:layout_gravity="center_vertical"
+			android:gravity="center_vertical">
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="25dp"
+				android:textFontWeight="500"
+				android:textSize="18dp"
+				android:lineHeight="22dp"
+				android:layout_weight="10"
+				android:background="@drawable/edittextstyleone"
+				android:backgroundTint="@color/shimmerColor"
+				android:gravity="start"
+				android:maxLines="2" />
+
+			<View
+				android:layout_width="10dp"
+				android:layout_height="1dp"
+				android:layout_weight="1" />
+
+			<TextView
+				android:layout_width="25dp"
+				android:layout_height="25dp"
+				android:lines="1"
+				android:gravity="center"
+				android:layout_gravity="top|end"
+				android:background="@drawable/edittextstyleone"
+				android:backgroundTint="@color/shimmerColor"
+				android:textSize="20dp"/>
+
+		</LinearLayout>
+
+		<TextView
+			android:layout_width="128dp"
+			android:layout_height="20dp"
+			android:lines="1"
+			android:drawablePadding="5dp"
+			android:layout_marginTop="5dp"
+			android:layout_marginEnd="5dp"
+			android:background="@drawable/edittextstyleone"
+			android:backgroundTint="@color/shimmerColor"
+			android:textFontWeight="400"
+			android:textSize="14dp"
+			android:lineHeight="18dp"
+		/>
+		
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:orientation="horizontal"
+			android:layout_marginTop="5dp"
+			android:layout_marginEnd="10dp"
+			android:layout_marginStart="10dp"
+			android:layout_height="wrap_content"
+			android:weightSum="3">
+
+			<LinearLayout
+				android:id="@+id/LiveLayout"
+				android:layout_width="100dp"
+				android:layout_height="95dp"
+				android:layout_weight="1"
+				android:orientation="vertical"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:layout_marginEnd="5dp"
+				android:layout_marginStart="5dp"
+				android:background="@drawable/edittextstyleone"
+				android:backgroundTint="@color/shimmerColor" >
+
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/FriendsLayout"
+				android:layout_width="100dp"
+				android:layout_height="95dp"
+				android:layout_weight="1"
+				android:orientation="vertical"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:layout_marginEnd="5dp"
+				android:layout_marginStart="5dp"
+				android:background="@drawable/edittextstyleone"
+				android:backgroundTint="@color/shimmerColor" >
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/FavoritesLayout"
+				android:layout_width="100dp"
+				android:layout_height="95dp"
+				android:layout_weight="1"
+				android:orientation="vertical"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:layout_marginEnd="5dp"
+				android:layout_marginStart="5dp"
+				android:background="@drawable/edittextstyleone"
+				android:backgroundTint="@color/shimmerColor" >
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_marginTop="19dp"
+			android:layout_width="match_parent"
+			android:layout_height="130dp"
+			android:background="@drawable/edittextstyleone"
+			android:backgroundTint="@color/shimmerColor" >
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:padding="7dp"
+			android:layout_margin="0dp"
+			android:layout_gravity="center_horizontal">
+			 
+			<TextView
+				android:layout_width="90dp"
+				android:layout_height="15dp"
+				android:ellipsize="none"
+				android:layout_gravity="center_vertical"
+				android:gravity="center_vertical"
+				android:lines="1"
+				android:background="@drawable/edittextstyleone"
+				android:backgroundTint="@color/shimmerColor"
+				android:textFontWeight="400"
+				android:textSize="14dp"
+				android:lineHeight="18dp"
+				android:layout_marginTop="5dp"/>
+
+			
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="25dp"
+				android:textFontWeight="500"
+				android:textSize="18dp"
+				android:lineHeight="22dp"
+				android:layout_weight="10"
+				android:layout_marginTop="5dp"
+				android:background="@drawable/edittextstyleone"
+				android:backgroundTint="@color/shimmerColor"
+				android:gravity="start"
+				android:maxLines="2" />
+
+			<TextView
+				android:layout_width="90dp"
+				android:layout_height="15dp"
+				android:ellipsize="none"
+				android:layout_gravity="center_vertical"
+				android:gravity="center_vertical"
+				android:lines="1"
+				android:background="@drawable/edittextstyleone"
+				android:backgroundTint="@color/shimmerColor"
+				android:textFontWeight="400"
+				android:textSize="14dp"
+				android:lineHeight="18dp"
+				android:layout_marginTop="5dp"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+</merge>

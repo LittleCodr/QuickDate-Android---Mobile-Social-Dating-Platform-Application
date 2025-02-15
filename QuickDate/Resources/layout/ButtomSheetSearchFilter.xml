@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:fab="http://schemas.android.com/apk/res-auto"
+	android:orientation="vertical"
+	android:background="@android:color/transparent"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<androidx.core.widget.NestedScrollView
+		android:id="@+id/nested_scroll_view"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@android:color/transparent"
+		android:clipToPadding="false"
+		android:scrollbars="none"
+		android:scrollingCache="true"
+		app:layout_behavior="@string/appbar_scrolling_view_behavior">
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical"
+			android:background="@android:color/transparent">
+			<!--Head Page -->
+			<RelativeLayout
+				android:id="@+id/mainLayout"
+				android:paddingTop="10dp"
+				android:layout_width="match_parent"
+				android:background="@android:color/transparent"
+				android:layout_height="48dp">
+				<TextView
+					android:id="@+id/IconBack"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_centerVertical="true"
+					android:text="&gt;"
+					android:textSize="20sp"
+					android:textColor="@color/text_color_all"
+					android:layout_marginStart="25dp" />
+				<TextView
+					android:id="@+id/titlepage"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="0dp"
+					android:layout_centerVertical="true"
+					android:layout_toEndOf="@+id/IconBack"
+					android:text="@string/Lbl_Filter"
+					android:layout_centerHorizontal="true"
+					android:textSize="20sp"
+					android:textColor="@color/text_color_all"
+					android:layout_marginStart="15dp" />
+				<View
+					android:layout_width="match_parent"
+					android:layout_height="1dp"
+					android:layout_alignParentBottom="true"
+					android:background="?attr/colorDivider" />
+			</RelativeLayout> 
+			<!--Gender Section -->
+			<RelativeLayout
+				android:layout_marginTop="3dp"
+				android:layout_width="match_parent"
+				android:gravity="start"
+				android:padding="10dp"
+				android:layout_marginStart="18dp"
+				android:layout_marginEnd="25dp"
+				android:layout_height="120dp">
+				<ImageView
+					android:id="@+id/IconGender"
+					android:layout_width="35dp"
+					android:layout_height="35dp"
+					android:src="@drawable/img_person"
+					android:tint="@color/accent"
+					android:padding="8dp"
+					android:background="@drawable/shape_circle_white"
+					android:backgroundTint="@color/accentLight"
+					android:layout_alignParentStart="true" />
+				<TextView
+					android:id="@+id/GenderTextView"
+					android:layout_width="wrap_content"
+					android:layout_height="35dp"
+					android:layout_marginTop="2dp"
+					android:text="@string/Lbl_WhoAreYouLookingFor"
+					android:gravity="center_vertical"
+					android:textSize="16sp"
+					android:textColor="@color/text_color_all"
+					android:layout_marginStart="8dp"
+					android:layout_toEndOf="@+id/IconGender" />
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="50dp"
+					android:orientation="horizontal"
+					android:gravity="start"
+					android:layout_marginTop="15dp"
+					android:layout_below="@+id/GenderTextView"
+					android:weightSum="3">
+
+					<androidx.appcompat.widget.AppCompatButton
+						android:id="@+id/GirlsButton"
+						android:background="@drawable/round_button_pressed"
+						android:layout_height="40dp"
+						android:layout_width="0dp"
+						android:layout_weight="1"
+						android:padding="5dp"
+						style="@style/TextAppearance.MaterialComponents.Body1"
+						android:text="@string/Lbl_Girls"
+						android:textColor="@color/gnt_white"
+						android:textSize="14sp"
+						android:clickable="true"
+						android:layout_marginEnd="5dp"
+						android:textAllCaps="false"
+						android:gravity="center" />
+					<androidx.appcompat.widget.AppCompatButton
+						android:id="@+id/ManButton"
+						android:background="@drawable/round_button_outline_withoutstock"
+						android:layout_height="40dp"
+						android:layout_width="0dp"
+						android:layout_weight="1"
+						android:padding="5dp"
+						android:layout_marginStart="5dp"
+						android:layout_marginEnd="5dp"
+						style="@style/TextAppearance.MaterialComponents.Body1"
+						android:text="@string/Lbl_Boys"
+						android:textSize="14sp"
+						android:clickable="true"
+						android:textAllCaps="false"
+						android:gravity="center" />
+					<androidx.appcompat.widget.AppCompatButton
+						android:id="@+id/BothButton"
+						android:background="@drawable/round_button_outline_withoutstock"
+						android:layout_height="40dp"
+						android:layout_width="0dp"
+						android:layout_weight="1"
+						android:padding="5dp"
+						android:layout_marginStart="5dp"
+						android:layout_marginEnd="5dp"
+						style="@style/TextAppearance.MaterialComponents.Body1"
+						android:text="@string/Lbl_Both"
+						android:textSize="14sp"
+						android:clickable="true"
+						android:textAllCaps="false"
+						android:gravity="center" />
+				</LinearLayout>
+				<!--<View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:background="?attr/colorDivider" />-->
+			</RelativeLayout>
+
+			<!--Age Section -->
+			<RelativeLayout
+				android:paddingTop="5dp"
+				android:layout_marginTop="6dp"
+				android:layout_width="match_parent"
+				android:gravity="center_horizontal"
+				android:layout_height="120dp">
+				<ImageView
+					android:id="@+id/IconAge"
+					android:layout_width="35dp"
+					android:layout_height="35dp"
+					android:src="@drawable/img_calendar_month"
+					android:tint="@color/accent"
+					android:padding="8dp"
+					android:background="@drawable/shape_circle_white"
+					android:backgroundTint="@color/accentLight"
+					android:layout_alignParentStart="true"
+					android:layout_alignParentTop="true"
+					android:layout_marginStart="23dp"/> 
+				<TextView
+					android:id="@+id/AgeTextView"
+					android:layout_width="wrap_content"
+					android:layout_height="35dp"
+					android:text="@string/Lbl_Age"
+					android:layout_alignParentTop="true"
+					android:textSize="14sp"
+					android:gravity="center_vertical"
+					android:textColor="@color/text_color_all"
+					android:layout_marginStart="8dp"
+					android:layout_toEndOf="@+id/IconAge" />
+				<TextView
+					android:id="@+id/Agenumber"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_below="@+id/AgeTextView"
+					android:text="18 - 75"
+					android:layout_alignParentEnd="true"
+					android:textSize="12sp"
+					android:textColor="@color/accent"
+					android:layout_marginEnd="21dp" />
+				<com.google.android.material.slider.RangeSlider
+					android:id="@+id/AgeSeekBar"
+					android:layout_width="match_parent"
+					android:layout_height="20dp"
+					android:layout_below="@+id/Agenumber"
+					app:values="@array/initial_slider_values"
+					style="@style/Widget.App.Slider"
+					app:thumbColor="@color/accent"
+					android:layout_marginStart="25dp"
+					android:layout_marginEnd="21dp"
+					android:layout_gravity="center"/>
+				    
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="20dp"
+					android:layout_marginStart="25dp"
+					android:layout_marginEnd="21dp"
+					android:weightSum="1"
+					android:paddingEnd="7dp"
+					android:paddingStart="7dp"
+					android:orientation="horizontal" 
+					android:layout_below="@+id/AgeSeekBar">
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@string/demo_min_label"
+						android:gravity="start"
+						android:layout_weight="0.5"
+						android:textSize="12sp"
+						android:textColor="@color/decriptionColor" />
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@string/demo_max_label"
+						android:gravity="end"
+						android:layout_weight="0.5"
+						android:textSize="12sp"
+						android:textColor="@color/decriptionColor"/>
+				</LinearLayout>
+				<!-- <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:background="?attr/colorDivider" />-->
+			</RelativeLayout>
+			<!--Distance Section -->
+			<RelativeLayout
+				android:paddingTop="5dp"
+				android:layout_marginTop="6dp"
+				android:layout_width="match_parent"
+				android:gravity="center_horizontal"
+				android:layout_height="wrap_content">
+				<ImageView
+					android:id="@+id/IconDistance"
+					android:layout_width="35dp"
+					android:layout_height="35dp"
+					android:src="@drawable/img_explore_enable"
+					android:tint="@color/accent"
+					android:padding="8dp"
+					android:background="@drawable/shape_circle_white"
+					android:backgroundTint="@color/accentLight"
+					android:layout_alignParentStart="true"
+					android:layout_alignParentTop="true"
+					android:layout_marginStart="23dp"/> 
+				<TextView
+					android:id="@+id/DistanceTextView"
+					android:layout_width="wrap_content"
+					android:layout_height="35dp"
+					android:gravity="center_vertical"
+					android:text="@string/Lbl_Distance"
+					android:textSize="16sp"
+					android:textColor="@color/text_color_all"
+					android:layout_marginStart="8dp"
+					android:layout_toEndOf="@+id/IconDistance" />
+				<TextView
+					android:id="@+id/Distancenumber"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="1dp"
+					android:layout_alignParentEnd="true"
+					android:layout_below="@+id/DistanceTextView"
+					android:textSize="12sp"
+					android:textColor="@color/accent"
+					android:layout_marginEnd="21dp" />
+				<com.google.android.material.slider.Slider
+					android:id="@+id/distanceSlider"
+					android:layout_width="match_parent"
+					android:layout_height="20dp"
+					app:values="@array/initial_slider_values"
+					android:layout_below="@+id/Distancenumber"
+					android:valueFrom="0.0"
+					android:valueTo="100.0"
+					style="@style/Widget.App.Slider"
+					app:thumbColor="@color/accent"
+					android:layout_marginStart="25dp"
+					android:layout_marginEnd="21dp"
+					android:layout_marginTop="11dp"
+					android:layout_gravity="center"/> 
+			
+				<!--  <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:background="?attr/colorDivider" />-->
+			</RelativeLayout>
+			<!--Online Section -->
+			<RelativeLayout
+				android:paddingTop="5dp"
+				android:layout_marginTop="6dp"
+				android:layout_width="match_parent"
+				android:gravity="center_horizontal"
+				android:layout_height="40dp">
+				<ImageView
+					android:id="@+id/Icononline"
+					android:layout_width="35dp"
+					android:layout_height="35dp"
+					android:src="@drawable/img_crisis_alert"
+					android:tint="@color/accent"
+					android:padding="8dp"
+					android:background="@drawable/shape_circle_white"
+					android:backgroundTint="@color/accentLight"
+					android:layout_alignParentStart="true"
+					android:layout_alignParentTop="true"
+					android:layout_marginStart="23dp"/>  
+				<TextView
+					android:id="@+id/OnlineTextView"
+					android:layout_width="wrap_content"
+					android:layout_height="35dp"
+					android:layout_marginTop="2dp"
+					android:text="@string/Lbl_OnlineNow"
+					android:textSize="16sp"
+					android:gravity="center_vertical"
+					android:textColor="@color/text_color_all"
+					android:layout_marginStart="8dp"
+					android:layout_toEndOf="@+id/Icononline" />
+				<Switch
+					android:id="@+id/togglebutton"
+					android:layout_width="wrap_content"
+					android:layout_height="18dp"
+					android:checked="true"
+					android:layout_marginTop="0dp"
+					android:layout_alignParentEnd="true"
+					android:layout_marginEnd="28dp" />
+				 
+			</RelativeLayout>
+			<!--Online Section -->
+			<RelativeLayout
+				android:paddingTop="5dp"
+				android:layout_marginTop="6dp"
+				android:layout_marginStart="18dp"
+				android:layout_marginEnd="18dp"
+				android:layout_width="match_parent"
+				android:gravity="center_horizontal"
+				android:layout_height="wrap_content">
+				<androidx.appcompat.widget.AppCompatButton
+					android:id="@+id/ApplyButton"
+					android:background="@drawable/shape_radius_gradient_btn"
+					android:layout_height="55dp"
+					android:layout_width="match_parent"
+					android:padding="5dp"
+					style="@style/TextAppearance.MaterialComponents.Body1"
+					android:text="@string/Lbl_ApplyFilter"
+					android:textColor="@color/gnt_white"
+					android:textSize="20sp"
+					android:textAllCaps="false"
+					android:clickable="true"
+					android:gravity="center"
+					android:layout_marginBottom="10dp"  />
+				<TextView
+					android:id="@+id/Resetbutton"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_below="@+id/ApplyButton"
+					android:text="@string/Lbl_ResetFilter"
+					android:layout_marginTop="10dp"
+					android:textSize="20sp"
+					android:layout_centerHorizontal="true"
+					android:textColor="@color/decriptionColor"
+					android:textAllCaps="false"
+					android:padding="10dp"
+					android:layout_marginEnd="10dp"/> 
+			</RelativeLayout>
+			 
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="40dp"
+				android:layout_alignParentBottom="true"
+				android:layout_marginEnd="20dp"
+				android:layout_marginStart="20dp" />
+
+		</LinearLayout>
+	</androidx.core.widget.NestedScrollView>
+</LinearLayout>

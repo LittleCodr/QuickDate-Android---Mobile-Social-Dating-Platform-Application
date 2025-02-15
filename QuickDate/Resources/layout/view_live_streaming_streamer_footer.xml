@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:fillViewport="true"
+                      android:measureAllChildren="false"
+                      android:scrollbars="none"  >
+
+	<LinearLayout 
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="55dp" 
+		android:gravity="center_vertical">
+		 
+		<TextView
+			android:id="@+id/camera_switch_btn"
+			android:layout_width="45dp" 
+			android:layout_height="wrap_content"
+			android:layout_marginEnd="8dp"
+			android:layout_marginStart="8dp" 
+			android:gravity="center"
+			android:layout_gravity="center"
+			android:textSize="25sp"
+			android:textColor="@color/gnt_white"
+			android:text="IC" /> 
+
+		<TextView
+			android:id="@+id/effect_btn"
+			android:layout_width="45dp" 
+			android:layout_height="wrap_content"
+			android:layout_marginEnd="8dp"
+			android:layout_marginStart="8dp"
+			android:gravity="center"
+			android:layout_gravity="center" 
+			android:textSize="25sp"
+			android:textColor="@color/gnt_white"
+			android:text="IC" />
+		
+		<TextView
+			android:id="@+id/video_enabled_btn"
+			android:layout_width="45dp" 
+			android:layout_height="wrap_content"
+			android:layout_marginEnd="8dp"
+			android:layout_marginStart="8dp"
+			android:gravity="center"
+			android:layout_gravity="center" 
+			android:textSize="25sp"
+			android:textColor="@color/gnt_white"
+			android:text="IC" />
+		
+		<TextView
+			android:id="@+id/audio_enabled_btn"
+			android:layout_width="45dp" 
+			android:layout_height="wrap_content"
+			android:layout_marginEnd="8dp"
+			android:layout_marginStart="8dp"
+			android:gravity="center"
+			android:layout_gravity="center" 
+			android:textSize="25sp"
+			android:textColor="@color/gnt_white"
+			android:text="IC" />
+		 
+	</LinearLayout>
+
+</HorizontalScrollView>

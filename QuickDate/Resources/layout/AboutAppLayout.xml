@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:id="@+id/TopLayout"
+    android:background="@drawable/firstbackgroundeffects"
+	android:backgroundTint="@color/accent"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        app:theme="@style/ToolbarTheme"
+        android:layout_gravity="top"
+        app:layout_collapseMode="pin"
+        android:elevation="2dp"
+        app:titleTextAppearance="@style/Toolbar.TitleText"
+        android:background="@android:color/transparent" />
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nested_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:scrollingCache="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="?attr/colorFill"
+                app:cardCornerRadius="2dp"
+                app:cardElevation="2dp"
+                app:cardUseCompatPadding="true">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:minHeight="50dp"
+                        android:orientation="horizontal"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp">
+                        <View
+                            android:layout_width="15dp"
+                            android:layout_height="wrap_content" />
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/icon_heart_outline_vector"
+                            android:tint="@color/accent" />
+                        <View
+                            android:layout_width="15dp"
+                            android:layout_height="wrap_content" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/appName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Application Name"
+                                android:textSize="20sp"
+                                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+                                 />
+                            <TextView
+                                android:id="@+id/appUsername"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="13sp"
+                                android:text="dream_space"
+                                android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
+                                android:textColor="#BDBDBD" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:gravity="center_vertical"
+                        android:minHeight="50dp"
+                        android:orientation="horizontal"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp">
+                        <View
+                            android:layout_width="20dp"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/iconVersion"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@android:color/transparent"
+                            android:textColor="?attr/colorSecText"
+                            android:textSize="25sp"
+                            android:gravity="center"
+                            android:text="V" />
+                        <View
+                            android:layout_width="20dp"
+                            android:layout_height="wrap_content" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/Lbl_Version"
+                                android:textSize="16sp"
+                                android:textStyle="normal"
+                                android:gravity="center" />
+                            <TextView
+                                android:id="@+id/countVersion"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1.0"
+                                android:textSize="13sp"
+                                android:textColor="?attr/colorSecText" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/layoutChangelog"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:gravity="center_vertical"
+                        android:minHeight="50dp"
+                        android:orientation="horizontal"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp">
+                        <View
+                            android:layout_width="20dp"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/iconChangelog"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@android:color/transparent"
+                            android:textColor="?attr/colorSecText"
+                            android:textSize="25sp"
+                            android:gravity="center"
+                            android:text="S" />
+                        <View
+                            android:layout_width="20dp"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Lbl_Changelog"
+                            android:textSize="16sp"
+                            android:textStyle="normal"
+                            android:gravity="center" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/layoutRate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:gravity="center_vertical"
+                        android:minHeight="50dp"
+                        android:orientation="horizontal"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp">
+                        <View
+                            android:layout_width="20dp"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/iconRateApp"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@android:color/transparent"
+                            android:textColor="?attr/colorSecText"
+                            android:textSize="25sp"
+                            android:gravity="center"
+                            android:text="R" />
+                        <View
+                            android:layout_width="20dp"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Lbl_RateOurApp"
+                            android:textSize="16sp"
+                            android:textStyle="normal"
+                            android:gravity="center"
+                             />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="10dp" />
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                app:cardBackgroundColor="?attr/colorFill"
+                app:cardCornerRadius="2dp"
+                app:cardElevation="2dp"
+                app:cardUseCompatPadding="true">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/Lbl_About"
+                        android:textSize="16sp"
+                        android:textStyle="normal"
+                        android:gravity="center"
+                         />
+                    <LinearLayout
+                        android:id="@+id/layoutTerms"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:gravity="center_vertical"
+                        android:minHeight="50dp"
+                        android:orientation="horizontal"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp">
+                        <View
+                            android:layout_width="20dp"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/iconTerms"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@android:color/transparent"
+                            android:textColor="?attr/colorSecText"
+                            android:textSize="25sp"
+                            android:gravity="center"
+                            android:text="T" />
+                        <View
+                            android:layout_width="20dp"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Lbl_TermsOfUse"
+                            android:textSize="16sp"
+                            android:textStyle="normal"
+                            android:gravity="center"
+                             />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/layoutPrivacy"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:gravity="center_vertical"
+                        android:minHeight="50dp"
+                        android:orientation="horizontal"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp">
+                        <View
+                            android:layout_width="20dp"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/iconPrivacy"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@android:color/transparent"
+                            android:textColor="?attr/colorSecText"
+                            android:textSize="25sp"
+                            android:gravity="center"
+                            android:text="P" />
+                        <View
+                            android:layout_width="20dp"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Lbl_PrivacyPolicy"
+                            android:textSize="16sp"
+                            android:textStyle="normal"
+                            android:gravity="center"
+                             />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/layoutAbout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:gravity="center_vertical"
+                        android:minHeight="50dp"
+                        android:orientation="horizontal"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp">
+                        <View
+                            android:layout_width="20dp"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/iconAbout"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@android:color/transparent"
+                            android:textColor="?attr/colorSecText"
+                            android:textSize="25sp"
+                            android:gravity="center"
+                            android:text="A" />
+                        <View
+                            android:layout_width="20dp"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Lbl_AboutUs"
+                            android:textSize="16sp"
+                            android:textStyle="normal"
+                            android:gravity="center"
+                             />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="15dp" />
+            <include layout="@layout/fb_native_ad_unit"
+                android:id="@+id/native_ad_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp" /> 
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView> 
+</LinearLayout>

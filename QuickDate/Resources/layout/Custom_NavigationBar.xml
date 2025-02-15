@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:id="@+id/ntb_horizontal"
+	android:layout_alignParentBottom="true"
+	android:layout_height="70dp"
+	android:layout_gravity="bottom|center">
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="60dp"
+		android:baselineAligned="false"
+		android:id="@+id/llMain"
+		android:gravity="center"
+		android:layout_marginStart="15dp"
+		android:layout_marginEnd="15dp"
+		android:layout_marginBottom="10dp"
+		android:background="@xml/rounded_corner_full"
+		android:orientation="horizontal"
+		android:weightSum="5"
+		app:layout_behavior="@string/hide_bottom_view_on_scroll_behavior">
+		<LinearLayout
+			android:id="@+id/llHome"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:clickable="true"
+			android:focusable="true"
+			android:background="@drawable/custom_ripple"
+			android:orientation="vertical">
+			<ImageView
+				android:layout_width="44dp"
+				android:layout_height="44dp"
+				android:padding="10dp"
+				android:id="@+id/ivHome"
+				android:background="@drawable/shape_bg_bottom_navigation"
+				android:tint="@color/accent"
+				android:src="@drawable/icon_cards_vector" />
+		</LinearLayout>
+		<LinearLayout
+			android:id="@+id/llTrend"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:clickable="true"
+			android:focusable="true"
+			android:background="@drawable/custom_ripple"
+			android:orientation="vertical">
+			<ImageView
+				android:layout_width="44dp"
+				android:layout_height="44dp"
+				android:padding="10dp"
+				android:id="@+id/ivTrend"
+				android:tint="?attr/colorSecText"
+				android:src="@drawable/icon_fire_vector" />
+		</LinearLayout>
+		<FrameLayout
+			android:id="@+id/llNotification"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:clickable="true"
+			android:focusable="true"
+			android:background="@drawable/custom_ripple"
+			android:orientation="vertical">
+
+			<ImageView
+				android:layout_width="44dp"
+				android:layout_height="44dp"
+				android:padding="10dp"
+				android:gravity="center"
+				android:layout_gravity="center"
+				android:id="@+id/ivNotification"
+				android:tint="?attr/colorSecText"
+				android:src="@drawable/icon_notification_vector" />
+
+			<com.airbnb.lottie.LottieAnimationView
+				android:id="@+id/animation_view2"
+				android:layout_gravity="center"
+				android:layout_marginBottom="0.5dp"
+				android:layout_height="182dp"
+				android:padding="0dp"
+				android:visibility="gone"
+				android:layout_width="202dp"
+				app:lottie_loop="true" />
+
+		</FrameLayout>
+
+		<LinearLayout
+			android:id="@+id/llMessages"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:clickable="true"
+			android:focusable="true"
+			android:background="@drawable/custom_ripple"
+			android:orientation="vertical">
+			<ImageView
+				android:layout_width="44dp"
+				android:layout_height="44dp"
+				android:padding="10dp"
+				android:gravity="center"
+				android:layout_gravity="center"
+				android:id="@+id/ivMessages"
+				android:tint="?attr/colorSecText"
+				android:src="@drawable/icon_message_vector" />
+		</LinearLayout>
+		<LinearLayout
+			android:id="@+id/llProfile"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:clickable="true"
+			android:focusable="true"
+			android:background="@drawable/custom_ripple"
+			android:orientation="vertical">
+			<ImageView
+				android:layout_width="44dp"
+				android:layout_height="44dp"
+				android:padding="6dp"
+				android:layout_gravity="center"
+				android:id="@+id/ivProfile"
+				android:src="@drawable/no_profile_image_circle" />
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>  

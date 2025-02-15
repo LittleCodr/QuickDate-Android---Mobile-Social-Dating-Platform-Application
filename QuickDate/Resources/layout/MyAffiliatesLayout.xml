@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="false"
+    android:orientation="vertical"
+    android:id="@+id/TopLayout"
+    android:background="@drawable/firstbackgroundeffects"
+	android:backgroundTint="@color/accent"
+    android:layout_alignParentStart="true"
+    android:foregroundGravity="center_horizontal"
+    android:gravity="center">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        app:theme="@style/ToolbarTheme"
+        android:layout_gravity="top"
+        app:layout_collapseMode="pin"
+        app:titleTextAppearance="@style/Toolbar.TitleText"
+        android:background="@android:color/transparent"
+        android:elevation="2dp" />
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nested_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:scrollingCache="true">
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:gravity="top|center"
+            android:layout_gravity="top|center"
+            android:layout_marginTop="20dp">
+            <ImageView
+                android:id="@+id/ImageUser"
+                android:scaleType="fitCenter"
+                android:layout_width="250dp"
+                android:layout_height="200dp"
+                android:focusable="false"
+                android:clickable="false"
+                android:src="@drawable/my_affiliates" />
+            <TextView
+                android:id="@+id/myAffiliatesText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lines="1"
+                android:layout_marginTop="20dp"
+                android:focusable="false"
+                android:clickable="false"
+                android:text="Earn up to $0.10 for each user your refer to us !"
+                android:layout_alignParentStart="true"
+                android:gravity="start"
+                android:textSize="13dp"
+                android:textAlignment="textStart" />
+            <TextView
+                android:id="@+id/linkText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lines="1"
+                android:textColor="#1B5E20"
+                android:layout_marginTop="20dp"
+                android:layout_alignParentStart="true"
+                android:gravity="start"
+                android:textSize="13dp"
+                android:textAlignment="textStart" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:id="@+id/cont"
+                android:textSize="12sp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="11dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/round_button_outline"
+                android:tag="false"
+                android:paddingTop="1dp"
+                android:paddingStart="17dp"
+                android:paddingEnd="17dp"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:text="@string/Lbl_ShareTo"
+                android:textColor="@color/accent" />
+            <QuickDate.Helpers.Ads.TemplateView
+                android:id="@+id/my_template"
+                android:padding="8dp"
+                android:visibility="gone"
+                app:gnt_template_type="@layout/gnt_medium_template_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

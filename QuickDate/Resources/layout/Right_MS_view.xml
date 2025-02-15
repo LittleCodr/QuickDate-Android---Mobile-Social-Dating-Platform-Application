@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp" > 
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginStart="13dp"
+        android:background="@drawable/chat_rounded_right_layout"
+        android:id="@+id/bubble_layout"
+        android:layout_gravity="end" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+	    <com.luseen.autolinklibrary.AutoLinkTextView
+		    android:id="@+id/active"
+		    android:gravity="end" 
+		    android:textColor="@color/gnt_white"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:maxWidth="230dp"
+		    android:textIsSelectable="true"
+		    android:layout_weight="1" />
+    </LinearLayout>
+	<TextView
+		android:layout_height="match_parent"
+		android:id="@+id/time"
+		android:textColor="?attr/colorSecText"
+		android:textSize="10dp"
+		android:layout_marginTop="3dp"
+		android:layout_gravity="end" 
+		android:layout_width="wrap_content"
+		android:text="12:02"  />
+</LinearLayout>

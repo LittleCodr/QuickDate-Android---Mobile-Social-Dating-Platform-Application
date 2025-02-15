@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!--@color/primary-->
+	<!--@color/accent-->
+	<!--@color/gnt_white-->
+	<!--@color/textDark_color-->
+	<!--Get colors from: http://www.materialpalette.com/-->
+
+	<color name="accent">#FF007F</color>
+	<color name="primary">#BF00FF</color>
+
+	<color name="accent_transparent">#80a33596</color>
+	<color name="primary_transparent">#8063245c</color>
+
+	<color name="primaryDark">#7B2BFF</color> 
+	<color name="primaryLight">#FCF2FF</color>
+	<color name="accentLight">#FFF2F8</color>
+
+	<color name="shimmerColor">#C2C2C2</color>
+
+	<color name="StartColorToolBar">@color/gnt_white</color>
+	<color name="EndColorToolBar">#efefef</color>
+
+	<color name="StartColorToolBarDark">#444444</color>
+	<color name="EndColorToolBarDark">#121212</color>
+
+	<color name="TextColorToolBar">#3f51b5</color>
+
+	<color name="extraDark">#db4041</color>
+
+	<color name="textDark_color">#444444</color>
+	<color name="text_color_in_between">#888</color>
+	<color name="LightColor">#efefef</color>
+	<color name="anderblack_color">#ffefefef</color>
+	<color name="lightPrimary">#B3E5FC</color>
+	<color name="primaryText">#212121</color>
+	<color name="secondaryText">#1e2321</color>
+	<color name="divider">#B6B6B6</color>
+	<color name="activated_color">#E8E8E8</color>
+
+	<color name="Dialog_Accent_color">#c7ac56</color>
+	<color name="Dialog_text_color">#fafafa</color>
+	<color name="Dialog_background_color">#5c8487</color>
+	<color name="Dialog_Btn_color">#992e49</color>
+
+	<color name="AutoLinkText_ModePhone_color">#008000</color>
+	<color name="AutoLinkText_ModeEmail_color">#3e0e4c</color>
+	<color name="AutoLinkText_ModeHashtag_color">#0000ff</color>
+	<color name="AutoLinkText_ModeUrl_color">#df541e</color>
+	<color name="AutoLinkText_ModeMention_color">#ff0000</color>
+
+	<color name="right_ModePhone_color">#FFFFFF</color>
+	<color name="right_ModeEmail_color">#FFFFFF</color>
+	<color name="right_ModeHashtag_color">#FFFFFF</color>
+	<color name="right_ModeUrl_color">#FFFFFF</color>
+	<color name="right_ModeMention_color">#FFFFFF</color>
+
+	<color name="gnt_test_background_color">#00F4F4F4</color>
+	<color name="gnt_test_background_color_2">#00A3A3A3</color>
+	<color name="gnt_black">#000000</color>
+	<color name="gnt_white">#FFFFFF</color>
+	<color name="gnt_red">#FF0000</color>
+	<color name="gnt_green">#64DD17</color>
+	<color name="gnt_blue">#4285f4</color>
+	<color name="gnt_ad_green">#3A6728</color>
+	<color name="gnt_gray">#808080</color>
+	<color name="gnt_outline">#E0E0E0</color>
+
+	<color name="WoWonderLogin_color">#a84849</color>
+	
+	<color name="DragTransparentBlack">#90000000</color>
+	<color name="transparentDark">#F2000000</color>
+
+	<color name="green100">#c8e6c9</color>
+	<color name="greenA700">#00ad07</color>
+
+	<color name="red100">#ffcdd2</color>
+	<color name="redA700">#d50000</color>
+	<color name="border_line">#BDBDBD</color>
+	<color name="text_color_all">#131313</color>
+	<color name="unselectedView_color">#F9F9F9</color>
+	<color name="filterreset_color">#4D4D4D</color>
+	<color name="bottom_navigation_transparent">#10ff007f</color>
+	<color name="decriptionColor">#858585</color>
+</resources>

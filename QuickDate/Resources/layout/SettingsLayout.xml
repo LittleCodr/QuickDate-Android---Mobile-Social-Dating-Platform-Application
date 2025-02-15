@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/TopLayout"
+    android:background="@drawable/firstbackgroundeffects"
+	android:backgroundTint="@color/accent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:outlineProvider="none"
+        app:elevation="0dp"
+        android:background="@android:color/transparent"
+        android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar" 
+		    android:layout_width="match_parent" 
+		    android:layout_height="48dp"  
+		    app:theme="@style/ToolbarTheme" 
+		    android:layout_gravity="top"
+		    app:layout_collapseMode="pin"
+		    app:titleTextAppearance="@style/Toolbar.TitleText" 
+		    android:background="@android:color/transparent"
+		    android:elevation="0dp">
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+	<FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+      android:id="@+id/bannerContainer"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:layout_centerHorizontal="true"
+      android:orientation="vertical" /> 
+</LinearLayout>

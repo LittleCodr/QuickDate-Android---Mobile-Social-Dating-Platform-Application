@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" >
+ 
+  <!--PROFILE SECTION -->
+  <PreferenceCategory android:key="CategoryGeneral_key"  android:title="@string/Lbl_General" >
+
+    <QuickDate.Activities.SettingsUser.Custom.GeneralCustomPreference
+      android:key="myAccount_key"
+      app:iconSpaceReserved="false"
+      android:title="@string/Lbl_MyAccount" />
+
+    <QuickDate.Activities.SettingsUser.Custom.GeneralCustomPreference
+      android:key="socialLinks_key"
+      android:title="@string/Lbl_SocialLinks" />
+
+    <QuickDate.Activities.SettingsUser.Custom.GeneralCustomPreference
+      android:key="blocked_key"
+      android:title="@string/Lbl_BlockedUsers" />
+
+    <QuickDate.Activities.SettingsUser.Custom.GeneralCustomPreference
+      android:key="MyAffiliates_key"
+      android:title="@string/Lbl_MyAffiliates" />
+   
+  </PreferenceCategory>
+ 
+  <PreferenceCategory  android:key="Payment_key"  android:title="@string/Lbl_Payment" >
+
+    <QuickDate.Activities.SettingsUser.Custom.GeneralCustomPreference
+      android:key="Withdrawals_key"
+      android:title="@string/Lbl_Withdrawals" />
+
+    <QuickDate.Activities.SettingsUser.Custom.GeneralCustomPreference
+      android:key="Transactions_key"
+      android:title="@string/Lbl_Transactions" />
+
+  </PreferenceCategory>
+
+  
+  <PreferenceCategory  android:key="SecurityAccount_key"  android:title="@string/Lbl_Security" >
+
+    <QuickDate.Activities.SettingsUser.Custom.GeneralCustomPreference
+      android:key="editPassword_key"
+      android:title="@string/Lbl_Password"
+      android:summary="@string/Lbl_Change_your_password" />
+
+    <QuickDate.Activities.SettingsUser.Custom.GeneralCustomPreference
+      android:key="Twofactor_key"
+      android:title="@string/Lbl_TwoFactor"  />
+
+    <QuickDate.Activities.SettingsUser.Custom.GeneralCustomPreference
+      android:key="ManageSessions_key"
+      android:title="@string/Lbl_ManageSessions"  />
+
+  </PreferenceCategory>
+
+  
+
+  <PreferenceCategory  android:key="Theme_key"  android:title="@string/Lbl_Display" >
+
+    <QuickDate.Activities.SettingsUser.Custom.GeneralCustomPreference
+      android:key="Night_Mode_key"
+      android:title="@string/Lbl_Theme" />
+
+    <QuickDate.Activities.SettingsUser.Custom.GeneralCustomPreference
+	    android:key="Lang_key"
+	    android:title="@string/Lbl_Language" /> 
+
+  </PreferenceCategory>
+  
+  <!--Messages SECTION-->
+  
+  <PreferenceCategory android:key="CategoryMessenger_key" android:title="@string/Lbl_Messenger" >
+
+    <!-- Online -->
+    <QuickDate.Activities.SettingsUser.Custom.CustomSwitchPreference
+      android:title="@string/Lbl_OnlineChat"
+      android:key="chatOnline_key"
+      app:iconSpaceReserved="false"
+      style="@style/SwitchCompatTheme"
+      android:defaultValue="true" />
+ 
+  </PreferenceCategory>
+
+  <!--Privacy SECTION-->
+   
+  <PreferenceCategory android:key="CategoryPrivacy_key" android:title="@string/Lbl_Privacy" >
+
+    <!--Show my profile on search engines?-->
+    <QuickDate.Activities.SettingsUser.Custom.CustomSwitchPreference
+      android:title="@string/Lbl_PSearchEngines"
+      android:key="searchEngines_key"
+      app:iconSpaceReserved="false"
+      style="@style/SwitchCompatTheme"
+      android:defaultValue="true" />
+
+    <!--Show my profile in random users-->
+    <QuickDate.Activities.SettingsUser.Custom.CustomSwitchPreference
+      android:title="@string/Lbl_PRandomUsers"
+      android:key="randomUsers_key"
+      app:iconSpaceReserved="false"
+      style="@style/SwitchCompatTheme"
+      android:defaultValue="true" />
+
+    <!--Show my profile in find match page-->
+    <QuickDate.Activities.SettingsUser.Custom.CustomSwitchPreference
+      android:title="@string/Lbl_PFindMatchPage"
+      android:key="findMatchPage_key"
+      app:iconSpaceReserved="false"
+      style="@style/SwitchCompatTheme"
+      android:defaultValue="true" />
+      
+    <!--Confirm request when someone request to be a friend with you?-->
+    <QuickDate.Activities.SettingsUser.Custom.CustomSwitchPreference
+      android:title="@string/Lbl_PConfirmFollowers"
+      android:key="confirmFollowers_key"
+      app:iconSpaceReserved="false"
+      style="@style/SwitchCompatTheme"
+      android:defaultValue="true" />
+      
+  </PreferenceCategory>
+
+  <!--Storage SECTION-->
+  
+  <PreferenceCategory  android:key="CategoryStorage_key" android:title="@string/Lbl_Storage" >
+
+    <QuickDate.Activities.SettingsUser.Custom.GeneralCustomPreference
+      android:key="Storage_key"
+      android:title="@string/Lbl_ClearCache" />
+
+  </PreferenceCategory>
+ 
+  <!--Support SECTION--> 
+  <PreferenceCategory  android:key="CategorySupport_key" android:title="@string/Lbl_Support" >
+
+    <QuickDate.Activities.SettingsUser.Custom.GeneralCustomPreference
+        android:key="help_key"
+        android:title="@string/Lbl_Help" />
+
+    <QuickDate.Activities.SettingsUser.Custom.GeneralCustomPreference
+      android:key="about_key"
+      android:title="@string/Lbl_About" />
+ 
+    <QuickDate.Activities.SettingsUser.Custom.GeneralCustomPreference
+      android:key="deleteAccount_key"
+      android:title="@string/Lbl_DeleteAccount" />
+
+    <QuickDate.Activities.SettingsUser.Custom.GeneralCustomPreference
+      android:key="logout_key"
+      android:title="@string/Lbl_Logout" />
+  
+  </PreferenceCategory>
+   
+
+</PreferenceScreen>

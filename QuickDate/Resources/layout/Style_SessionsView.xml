@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:paddingEnd="15dp"
+                android:paddingStart="8dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:background="?attr/selectableItemBackground"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+  <ImageView
+    android:id="@+id/card_pro_pic"
+    android:scaleType="centerCrop"
+    android:layout_width="33dp"
+    android:layout_height="33dp"
+    android:src="@drawable/imageplacholder_circle"
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="5dp" />
+  <LinearLayout
+	  android:layout_width="match_parent"
+	  android:layout_height="wrap_content"
+      android:layout_toEndOf="@id/card_pro_pic"
+      android:layout_marginStart="10dp"
+      android:orientation="vertical">
+    <TextView
+      android:id="@+id/card_name"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textSize="15sp" />
+    <TextView
+      android:id="@+id/card_Browser"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textSize="12sp" /> 
+    <TextView
+      android:id="@+id/card_Seen"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textSize="12sp" /> 
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1dp" 
+        android:layout_marginTop="3dp"
+		android:background="?attr/colorDivider"   />
+  </LinearLayout>
+  <at.markushi.ui.CircleButton 
+    android:id="@+id/ImageCircle"
+    android:layout_width="35dp"
+    android:layout_height="35dp"
+    app:cb_pressedRingWidth="1dip"
+    android:src="@drawable/icon_close_vector"
+    android:layout_alignTop="@id/Image"
+    android:layout_marginBottom="2dp"
+    android:layout_alignParentEnd="true"
+    android:tint="@color/gnt_white"
+    app:cb_color="@color/accent"
+    android:layout_marginEnd="0dp"
+    android:layout_alignWithParentIfMissing="false" />
+</RelativeLayout>

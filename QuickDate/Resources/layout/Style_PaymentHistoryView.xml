@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="?attr/selectableItemBackground"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:weightSum="3"
+        android:layout_marginTop="8dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/amount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            
+            android:gravity="start|center"
+            android:textAlignment="textStart" 
+            android:layout_weight="1"
+            android:text="Amount"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="5dp"
+            android:textSize="14sp"  />
+        <TextView
+            android:id="@+id/requested"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            
+            android:gravity="start|center"
+            android:textAlignment="textStart" 
+            android:layout_weight="1"
+            android:text="Requested"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:textSize="14sp"  />
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            
+            android:gravity="start|center"
+            android:textAlignment="textStart" 
+            android:layout_weight="1"
+            android:text="Status"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:textSize="14sp"  />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="?attr/colorDivider" />
+</LinearLayout>

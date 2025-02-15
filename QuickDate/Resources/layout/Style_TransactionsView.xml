@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:padding="10dp"
+               android:background="?attr/selectableItemBackground"
+               android:orientation="vertical">
+    
+  <TextView
+    android:id="@+id/ProcessedText"  
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="14dp"  
+    android:focusable="false"
+    android:textStyle="bold"
+    android:ellipsize="end"
+    android:text="Processed"
+    android:lines="1"
+    android:maxLines="1"
+    android:clickable="false"
+    android:textAlignment="textStart" />  
+     
+  <FrameLayout  
+    android:focusable="true"
+    android:clickable="true"
+    android:layout_centerHorizontal="true" 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+	    
+    <TextView
+      android:id="@+id/TypeText"  
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textSize="14dp"  
+      android:focusable="false"
+      android:ellipsize="end"
+      android:text="PRO - Lifetime"
+      android:lines="1"
+      android:maxLines="1"
+      android:clickable="false"
+      android:textAlignment="textStart" />  
+	    
+    <TextView
+      android:id="@+id/AmountValue"  
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content" 
+      android:textSize="15dp"
+      android:layout_gravity="end" 
+      android:layout_marginEnd="10dp" 
+      android:text="$500"
+      android:focusable="false"
+      android:lines="1"
+      android:maxLines="1"  />  
+  </FrameLayout>
+
+  <TextView
+    android:id="@+id/DateText"  
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="14dp"  
+    android:focusable="false"
+    android:ellipsize="end"
+    android:text="2021-09-24 08:29:49"
+    android:lines="1"
+    android:maxLines="1"
+    android:clickable="false"
+    android:textAlignment="textStart" />  
+
+  <View
+    android:layout_width="match_parent"
+    android:layout_height="1dp" 
+    android:layout_marginTop="5dp"
+    android:background="?attr/colorDivider"   />
+
+</LinearLayout> 

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:amazon="http://schemas.amazon.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+		  package="com.quickdatesocial.android" android:versionCode="1" android:versionName="1.0" android:installLocation="auto">
+	<uses-sdk android:minSdkVersion="21" android:targetSdkVersion="34" />
+	<uses-feature android:name="android.hardware.camera" android:required="true" />
+	<uses-feature android:name="android.hardware.camera.autofocus" />
+	<uses-feature android:name="android.hardware.camera.any" />
+	<uses-feature android:name="android.hardware.location.gps" />
+	<uses-feature android:glEsVersion="0x00020000" android:required="true" />
+	<uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+	<uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />	<!--android:maxSdkVersion="32"-->
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="28" tools:ignore="ScopedStorage" />
+	<uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+	<uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+	<uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+	<uses-permission android:name="android.permission.READ_MEDIA_AURAL" />
+	<uses-permission android:name="android.permission.CAMERA" />
+	<uses-permission android:name="android.permission.READ_CONTACTS" />
+	<uses-permission android:name="android.permission.READ_PHONE_NUMBERS" />
+	<uses-permission android:name="android.permission.VIBRATE" />
+	<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+	<uses-permission android:name="android.permission.INTERNAL_SYSTEM_WINDOW" />
+	<uses-permission android:name="android.permission.BROADCAST_SMS" />
+	<uses-permission android:name="android.permission.BIND_JOB_SERVICE" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+	<uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+	<uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" />
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
+	<uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+	<uses-permission android:name="android.permission.RECORD_AUDIO" />
+	<uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+	<uses-permission android:name="android.permission.FOREGROUND_SERVICE_REMOTE_MESSAGING" />
+	<uses-permission android:name="android.permission.ACTION_MANAGE_OVERLAY_PERMISSION" />
+	<uses-permission android:name="android.permission.USE_BIOMETRIC" />
+	<uses-permission android:name="android.permission.BLUETOOTH" />
+	<uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+	<uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+	<uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+	<uses-permission android:name="android.permission.RUN_USER_INITIATED_JOBS" />
+	<!--<uses-permission android:name="com.android.vending.BILLING" />-->
+	<uses-permission android:name="android.permission.REQUEST_COMPANION_RUN_IN_BACKGROUND" />
+	<uses-permission android:name="android.permission.REQUEST_COMPANION_START_FOREGROUND_SERVICES_FROM_BACKGROUND" />
+	<uses-permission android:name="android.permission.REQUEST_COMPANION_USE_DATA_IN_BACKGROUND" />
+	<uses-permission android:name="android.permission.START_ACTIVITIES_FROM_BACKGROUND" />
+	<!--<uses-permission android:name="android.permission.START_FOREGROUND_SERVICES_FROM_BACKGROUND" />-->
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+	<!--one signal-->
+	<permission android:name="${packageName}.permission.RECEIVE_ADM_MESSAGE" android:protectionLevel="signature" />
+	<uses-permission android:name="${packageName}.permission.RECEIVE_ADM_MESSAGE" />
+	<!-- This permission allows your app access to receive push notifications from ADM. -->
+	<uses-permission android:name="com.amazon.device.messaging.permission.RECEIVE" />
+	<!-- Allow the application to access Google web-based services. -->
+	<permission android:name="${packageName}.permission.MAPS_RECEIVE" android:protectionLevel="signature" />
+	<application android:name=".MainApplication" android:usesCleartextTraffic="true" android:allowBackup="false" android:icon="@mipmap/icon" android:label="QuickDate" android:supportsRtl="true" android:theme="@style/MyTheme" android:networkSecurityConfig="@xml/network_security_config" android:appComponentFactory="androidx" android:largeHeap="true" android:hardwareAccelerated="true" android:requestLegacyExternalStorage="true" android:enableOnBackInvokedCallback="true" tools:ignore="GoogleAppIndexingWarning" tools:replace="android:icon, android:label, android:theme, android:name, android:allowBackup, android:supportsRtl, android:appComponentFactory">
+		<!--Google Maps /Places  API Key-->
+		<meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="@string/google_key" />
+		<meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+		<meta-data android:name="com.google.android.gms.ads.APPLICATION_ID" android:value="@string/admob_app_id" />
+		<activity android:name="com.google.android.gms.ads.AdActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+		<meta-data android:name="com.google.android.gms.vision.DEPENDENCIES" android:value="barcode" />
+		<meta-data android:name="android.webkit.WebView.EnableSafeBrowsing" android:value="true" />
+		<meta-data android:name="com.google.android.gms.wallet.api.enabled" android:value="true" />
+		<!--one signal-->
+		<amazon:enable-feature android:name="com.amazon.device.messaging" android:required="false" />
+		<service android:name="${packageName}.notification.HmsMessageServiceAppLevel" android:exported="false">
+			<intent-filter>
+				<action android:name="com.huawei.push.action.MESSAGING_EVENT" />
+			</intent-filter>
+		</service>
+		<service android:name="com.onesignal.notifications.services.ADMMessageHandlerJob" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="false" />
+		<!-- This is needed for devices with older ADM versions -->
+		<service android:name="com.onesignal.notifications.services.ADMMessageHandler" android:exported="false" />
+		<receiver android:name="com.onesignal.notifications.receivers.ADMMessageReceiver" android:permission="com.amazon.device.messaging.permission.SEND" android:exported="true">
+			<!-- To interact with ADM, your app must listen for the following intents. -->
+			<intent-filter>
+				<action android:name="com.amazon.device.messaging.intent.REGISTRATION" />
+				<action android:name="com.amazon.device.messaging.intent.RECEIVE" />
+				<!-- Replace the name in the category tag with your app's package name. -->
+				<category android:name="${packageName}" />
+			</intent-filter>
+		</receiver>
+		<meta-data android:name="com.onesignal.NotificationServiceExtension" android:value="${packageName}.notification.NotificationServiceExtension" />
+		<!-- Facebook login / API Key -->
+		<uses-library android:name="org.apache.http.legacy" android:required="false" />
+		<meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id" />
+		<meta-data android:name="com.facebook.sdk.ClientToken" android:value="@string/facebook_client_token" />
+		<meta-data android:name="com.facebook.sdk.AutoLogAppEventsEnabled" android:value="false" />
+		<meta-data android:name="com.facebook.sdk.AdvertiserIDCollectionEnabled" android:value="false" />
+		<activity android:name="com.facebook.ads.AudienceNetworkActivity" android:hardwareAccelerated="true" />
+		<activity android:name="com.facebook.FacebookActivity" android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation" android:label="appname" />
+		<activity android:name="com.facebook.CustomTabActivity" android:exported="true">
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<category android:name="android.intent.category.BROWSABLE" />
+				<data android:scheme="@string/fb_login_protocol_scheme" />
+			</intent-filter>
+		</activity>
+		<!--applovin-->
+		<meta-data android:name="applovin.sdk.key" android:value="@string/applovin_key" />
+		<!--<activity android:name=".Activities.SplashScreenActivity" android:exported="true" android:theme="@style/SplashScreenTheme" android:screenOrientation="portrait">
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<category android:name="android.intent.category.BROWSABLE" /> 
+				<data android:scheme="https" android:host="@string/ApplicationUrlWeb" />
+			</intent-filter>
+		</activity>-->
+		<uses-library android:name="androidx.window.extensions" android:required="false" />
+		<uses-library android:name="androidx.window.sidecar" android:required="false" />
+		<uses-library android:name="android.ext.adservices" android:required="false" />
+		<provider android:name="androidx.core.content.FileProvider" android:authorities="${packageName}.fileprovider" android:exported="false" android:grantUriPermissions="true">
+			<meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths" />
+		</provider>
+		<meta-data android:name="firebase_performance_logcat_enabled" android:value="true" />
+		<!-- RazorPay API key -->
+		<meta-data android:name="com.razorpay.ApiKey" android:value="@string/razorpay_api_Key" />
+		<receiver android:name="com.razorpay.RzpTokenReceiver" android:exported="true">
+			<intent-filter>
+				<action android:name="rzp.device_token.share" />
+			</intent-filter>
+		</receiver>
+		<activity android:name="com.razorpay.CheckoutActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:exported="false" android:theme="@style/RazorpayTheme" tools:replace="android:theme">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<data android:host="rzp.io" android:scheme="io.rzp" />
+			</intent-filter>
+		</activity>
+		<service android:name=".Activities.Call.Tools.CallingService" android:exported="true" />
+		<service android:name=".Services.AppApiService" android:exported="true" android:permission="android.permission.BIND_JOB_SERVICE" />
+	</application>
+	<queries>
+		<intent>
+			<action android:name="android.support.customtabs.action.CustomTabsService" />
+		</intent>
+		<intent>
+			<action android:name="android.intent.action.GET_CONTENT" />
+			<category android:name="android.intent.category.OPENABLE" />
+			<data android:mimeType="*/*" />
+		</intent>
+		<intent>
+			<action android:name="android.intent.action.VIEW" />
+			<data android:mimeType="*/*" />
+		</intent>
+		<intent>
+			<action android:name="android.media.browse.MediaBrowserService" />
+		</intent>
+		<intent>
+			<action android:name="android.intent.action.VIEW" />
+			<category android:name="android.intent.category.BROWSABLE" />
+			<data android:scheme="https" />
+		</intent>
+		<intent>
+			<action android:name="android.intent.action.VIEW" />
+			<data android:scheme="mailto" />
+		</intent>
+		<intent>
+			<action android:name="android.intent.action.SEND" />
+			<data android:scheme="mailto" />
+		</intent>
+		<intent>
+			<action android:name="android.media.action.IMAGE_CAPTURE" />
+		</intent>
+		<intent>
+			<action android:name="com.google.android.youtube.api.service.START" />
+		</intent>
+		<intent>
+			<action android:name="android.intent.action.PICK" />
+			<data android:mimeType="*/*" />
+		</intent>
+		<intent>
+			<action android:name="android.intent.action.OPEN_DOCUMENT_TREE" />
+		</intent>
+		<intent>
+			<action android:name="com.applovin.am.intent.action.APPHUB_SERVICE" />
+		</intent>
+		<intent>
+			<action android:name="com.android.vending.billing.InAppBillingService.BIND" />
+		</intent>
+		<package android:name="com.google.android.gms.policy_cast_dynamite" />
+		<package android:name="com.facebook.katana" />
+	</queries>
+</manifest>

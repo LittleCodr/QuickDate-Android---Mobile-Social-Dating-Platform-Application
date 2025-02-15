@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:orientation="vertical"
+	android:fitsSystemWindows="true"
+	android:layout_width="match_parent"
+	android:background="@drawable/rounded_dialog"
+	android:layout_height="wrap_content">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="20dp"
+		android:orientation="vertical"
+		android:layout_gravity="center"
+		android:gravity="center">
+		<View
+			android:layout_width="80dp"
+			android:layout_height="4dp"
+			android:layout_gravity="center"
+			android:gravity="center"
+			android:background="?attr/colorDivider" />
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:layout_marginEnd="20dp"
+		android:layout_marginStart="20dp"
+		android:layout_marginTop="8dp"
+		android:padding="5dp"
+		android:layout_height="wrap_content">
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/Lbl_SelectYourPaymentMethod"
+			android:gravity="start|center"
+			android:layout_centerVertical="true"
+			android:textSize="20sp" />
+		<View
+			android:layout_width="0dp"
+			android:layout_height="1dp"
+			android:layout_weight="1"/>
+		<ImageView
+			android:layout_width="25dp"
+			android:layout_height="25dp"
+			android:padding="5dp"
+			android:id="@+id/iconClose"
+			android:layout_alignParentEnd="true"
+			android:visibility="gone"
+			android:src="@drawable/icon_close_vector" />
+	</LinearLayout>
+
+	<androidx.core.widget.NestedScrollView
+		android:id="@+id/ScrollView"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:fillViewport="true"
+		app:layout_behavior="@string/appbar_scrolling_view_behavior">
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="25dp" />
+			 
+			<LinearLayout
+				android:id="@+id/GooglePayLayout"
+				android:layout_width="match_parent"
+				android:orientation="horizontal"
+				android:padding="8dp"
+				android:layout_marginEnd="20dp"
+				android:layout_marginStart="20dp"
+				android:layout_gravity="center" 
+				android:gravity="center"
+				android:background="@drawable/Shape_Radius_Line_Grey"
+				android:layout_height="48dp">
+				<ImageView
+					android:id="@+id/iconGooglePay"
+					android:layout_width="30dp"
+					android:layout_height="30dp"
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:src="@drawable/icon_googlepay_vector" />
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/Lbl_GooglePay"
+					android:layout_marginStart="5dp"
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:textSize="16sp" />
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:orientation="horizontal"
+				android:padding="8dp"
+				android:layout_marginTop="5dp"
+				android:layout_marginEnd="15dp"
+				android:layout_marginStart="15dp"
+				android:layout_height="wrap_content" >
+
+				<LinearLayout
+					android:id="@+id/PaypalLayout"
+					android:layout_width="wrap_content"
+					android:layout_height="80dp"
+					android:minWidth="90dp"
+					android:layout_weight="1"
+					android:orientation="vertical"
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:layout_marginEnd="5dp"
+					android:layout_marginStart="0dp"
+					android:background="@drawable/Shape_Radius_Line_Grey">
+					<ImageView
+						android:id="@+id/iconPaypal"
+						android:layout_width="25dp"
+						android:layout_height="25dp"
+						android:padding="2dp"
+						android:layout_gravity="center"
+						android:gravity="center"
+						android:src="@drawable/icon_paypal_vector" />
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@string/Btn_Paypal"
+						android:layout_marginTop="5dp"
+						android:layout_gravity="center"
+						android:gravity="center"
+						android:textSize="14sp" />
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:id="@+id/CreditCardLayout"
+					android:layout_width="wrap_content"
+					android:layout_height="80dp"
+					android:minWidth="90dp"
+					android:layout_weight="1"
+					android:orientation="vertical"
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:layout_marginEnd="5dp"
+					android:layout_marginStart="5dp"
+					android:background="@drawable/Shape_Radius_Line_Grey">
+					<ImageView
+						android:id="@+id/iconCreditCard"
+						android:layout_width="25dp"
+						android:layout_height="25dp"
+						android:padding="0dp"
+						android:layout_gravity="center"
+						android:gravity="center"
+						android:src="@drawable/icon_stripe_vector" />
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@string/Lbl_CreditCard"
+						android:layout_marginTop="5dp"
+						android:layout_gravity="center"
+						android:gravity="center"
+						android:textSize="14sp" />
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:id="@+id/BankTransferLayout"
+					android:layout_width="wrap_content"
+					android:layout_height="80dp"
+					android:minWidth="90dp"
+					android:layout_weight="1"
+					android:orientation="vertical"
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:layout_marginEnd="0dp"
+					android:layout_marginStart="5dp"
+					android:background="@drawable/Shape_Radius_Line_Grey">
+					<ImageView
+						android:id="@+id/iconBankTransfer"
+						android:layout_width="25dp"
+						android:layout_height="25dp"
+						android:padding="2dp"
+						android:layout_gravity="center"
+						android:gravity="center"
+						android:src="@drawable/icon_bank_vector" />
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@string/Lbl_Bank"
+						android:layout_marginTop="5dp"
+						android:layout_gravity="center"
+						android:gravity="center"
+						android:textSize="14sp" />
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/RazorPayLayout"
+				android:layout_width="match_parent"
+				android:orientation="horizontal"
+				android:padding="8dp"
+				android:layout_marginTop="10dp"
+				android:layout_marginEnd="20dp"
+				android:layout_marginStart="20dp"
+				android:background="@drawable/Shape_Radius_Line_Grey"
+				android:layout_height="48dp">
+				<ImageView
+					android:layout_width="25dp"
+					android:layout_height="25dp"
+					android:padding="2dp"
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:layout_marginStart="5dp"
+					android:src="@drawable/icon_razorpay_vector" />
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/Lbl_RazorPay"
+					android:layout_marginStart="9dp"
+					android:layout_gravity="center_vertical"
+					android:gravity="center_vertical"
+					android:textSize="16sp" />
+				<View
+					android:layout_width="0dp"
+					android:layout_height="1dp"
+					android:layout_weight="1"/>
+
+				<ImageView
+					android:layout_width="24dp"
+					android:layout_height="24dp"
+					android:padding="2dp"
+					android:layout_marginEnd="7dp"
+					android:layout_gravity="center"
+					android:tint="#858585"
+					android:src="@drawable/icon_back_arrow_right" />
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/CashFreeLayout"
+				android:layout_width="match_parent"
+				android:orientation="horizontal"
+				android:padding="8dp"
+				android:layout_marginTop="10dp"
+				android:layout_marginEnd="20dp" 
+				android:layout_marginStart="20dp"
+				android:background="@drawable/Shape_Radius_Line_Grey"
+				android:layout_height="48dp">
+				<ImageView
+					android:layout_width="25dp"
+					android:layout_height="25dp"
+					android:padding="2dp"
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:layout_marginStart="5dp"
+					android:src="@drawable/icon_cashfree_vector" />
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/Lbl_CashFree"
+					android:layout_marginStart="9dp"
+					android:layout_gravity="center_vertical"
+					android:gravity="center_vertical"
+					android:textSize="16sp" />
+				<View
+					android:layout_width="0dp"
+					android:layout_height="1dp"
+					android:layout_weight="1"/>
+				<ImageView
+					android:layout_width="24dp"
+					android:layout_height="24dp"
+					android:padding="2dp"
+					android:layout_marginEnd="7dp"
+					android:layout_gravity="center"
+					android:tint="#858585"
+					android:src="@drawable/icon_back_arrow_right" />
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/PayStackLayout"
+				android:layout_width="match_parent"
+				android:orientation="horizontal"
+				android:padding="8dp"
+				android:layout_marginTop="10dp"
+				android:layout_marginEnd="20dp"
+				android:layout_marginStart="20dp"
+				android:background="@drawable/Shape_Radius_Line_Grey"
+				android:layout_height="48dp">
+				<ImageView
+					android:layout_width="25dp"
+					android:layout_height="25dp"
+					android:padding="4dp"
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:layout_marginStart="5dp"
+					android:src="@drawable/icon_paystack_vector" />
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/Lbl_PayStack"
+					android:layout_marginStart="9dp"
+					android:layout_gravity="center_vertical"
+					android:gravity="center_vertical"
+					android:textSize="16sp" />
+				<View
+					android:layout_width="0dp"
+					android:layout_height="1dp"
+					android:layout_weight="1"/>
+				<ImageView
+					android:layout_width="24dp"
+					android:layout_height="24dp"
+					android:padding="2dp"
+					android:layout_marginEnd="7dp"
+					android:layout_gravity="center"
+					android:tint="#858585"
+					android:src="@drawable/icon_back_arrow_right" />
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/PaySeraLayout"
+				android:layout_width="match_parent"
+				android:orientation="horizontal"
+				android:padding="8dp"
+				android:layout_marginTop="10dp"
+				android:layout_marginEnd="20dp"
+				android:layout_marginStart="20dp"
+				android:background="@drawable/Shape_Radius_Line_Grey"
+				android:layout_height="48dp">
+				<ImageView
+					android:layout_width="25dp"
+					android:layout_height="25dp"
+					android:padding="2dp"
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:layout_marginStart="5dp"
+					android:src="@drawable/icon_paysera_vector" />
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/Lbl_PaySera"
+					android:layout_marginStart="9dp"
+					android:layout_gravity="center_vertical"
+					android:gravity="center_vertical"
+					android:textSize="16sp" />
+				<View
+					android:layout_width="0dp"
+					android:layout_height="1dp"
+					android:layout_weight="1"/>
+				<ImageView
+					android:layout_width="24dp"
+					android:layout_height="24dp"
+					android:padding="2dp"
+					android:layout_marginEnd="7dp"
+					android:layout_gravity="center"
+					android:tint="#858585"
+					android:src="@drawable/icon_back_arrow_right" />
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/SecurionPayLayout"
+				android:layout_width="match_parent"
+				android:orientation="horizontal"
+				android:padding="8dp"
+				android:layout_marginTop="10dp"
+				android:layout_marginEnd="20dp"
+				android:layout_marginStart="20dp"
+				android:background="@drawable/Shape_Radius_Line_Grey"
+				android:layout_height="48dp">
+				<ImageView
+					android:layout_width="25dp"
+					android:layout_height="25dp"
+					android:padding="2dp"
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:layout_marginStart="5dp"
+					android:src="@drawable/icon_securionpay_vector" />
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/Lbl_SecurionPay"
+					android:layout_marginStart="9dp"
+					android:layout_gravity="center_vertical"
+					android:gravity="center_vertical"
+					android:textSize="16sp" />
+				<View
+					android:layout_width="0dp"
+					android:layout_height="1dp"
+					android:layout_weight="1"/>
+				<ImageView
+					android:layout_width="24dp"
+					android:layout_height="24dp"
+					android:padding="2dp"
+					android:layout_marginEnd="7dp"
+					android:layout_gravity="center"
+					android:tint="#858585"
+					android:src="@drawable/icon_back_arrow_right" />
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/AuthorizeNetLayout"
+				android:layout_width="match_parent"
+				android:orientation="horizontal"
+				android:padding="8dp"
+				android:layout_marginTop="10dp"
+				android:layout_marginEnd="20dp"
+				android:layout_marginStart="20dp"
+				android:background="@drawable/Shape_Radius_Line_Grey"
+				android:layout_height="48dp">
+				<ImageView
+					android:layout_width="25dp"
+					android:layout_height="25dp"
+					android:padding="2dp"
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:layout_marginStart="5dp"
+					android:src="@drawable/icon_authorizenet_vector" />
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/Lbl_AuthorizeNet"
+					android:layout_marginStart="9dp"
+					android:layout_gravity="center_vertical"
+					android:gravity="center_vertical"
+					android:textSize="16sp" />
+				<View
+					android:layout_width="0dp"
+					android:layout_height="1dp"
+					android:layout_weight="1"/>
+				<ImageView
+					android:layout_width="24dp"
+					android:layout_height="24dp"
+					android:padding="2dp"
+					android:layout_marginEnd="7dp"
+					android:layout_gravity="center"
+					android:tint="#858585"
+					android:src="@drawable/icon_back_arrow_right" />
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/IyziPayLayout"
+				android:layout_width="match_parent"
+				android:orientation="horizontal"
+				android:padding="8dp"
+				android:layout_marginTop="10dp"
+				android:layout_marginEnd="20dp"
+				android:layout_marginStart="20dp"
+				android:background="@drawable/Shape_Radius_Line_Grey"
+				android:layout_height="48dp">
+				<ImageView
+					android:layout_width="25dp"
+					android:layout_height="25dp"
+					android:padding="2dp"
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:layout_marginStart="5dp"
+					android:src="@drawable/icon_iyzipay_vector" />
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/Lbl_IyziPay"
+					android:layout_marginStart="9dp"
+					android:layout_gravity="center_vertical"
+					android:gravity="center_vertical"
+					android:textSize="16sp" />
+				<View
+					android:layout_width="0dp"
+					android:layout_height="1dp"
+					android:layout_weight="1"/>
+				<ImageView
+					android:layout_width="24dp"
+					android:layout_height="24dp"
+					android:padding="2dp"
+					android:layout_marginEnd="7dp"
+					android:layout_gravity="center"
+					android:tint="#858585"
+					android:src="@drawable/icon_back_arrow_right" />
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/AamarPayLayout"
+				android:layout_width="match_parent"
+				android:orientation="horizontal"
+				android:padding="8dp"
+				android:layout_marginTop="10dp"
+				android:layout_marginEnd="20dp"
+				android:layout_marginStart="20dp"
+				android:background="@drawable/Shape_Radius_Line_Grey"
+				android:layout_height="48dp">
+				<ImageView
+					android:layout_width="25dp"
+					android:layout_height="25dp"
+					android:padding="2dp"
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:layout_marginStart="5dp"
+					android:src="@drawable/icon_aamarpay_vector" />
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/Lbl_AamarPay"
+					android:layout_marginStart="9dp"
+					android:layout_gravity="center_vertical"
+					android:gravity="center_vertical"
+					android:textSize="16sp" />
+				<View
+					android:layout_width="0dp"
+					android:layout_height="1dp"
+					android:layout_weight="1"/>
+				<ImageView
+					android:layout_width="24dp"
+					android:layout_height="24dp"
+					android:padding="2dp"
+					android:layout_marginEnd="7dp"
+					android:layout_gravity="center"
+					android:tint="#858585"
+					android:src="@drawable/icon_back_arrow_right" />
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/FlutterWaveLayout"
+				android:layout_width="match_parent"
+				android:orientation="horizontal"
+				android:padding="8dp"
+				android:layout_marginTop="10dp"
+				android:layout_marginEnd="20dp"
+				android:layout_marginStart="20dp"
+				android:background="@drawable/Shape_Radius_Line_Grey"
+				android:layout_height="48dp">
+				<ImageView
+					android:layout_width="25dp"
+					android:layout_height="25dp"
+					android:padding="2dp"
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:layout_marginStart="5dp"
+					android:src="@drawable/icon_flutterwave_vector" />
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/Lbl_FlutterWave"
+					android:layout_marginStart="9dp"
+					android:layout_gravity="center_vertical"
+					android:gravity="center_vertical"
+					android:textSize="16sp" />
+				<View
+					android:layout_width="0dp"
+					android:layout_height="1dp"
+					android:layout_weight="1"/>
+				<ImageView
+					android:layout_width="24dp"
+					android:layout_height="24dp"
+					android:padding="2dp"
+					android:layout_marginEnd="7dp"
+					android:layout_gravity="center"
+					android:tint="#858585"
+					android:src="@drawable/icon_back_arrow_right" />
+
+			</LinearLayout>
+			 
+			<View
+				android:layout_height="?android:attr/actionBarSize"
+				android:layout_width="match_parent" />
+
+		</LinearLayout>
+	</androidx.core.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,970 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!--Notes :-->
+	<!-- - If the text is marked ' Please replace with the symbol &apos; and add at the beginning and end of the sentence "
+        Example: Let's get started! >> "Let&apos;s get started!"  -->
+	<!-- - If the text is marked & Please replace with the symbol &amp; 
+        Example. Movies & Animation >> Movies &amp; Animation   -->
+
+	<!--Range seeker-->
+	<string name="demo_min_label">الحد الأدنى</string>
+	<string name="demo_max_label">الحد الأقصى</string>
+	<!--===============================================================-->
+
+	<!--most used-->
+	<string name="video">فيديو</string>
+	<string name="audio">الصوت</string>
+	<string name="image">صورة</string>
+	<string name="text">النص</string>
+	<string name="retry">إعادة المحاولة</string>
+	<string name="Lbl_Empty">فارغ</string>
+	<string name="Lbl_Loading">جاري التحميل</string>
+	<string name="Lbl_Comment">تعليق</string>
+	<string name="Lbl_Videos">مقاطع الفيديو</string>
+	<string name="Lbl_Views">المشاهدات</string>
+	<string name="Lbl_aboutMe">نبذة عني</string>
+	<string name="Lbl_About">حول</string>
+	<string name="Lbl_Error">خطأ</string>
+	<string name="Lbl_Ok">موافق</string>
+	<string name="Lbl_Security">الأمان</string>
+	<string name="Lbl_Done">تم</string>
+	<string name="Lbl_Deleted">محذوف</string>
+	<string name="Lbl_Delete">حذف</string>
+	<string name="Lbl_Submit">إرسال</string>
+	<string name="Lbl_Cancel">إلغاء</string>
+	<string name="Lbl_Yes">نعم</string>
+	<string name="Lbl_No">لا</string>
+	<string name="Lbl_Warning">تحذير</string>
+	<string name="Lbl_Changed">تم التغيير</string>
+	<string name="Lbl_Crop">اقتصاص</string>
+	<string name="Lbl_Report">التقرير</string>
+	<string name="Lbl_Quality">الجودة</string>
+	<string name="Lbl_Help_feedback">المساعدة &amp; ردود الفعل</string>
+	<string name="Lbl_Make_video_offline">جعل الفيديو بلا إنترنت</string>
+	<string name="Lbl_Share">مشاركة</string>
+	<string name="Lbl_InviteSMSText_1">مرحبًا، لنلتقي</string>
+	<string name="Lbl_InviteSMSText_2">لهاتفك الذكي</string>
+	<string name="Lbl_Success">النجاح</string>
+	<string name="Lbl_Offline_Mode">وضع عدم الاتصال</string>
+	<string name="Lbl_Cover">الغلاف</string>
+	<string name="Lbl_Avatar">الصورة الرمزية</string>
+	<string name="Lbl_Close">إغلاق</string>
+	<string name="Lbl_With">مع</string>
+	<string name="Lbl_At">في</string>
+	<string name="Lbl_SelectPictures">حدد الصور</string>
+	<string name="Lbl_SelectImage">حدد صورة</string>
+	<string name="Lbl_SelectFile">حدد ملف</string>
+	<string name="Lbl_SelectGif">حدد Gif</string>
+	<string name="Lbl_Unknown">غير معروف</string>
+	<string name="Lbl_ReadMore">اقرأ المزيد</string>
+	<string name="Lbl_ReadLess">اقرأ أقل</string>
+	<string name="Lbl_Description">الوصف</string>
+	<string name="Lbl_Published_on">تم النشر في</string>
+	<string name="Lbl_I_agree_to_the">أوافق على</string>
+	<string name="Lbl_Last_seen">شوهد آخر مرة</string>
+	<string name="Lbl_Create_Account">إنشاء حساب</string>
+	<string name="Lbl_SignUp">التسجيل</string>
+	<string name="Lbl_Like">أعجبني</string>
+	<string name="Lbl_Create">إنشاء</string>
+	<string name="Lbl_Send">إرسال</string>
+	<string name="Lbl_Male">ذكر</string>
+	<string name="Lbl_Female">أنثى</string>
+	<string name="Lbl_Comments">التعليقات</string>
+	<string name="Lbl_Save">حفظ</string>
+	<string name="Lbl_Country">البلد</string>
+	<string name="Lbl_Settings">الإعدادات</string>
+	<string name="Lbl_Send_to">إرسال إلى</string>
+	<string name="Lbl_Copy">نسخ</string>
+	<string name="Lbl_Type">اكتب</string>
+	<string name="Lbl_Remember">تذكر</string>
+	<string name="Lbl_Online">متصل</string>
+	<!--===============================================================-->
+
+	<!-- First Page-->
+	<string name="Lbl_FirstHeader">اكتشف شريك أحلامك</string>
+	<string name="Lbl_FirstSubHeader">اسحب لليمين لإعجاب شخص ما وإذا كنتما تحبان بعضكما البعض؟ <font color='@color/primary'>انها مطابقة</font></string>
+	<string name="Lbl_FirstFooter">المغازلة والدردشة والتعرف على أشخاص من حولك!</string>
+	<!--===============================================================-->
+
+	<!--Login && Register -->
+	<string name="Lbl_FirstName">الاسم الأول</string>
+	<string name="Lbl_LastName">الاسم الأخير</string>
+	<string name="Lbl_Username">اسم المستخدم</string>
+	<string name="Lbl_Email">البريد الإلكتروني</string>
+	<string name="Lbl_Login">تسجيل الدخول</string>
+	<string name="Lbl_Register">التسجيل</string>
+	<string name="Lbl_SignIn">تسجيل الدخول</string>
+	<string name="Lbl_DontHaveAnAccount">"أليس لديك حساب؟"</string>
+	<string name="Lbl_Or">أو</string>
+	<string name="Lbl_Please_write_your_email">يُرجى كتابة بريدك الإلكتروني</string>
+	<string name="Lbl_Null_Data_User">مستخدم بيانات فارغ</string>
+	<string name="Lbl_Create_An_Account">إنشاء حساب</string>
+	<string name="Lbl_By_registering_you_agree_to_our">من خلال التسجيل فإنك توافق على</string>
+	<string name="Lbl_Terms_of_service">شروط الخدمة</string>
+	<string name="Lbl_Already_Have_an_Account">لديك حساب بالفعل</string>
+	<string name="Lbl_Error_Register_password">التسجيل غير صحيح، كلمة المرور خاطئة</string>
+	<string name="Lbl_Error_Login">تسجيل الدخول غير صحيح، خطأ في اسم المستخدم أو كلمة المرور</string>
+	<!--===============================================================-->
+
+	<!-- Password-->
+	<string name="Lbl_Password">كلمة المرور</string>
+	<string name="Lbl_ConfirmPassword">تأكيد كلمة المرور</string>
+	<string name="Lbl_Forget_password">نسيت كلمة المرور</string>
+	<string name="Lbl_Forgot_your_password">هل نسيت كلمة المرور؟</string>
+	<string name="Lbl_Forgot_your_password_DontWorry">"لا تقلق، اكتب بريدك الإلكتروني هنا وسنقوم باستعادته لك."</string>
+	<string name="Lbl_Change_Password">تغيير كلمة المرور</string>
+	<string name="Lbl_Current_Password">كلمة المرور الحالية</string>
+	<string name="Lbl_New_Password">كلمة المرور الجديدة</string>
+	<string name="Lbl_Repeat_password">كرر كلمة المرور</string>
+	<string name="Lbl_Your_password_dont_match">كلمة المرور الخاصة بك غير متطابقة</string>
+	<string name="Lbl_Enter_Password">أدخل كلمة المرور الخاصة بك هنا</string>
+	<string name="Lbl_Change_your_password">تغيير كلمة المرور الخاصة بك</string>
+	<string name="Lbl_Please_enter_your_email_address">الرجاء إدخال عنوان بريدك الإلكتروني</string>
+	<string name="Lbl_We_will_send_you_link_to_reset_password">سوف نرسل لك رابطًا لإعادة تعيين كلمة المرور.</string>
+	<string name="Lbl_If_you_forgot_your_password">إذا نسيت كلمة المرور الخاصة بك، فيمكنك إعادة تعيينها من هنا.</string>
+	<string name="Lbl_Please_confirm_your_password">خطأ، يرجى تأكيد كلمة المرور الخاصة بك</string>
+	<!--===============================================================-->
+
+	<!--WalkTroutPage-->
+	<string name="Lbl_FinishButton_WalkTroutPage">البدء</string>
+	<string name="Lbl_Title_page1">تمرير البطاقات</string>
+	<string name="Lbl_Description_page1">مرر البطاقات يمينًا ويسارًا إذا كنت معجبًا بشخص ما أو لا يعجبك</string>
+	<string name="Lbl_Title_page2">البحث في الأماكن القريبة</string>
+	<string name="Lbl_Description_page2">تواصل مع الفرديين المحليين &amp; ابدأ مغامرة المواعدة عبر الإنترنت!</string>
+	<string name="Lbl_Title_page3">الدردشة</string>
+	<string name="Lbl_Description_page3">تواصل مع الأشخاص ذوي التفكير المماثل وتبادل حبك</string>
+	<!--===============================================================-->
+
+	<!--Profile-->
+	<string name="Lbl_MyProfile">ملفي الشخصي</string>
+	<string name="Lbl_Profile">الملف الشخصي</string>
+	<string name="Lbl_Interest">الاهتمام</string>
+	<string name="Lbl_Interests">الاهتمامات</string>
+	<string name="Lbl_DefaultAbout">مرحبًا، أنا أستخدم</string>
+	<string name="Lbl_CopeLinkToProfile">انسخ رابط الملف الشخصي</string>
+	<string name="Lbl_EnterTextInterest">أدخل علامة نصية، ثم اضغط على ,</string>
+	<string name="Lbl_Cm">سم</string>
+	<string name="Lbl_BodyType">نوع الجسم</string>
+	<string name="Lbl_ChooseHairColor">اختر لون شعرك</string>
+	<string name="Lbl_ChooseWorkStatus">اختر حالة عملك</string>
+	<string name="Lbl_ChooseRelationshipStatus">اختر حالة علاقتك</string>
+	<string name="Lbl_ChooseLanguage">اختر لغتك المفضلة</string>
+	<string name="Lbl_PhoneNumber">رقم الهاتف</string>
+	<string name="Lbl_ChooseYourCountry">اختر بلدك</string>
+
+	<string name="Lbl_FavoriteInfo">المعلومات المفضلة</string>
+	<string name="Lbl_Music">الموسيقى</string>
+	<string name="Lbl_Dish">طبق</string>
+	<string name="Lbl_Song">الأغنية</string>
+	<string name="Lbl_Hobby">الهواية</string>
+	<string name="Lbl_City">المدينة</string>
+	<string name="Lbl_Sport">الرياضة</string>
+	<string name="Lbl_Book">الكتاب</string>
+	<string name="Lbl_Movie">فيلم</string>
+	<string name="Lbl_Color">اللون</string>
+	<string name="Lbl_TvShow">برنامج تلفزيوني</string>
+
+	<string name="Lbl_LifeStyleInfo">معلومات نمط الحياة</string>
+	<string name="Lbl_ILiveWith">أعيش معه</string>
+	<string name="Lbl_LiveWith">العيش مع</string>
+	<string name="Lbl_Car">السيارة</string>
+	<string name="Lbl_Religion">الدين</string>
+	<string name="Lbl_Smoke">دخان</string>
+	<string name="Lbl_Drink">اشرب</string>
+	<string name="Lbl_Travel">السفر</string>
+
+	<string name="Lbl_EditLooksInfo">تحرير معلومات المظهر</string>
+	<string name="Lbl_Ethnicity">العرق</string>
+	<string name="Lbl_Body">الجسم</string>
+	<string name="Lbl_Height">الارتفاع</string>
+	<string name="Lbl_HairColor">لون الشعر</string>
+
+	<string name="Lbl_PersonalityInfo">معلومات الشخصية</string>
+	<string name="Lbl_Character">الحرف</string>
+	<string name="Lbl_Pets">الحيوانات الأليفة</string>
+	<string name="Lbl_Friends">الأصدقاء</string>
+	<string name="Lbl_Children">الأطفال</string>
+
+	<string name="Lbl_EditProfileInfo">تحرير معلومات الملف الشخصي</string>
+	<string name="Lbl_Birthday">عيد الميلاد</string>
+	<string name="Lbl_Language">اللغة</string>
+	<string name="Lbl_Relationship">العلاقة</string>
+	<string name="Lbl_WorkStatus">حالة العمل</string>
+	<string name="Lbl_Education">التعليم</string>
+	<string name="Lbl_EducationLevel">المستوى التعليمي</string>
+
+	<string name="Lbl_Upgrade">الترقية</string>
+	<string name="Lbl_BoostMe">عززني</string>
+	<string name="Lbl_EditProfile">تحرير الملف الشخصي</string>
+	<string name="Lbl_NeedHelp">هل تحتاج إلى مساعدة؟</string>
+	<string name="Lbl_ContactUs_Privacy">الأسئلة الشائعة، اتصل بنا، الخصوصية</string>
+	<string name="Lbl_YourBoostExpireInMinutes">ستنتهي صلاحية التعزيز الخاص بك خلال دقائق</string>
+	<!--===============================================================-->
+
+	<!--Edit My Profile-->
+	<string name="Lbl_ProfileCompletion">إكمال الملف الشخصي</string>
+	<string name="Lbl_ProfileInfo">معلومات الملف الشخصي</string>
+	<string name="Lbl_AddWordsAbout">أضف بضع كلمات عن نفسك</string>
+	<string name="Lbl_Name">الاسم</string>
+	<string name="Lbl_Gender">الجنس</string>
+	<string name="Lbl_PreferredLanguage">اللغة المفضلة</string>
+	<string name="Lbl_RelationshipStatus">حالة العلاقة</string>
+	<string name="Lbl_Looks">المظهر</string>
+	<string name="Lbl_Personality">الشخصية</string>
+	<string name="Lbl_Lifestyle">نمط الحياة</string>
+	<string name="Lbl_Favourites">المفضلة</string>
+	<string name="Lbl_MusicGenre">نوع الموسيقى</string>
+	<!--===============================================================-->
+
+	<!--User Profile-->
+	<string name="Lbl_WorkAndEducation">العمل والتعليم</string>
+	<string name="Lbl_Languages">اللغات</string>
+	<string name="Lbl_SocialInfo">المعلومات الاجتماعية</string>
+	<string name="Lbl_Gifts">الهدايا</string>
+	<string name="Lbl_SendGiftsAndChat">أرسل هدية وابدأ الدردشة الآن</string>
+	<string name="Lbl_SendGifts">أرسل هدية</string>
+	<string name="Lbl_IAm">"أنا"</string>
+	<string name="Lbl_IAm_A">"أنا"</string>
+	<string name="Lbl_person">شخص</string>
+	<string name="Lbl_IHave">لدي</string>
+	<string name="Lbl_Hair">الشعر</string>
+	<string name="Lbl_personAnd_IHave">أنا وشخص</string>
+	<string name="Lbl_My_plans_for_children">خططي للأطفال</string>
+	<string name="Lbl_ILiveAlone">أعيش وحدي</string>
+	<string name="Lbl_ILive">أنا أعيش</string>
+	<string name="Lbl_IDontSmoke">"أنا لا أدخن"</string>
+	<string name="Lbl_IDontDrink">"أنا لا أشرب"</string>
+	<string name="Lbl_And">و</string>
+	<string name="Lbl_tall">طويل</string>
+	<string name="Lbl_NoDescription">لا يوجد وصف</string>
+	<!--===============================================================-->
+
+	<!--Time-->
+	<string name="Lbl_justNow">الآن</string>
+	<string name="Lbl_hours">قبل ساعات</string>
+	<string name="Lbl_days">الأيام</string>
+	<string name="Lbl_month">قبل شهر</string>
+	<string name="Lbl_minutes">قبل دقائق</string>
+	<string name="Lbl_seconds">قبل ثوانٍ</string>
+	<string name="Lbl_year">قبل عام</string>
+	<string name="Lbl_CutHours">H</string>
+	<string name="Lbl_CutDays">D</string>
+	<string name="Lbl_CutMonth">M</string>
+	<string name="Lbl_CutMinutes">الحد الأدنى</string>
+	<string name="Lbl_CutSeconds">ثانية</string>
+	<string name="Lbl_CutYear">Y</string>
+	<string name="Lbl_about_minute">منذ دقيقة تقريبًا</string>
+	<string name="Lbl_about_hour">قبل حوالي ساعة</string>
+	<string name="Lbl_yesterday">أمس</string>
+	<string name="Lbl_about_month">منذ شهر تقريبًا</string>
+	<string name="Lbl_about_year">قبل عام تقريبًا</string>
+	<!--===============================================================-->
+
+	<!--Toast && Messages-->
+	<string name="Lbl_Permission_is_denied">"عذرًا: لا يمكنك متابعة الإجراء إذا كنت لا تسمح بذلك"</string>
+	<string name="Lbl_something_went_wrong">التحقق من بيانات الاعتماد الخاصة بك، حدث خطأ ما</string>
+	<string name="Lbl_CheckYourInternetConnection">يُرجى التحقق من اتصالك بالإنترنت</string>
+	<string name="Lbl_VerificationFailed">فشل التحقق</string>
+	<string name="Lbl_You_will_be_logged">سيتم تسجيل الخروج الآن، نراكم لاحقًا</string>
+	<string name="Lbl_Are_you_logout">هل أنت متأكد من أنك قمت بتسجيل الخروج؟</string>
+	<string name="Lbl_Text_copied">تم نسخ النص إلى الحافظة</string>
+	<string name="Lbl_Text_report">لقد تم إرسال التقرير</string>
+	<string name="Lbl_PleaseAddPhoneNumberCorrectly">يُرجى إضافة رقم الهاتف بشكل صحيح</string>
+	<!--===============================================================-->
+
+	<!--Error-->
+	<string name="Lbl_Error_Code">رمز الخطأ</string>
+	<string name="Lbl_Please_check_your_details">خطأ، يرجى التحقق من التفاصيل الخاصة بك</string>
+	<string name="Lbl_Please_enter_your_data">حدث خطأ، الرجاء إدخال بياناتك</string>
+	<string name="Lbl_IsEmailValid">حدث خطأ، يرجى كتابة عنوان بريدك الإلكتروني بالكامل</string>
+
+	<!--Error Login-->
+	<string name="Lbl_Error_1">لا يمكن أن يكون اسم المستخدم فارغًا</string>
+	<string name="Lbl_Error_2">لا يمكن أن تكون كلمة المرور فارغة</string>
+	<string name="Lbl_Error_3">تعذر حفظ الجلسة</string>
+	<string name="Lbl_Error_4">المستخدم غير موجود</string>
+	<string name="Lbl_Error_5">كلمة مرور خاطئة</string>
+
+	<!--Error Register-->
+	<string name="Lbl_Error_6">تم إلغاء تعيين بيانات المستخدم</string>
+	<string name="Lbl_Error_7">لا يمكن أن يكون اسم المستخدم فارغًا</string>
+	<string name="Lbl_Error_8">يجب أن يكون اسم المستخدم بين 5 / 32</string>
+	<string name="Lbl_Error_9">أحرف اسم المستخدم غير صالحة</string>
+	<string name="Lbl_Error_10">لا يمكن أن يكون البريد الإلكتروني فارغًا</string>
+	<string name="Lbl_Error_11">هذا البريد الإلكتروني غير صالح</string>
+	<string name="Lbl_Error_12">لا يمكن أن تكون كلمة المرور فارغة</string>
+	<string name="Lbl_Error_13">كلمة المرور قصيرة جدًا</string>
+	<string name="Lbl_Error_14">اسم المستخدم موجود</string>
+	<string name="Lbl_Error_15">البريد الإلكتروني موجود بالفعل</string>
+	<string name="Lbl_Error_16">فشل التسجيل</string>
+	<string name="Lbl_Error_17">تعذر إرسال رسالة التحقق</string>
+	<string name="Lbl_Error_18">خطأ: حدث خطأ غير معروف. يرجى المحاولة مرة أخرى لاحقًا</string>
+
+	<!--Error Reset Password-->
+	<string name="Lbl_Error_21">لم يتم إرسال بريد إلكتروني للمستخدم</string>
+	<string name="Lbl_Error_22">البريد الإلكتروني غير موجود</string>
+	<!--===============================================================-->
+
+	<!--Fragment-->
+	<string name="Lbl_Notifications">الإشعارات</string>
+	<string name="Lbl_Trending">الاتجاه</string>
+	<string name="Lbl_Search">بحث</string>
+	<string name="Lbl_More">المزيد</string>
+	<string name="Lbl_Users">المستخدمون</string>
+	<string name="Lbl_Cards">البطاقات</string>
+	<string name="Lbl_messages">الرسائل</string>
+	<!--===============================================================-->
+
+	<!--Tab-->
+	<string name="Lbl_Find_Match">ابحث عن تطابق</string>
+	<string name="Lbl_Matches">المطابقات</string>
+	<string name="Lbl_Visits">الزيارات</string>
+	<string name="Lbl_Likes">الإعجابات</string>
+	<!--===============================================================-->
+
+	<!--Button-->
+	<string name="Btn_GetPremium">احصل على الإصدار المميز</string>
+	<string name="Btn_BuyCredits">شراء الاعتمادات</string>
+	<string name="Btn_SkipCredits">تخطي الاعتمادات</string>
+	<string name="Btn_Continue">متابعة</string>
+	<string name="Btn_Paypal">Paypal</string>
+	<string name="Btn_SkipPremium">تخطي Premium</string>
+	<string name="Btn_NoOtherTime">لا، وقت آخر</string>
+	<string name="Btn_GooglePlay">Google Play</string>
+	<!--===============================================================-->
+
+	<!--Refresh-->
+	<string name="Lbl_PullToRefresh">اسحب للتحديث</string>
+	<string name="Lbl_RefreshMyNewsFeed">تحديث أحدث المستخدمين</string>
+	<string name="Lbl_Refreshing">متجدد</string>
+	<!--===============================================================-->
+
+	<!--Notifications-->
+	<string name="Lbl_VisitYou">زيارتك</string>
+	<string name="Lbl_LikeYou">مثلك</string>
+	<string name="Lbl_DislikeYou">لا أحبك</string>
+	<string name="Lbl_SendGiftToYou">إرسال هدية إليك</string>
+	<string name="Lbl_YouGotMatch">لقد حصلت على تطابق جديد، انقر للعرض!</string>
+	<string name="Lbl_MessageNotifications">أرسل إليك رسالة!</string>
+	<string name="Lbl_ApproveReceipt">لقد وافقنا على التحويل المصرفي الخاص بك</string>
+	<string name="Lbl_DisapproveReceipt">لقد رفضنا تحويلك البنكي، يرجى الاتصال بنا للحصول على مزيد من التفاصيل.</string>
+	<string name="Lbl_AcceptChatRequest">تم قبول طلب رسالتك!</string>
+	<string name="Lbl_DeclineChatRequest">رفض طلب رسالتك!</string>
+	<!--===============================================================-->
+
+	<!--Location-->
+	<string name="Lbl_Location">الموقع</string>
+	<string name="Lbl_Use_Location">هل تريد استخدام الموقع؟</string>
+	<string name="Lbl_GPS_is_disabled">تم تعطيل نظام تحديد المواقع العالمي (GPS).هل تريد تمكين نظام تحديد المواقع العالمي (GPS)</string>
+	<string name="Lbl_Error_LocationChanged">غير قادر على تحديد موقعك. حاول مرة أخرى خلال فترة قصيرة.</string>
+	<string name="Lbl_AddLocation">إضافة موقع</string>
+	<!--===============================================================-->
+
+	<!--Filter-->
+	<string name="Lbl_Filter">الفلتر</string>
+	<string name="Lbl_StartTyping">ابدأ الكتابة</string>
+	<string name="Lbl_WhoAreYouLookingFor">عمن تبحث؟</string>
+	<string name="Lbl_Boys">الأولاد</string>
+	<string name="Lbl_Girls">الفتيات</string>
+	<string name="Lbl_Both">كلاهما</string>
+	<string name="Lbl_Age">عمر مختلف</string>
+	<string name="Lbl_OnlineNow">متصل الآن</string>
+	<string name="Lbl_ResetFilter">إعادة تعيين عامل التصفية</string>
+	<string name="Lbl_ApplyFilter">تطبيق المرشحات</string>
+	<string name="Lbl_NearBy">بالقرب من</string>
+	<!--===============================================================-->
+
+	<!--Add Photo-->
+	<string name="Lbl_AddPhoto">إضافة صورة</string>
+	<string name="Lbl_Title_AddPhoto">أضف صورة لتلقي ردود الفعل!</string>
+	<string name="Lbl_SubTitle_AddPhoto">الآن ملفك الشخصي ليس مثيرًا للاهتمام لأي شخص :-(</string>
+	<string name="Lbl_IWill_AddPhoto_Later">سأضيف الصورة لاحقًا</string>
+	<!--===============================================================-->
+
+	<!--Dialog : Gift && AddCredits -->
+	<string name="Lbl_countCartGift">هل تريد الحصول على المزيد؟ إحصل على الأفضل! أو احصل على ملصقات جديدة لـ</string>
+	<string name="Lbl_TermsAndConditions">الشروط والأحكام</string>
+	<!--===============================================================-->
+
+	<!--Dialog : MatchFound -->
+	<string name="Lbl_Title_Match">إنها مطابقة</string>
+	<string name="Lbl_YouAnd">أنت و</string>
+	<string name="Lbl_SubTitle_Match">"أحببنا بعضنا البعض. قل "مرحبًا""</string>
+	<string name="Lbl_NotNow">ليس الآن</string>
+	<string name="Lbl_StartChat">ابدأ الدردشة</string>
+	<!--===============================================================-->
+
+	<!--Dialog : SkipTutorial -->
+	<string name="Lbl_Title_Skip">"دعونا نسهل الأمر"</string>
+	<string name="Lbl_SubTitle_Skip">إذا كنت معجبًا بهذا الشخص وبقيت على اتصال به، فاسحب لليمين</string>
+	<string name="Lbl_SkipTutorial">تخطي البرنامج التعليمي</string>
+	<string name="Lbl_Next">التالي</string>
+	<string name="Lbl_Finish">إنهاء</string>
+	<string name="Lbl_SubTitle_Finish">"إذا كنت لا تحب هذا الشخص ولا ترغب في البقاء على اتصال به، فاسحب لليسار"</string>
+	<!--===============================================================-->
+
+	<!--message-->
+	<string name="Lbl_Messenger">الرسول</string>
+	<string name="Lbl_Message">الرسالة</string>
+	<string name="Lbl_Chats">الدردشات</string>
+	<string name="Lbl_Write_your_message">اكتب رسالتك</string>
+	<string name="Lbl_Clear_chat">مسح الدردشة</string>
+	<string name="Lbl_SendImageFile">صورة</string>
+	<string name="Lbl_SendStickerFile">الملصق</string>
+	<string name="Lbl_SendGifFile">Gif</string>
+	<string name="Lbl_SendMessage">أرسل إليك رسالة</string>
+	<!--===============================================================-->
+
+	<!--Empty State Inflater-->
+	<string name="Lbl_NoConnection_TitleText">لا يتوفر إنترنت</string>
+	<string name="Lbl_NoConnection_DescriptionText">لم نتمكن من إنشاء اتصال بخوادمنا، يرجى إعادة المحاولة لاحقًا.</string>
+	<string name="Lbl_NoConnection_Button">حاول مرة أخرى</string>
+
+	<string name="Lbl_NoSearchResult_TitleText">لا توجد نتيجة للأسف!</string>
+	<string name="Lbl_NoSearchResult_DescriptionText">لا يمكننا العثور على الكلمة الرئيسية التي تبحث عنها ربما يكون هناك خطأ إملائي بسيط؟</string>
+	<string name="Lbl_NoSearchResult_Button">بحث عشوائي</string>
+
+	<string name="Lbl_SomThingWentWrong_TitleText">حدث خطأ ما</string>
+	<string name="Lbl_SomThingWentWrong_DescriptionText">استجابة الخادم</string>
+	<string name="Lbl_SomThingWentWrong_Button">حاول مرة أخرى</string>
+
+	<string name="Lbl_NoNotification_TitleText">لا توجد إشعارات بعد</string>
+	<string name="Lbl_NoNotification_DescriptionText">سوف نعرض ذلك بمجرد حصولك على نشاطك الأول هنا</string>
+
+	<string name="Lbl_NoMessage_TitleText">لا مزيد من الرسائل</string>
+	<string name="Lbl_NoMessage_DescriptionText">لا توجد محادثات حتى الآن</string>
+
+	<string name="Lbl_NoMoreUsers">لا يوجد المزيد من المستخدمين لإظهارهم</string>
+
+	<string name="Lbl_NoBlockUsers">لا يوجد مستخدمون</string>
+	<!--===============================================================-->
+
+	<!--Favorite-->
+	<string name="Lbl_UnFavorite">غير مفضل</string>
+	<string name="Lbl_Favorite">المفضلة</string>
+	<string name="Lbl_DisplayAllFavorite">عرض جميع المستخدمين المفضلين لديك</string>
+	<string name="Lbl_AddedFavorite">تمت إضافة المستخدم إلى المفضلة</string>
+	<string name="Lbl_RemovedFavorite">تمت إزالة المستخدم من المفضلة</string>
+	<!--===============================================================-->
+
+	<!--Settings-->
+	<string name="Lbl_General">عام</string>
+	<string name="Lbl_MyAccount">حسابي</string>
+	<string name="Lbl_SocialLinks">الروابط الاجتماعية</string>
+	<string name="Lbl_OnlineChat">"إظهار عندما تكون نشطًا"</string>
+	<string name="Lbl_Privacy">الخصوصية</string>
+	<string name="Lbl_PSearchEngines">هل تريد إظهار ملفي الشخصي على محركات البحث؟</string>
+	<string name="Lbl_PRandomUsers">هل تريد إظهار ملفي الشخصي لدى مستخدمين عشوائيين؟</string>
+	<string name="Lbl_PFindMatchPage">هل تريد إظهار ملفي الشخصي في صفحة البحث عن المطابقة؟</string>
+	<string name="Lbl_Storage">التخزين</string>
+	<string name="Lbl_ClearCache">مسح ذاكرة التخزين المؤقت</string>
+	<string name="Lbl_Support">الدعم</string>
+	<string name="Lbl_Help">تعليمات</string>
+	<string name="Lbl_ReportProblem">التقرير</string>
+	<string name="Lbl_DeleteAccount">حذف الحساب</string>
+	<string name="Lbl_Logout">تسجيل الخروج</string>
+	<!--===============================================================-->
+
+	<!--Invite Friends-->
+	<string name="Lbl_InviteFriends">دعوة الأصدقاء</string>
+	<string name="Lbl_ContactsPhone">هاتف جهات الاتصال</string>
+	<string name="Lbl_ShareThe">شارك</string>
+	<string name="Lbl_byInvitingFriends">عن طريق دعوة أصدقائك باستخدام هذه</string>
+	<string name="Lbl_ShareTheLove">شارك الحب</string>
+	<string name="Lbl_TextInvite">دعوة نصية</string>
+	<string name="Lbl_SocialMediaInvite">دعوة عبر وسائل التواصل الاجتماعي</string>
+	<string name="Lbl_InviteFriendsToTheApp">قم بدعوة الأصدقاء إلى التطبيق</string>
+	<!--===============================================================-->
+
+	<!--Social Links-->
+	<string name="Lbl_Facebook">فيسبوك</string>
+	<string name="Lbl_Twitter">تويتر</string>
+	<string name="Lbl_GooglePlus">جوجل بلس</string>
+	<string name="Lbl_Instagram">إنستغرام</string>
+	<string name="Lbl_LinkedIn">لينكد إن</string>
+	<string name="Lbl_Website">موقع الويب</string>
+	<!--===============================================================-->
+
+	<!--Block Users-->
+	<string name="Lbl_BlockedUsers">المستخدمون المحظورون</string>
+	<string name="Lbl_Block">حظر</string>
+	<string name="Lbl_Blocked_successfully">تم الحظر بنجاح</string>
+	<string name="Lbl_Unblock_successfully">تم إلغاء الحظر بنجاح</string>
+	<string name="Lbl_DoYouWantUnblock">هل تريد إلغاء حظر هذا المستخدم</string>
+	<!--===============================================================-->
+
+	<!--Delete Account-->
+	<string name="Lbl_Are_you_DeleteAccount">هل أنت متأكد من أنك تريد حذف الحساب من</string>
+	<string name="Lbl_Your_account_was_successfully_deleted">تم حذف حسابك بنجاح</string>
+	<string name="Lbl_Error_Terms">لا يمكنك الوصول إلى رفضك للشروط والأحكام</string>
+	<string name="Lbl_RemoveAccount">إزالة الحساب</string>
+	<string name="Lbl_IWantToDelete1">نعم، أريد الحذف</string>
+	<string name="Lbl_IWantToDelete2">بشكل دائم من</string>
+	<string name="Lbl_IWantToDelete3">الحساب.</string>
+	<!--===============================================================-->
+
+	<!--Increase Popularity-->
+	<string name="Lbl_IncreasePopularity">زيادة الشعبية</string>
+	<string name="Lbl_YourPopularity">شعبيتك</string>
+	<string name="Lbl_VeryLow">منخفض جدًا</string>
+	<string name="Lbl_Credits">الائتمانات</string>
+	<string name="Lbl_VisitsMain">روج لملفك الشخصي عن طريق الحصول على المزيد من الزيارات لمدة 5 دقائق</string>
+	<string name="Lbl_VisitsCost">احصل على 10 زيارات</string>
+	<string name="Lbl_MatchesMain">أظهر المزيد وانهض في نفس الوقت، لمدة 4 دقائق</string>
+	<string name="Lbl_MatchesCost">احصل على x3 مطابقات</string>
+	<string name="Lbl_LikesMain">"أخبر الجميع أنك متصل بالإنترنت وسيشاهدك المستخدمون الذين يرغبون في الدردشة، لمدة 5 دقائق"</string>
+	<string name="Lbl_LikesCost">احصل على x4 إعجابات</string>
+	<string name="Lbl_IncreaseStarted">بدأت الزيادة</string>
+	<!--===============================================================-->
+
+	<!--About App-->
+	<string name="Lbl_PrivacyPolicy">سياسة الخصوصية</string>
+	<string name="Lbl_TermsOfUse">شروط الاستخدام</string>
+	<string name="Lbl_Version">الإصدار</string>
+	<string name="Lbl_Changelog">سجل التغيير</string>
+	<string name="Lbl_RateOurApp">تقييم تطبيقنا</string>
+	<string name="Lbl_AboutUs">نبذة عنا</string>
+	<!--===============================================================-->
+
+	<!--Payment Card Details-->
+	<string name="Lbl_Expire">انتهاء الصلاحية</string>
+	<string name="Lbl_CVV">CVV</string>
+	<string name="Lbl_YourName">اسمك</string>
+	<string name="Lbl_CreditCardNumber">رقم بطاقة الائتمان</string>
+	<string name="Lbl_NameOfCard">الاسم الموجود على البطاقة</string>
+	<string name="Lbl_OrUsing">أو باستخدام</string>
+	<string name="Lbl_PleaseVerifyDataCard">يُرجى التحقق من صحة البيانات المدخلة</string>
+	<string name="Lbl_ErrorConnectionSystemStripe">يوجد خطأ في نظام الدفع الإلكتروني يرجى مراجعة قسم الصيانة وشكرا</string>
+	<string name="Lbl_Canceled">تم الإلغاء</string>
+	<string name="Lbl_Invalid">غير صالح</string>
+	<!--===============================================================-->
+
+	<!--Credit Window-->
+	<string name="Lbl_DescriptionCredits1">عزز ملفك الشخصي</string>
+	<string name="Lbl_DescriptionCredits2">قم بتمييز رسائلك</string>
+	<string name="Lbl_DescriptionCredits3">أرسل هدية</string>
+	<string name="Lbl_DescriptionCredits4">احصل على فرصة المشاهدة 100 مرة في ميزة "الاستكشاف"</string>
+	<string name="Lbl_DescriptionCredits5">ضع نفسك أولاً في البحث</string>
+	<string name="Lbl_DescriptionCredits6">احصل على ملصقات إضافية</string>
+	<string name="Lbl_DescriptionCredits7">ضاعف فرص الصداقة</string>
+	<string name="Lbl_Your">الخاص بك</string>
+	<string name="Lbl_CreditsBalance">رصيد الاعتمادات</string>
+	<!--===============================================================-->
+
+	<!--Upgrade Premium-->
+	<string name="Lbl_UpgradePremium">الترقية إلى Premium</string>
+	<string name="Lbl_UpgradePremiumMainText">سيساعدك تنشيط Premium على التعرف على المزيد من الأشخاص، بشكل أسرع.</string>
+	<string name="Lbl_SeeMoreStickers">شاهد المزيد من الملصقات في الدردشة</string>
+	<string name="Lbl_ShowInPremium">العرض في شريط Premium</string>
+	<string name="Lbl_SeeLikesNotifications">الاطلاع على إشعارات الإعجابات</string>
+	<string name="Lbl_GetDiscountBuyBoostMe">احصل على خصم عند الشراء عززني</string>
+	<string name="Lbl_DisplayFirstInFindMatches">العرض أولاً في البحث عن التطابقات</string>
+	<string name="Lbl_DisplayFirstInRandomUsers">العرض في الأعلى لدى المستخدمين العشوائيين</string>
+	<string name="Lbl_AddMe">أضفني</string>
+
+	<string name="Lbl_Normal">عادي</string>
+	<string name="Lbl_Weekly">أسبوعيًا</string>
+	<string name="Lbl_Monthly">شهريًا</string>
+	<string name="Lbl_Yearly">سنويًا</string>
+	<string name="Lbl_Lifetime">مدى الحياة</string>
+	<string name="Lbl_PayOnesAccessForEver">إمكانية الوصول للدفع للأبد</string>
+	<!--===============================================================-->
+
+	<!-- Verification Code Number-->
+	<string name="Lbl_Verification">التحقق</string>
+	<string name="Lbl_VerificationText">تم إرسال كلمة المرور لمرة واحدة (OTP) إليك على هاتفك المحمول. الرجاء إدخاله أدناه</string>
+	<string name="Btn_Verify">التحقق</string>
+	<string name="Lbl_CodeNotCorrect">الرجاء كتابة رقم الرمز الصحيح</string>
+	<string name="Lbl_TheNumber">الرقم</string>
+	<string name="Lbl_ISNotValidNumber">ليس رقم هاتف صالحًا</string>
+	<string name="Lbl_VerifyYourNumber">التحقق من رقمك</string>
+	<string name="Lbl_PleaseEnterYourMobileNumber">الرجاء إدخال رقم هاتفك المحمول لتلقي رمز التحقق. قد يتم تطبيق أسعار شركة النقل</string>
+	<!--===============================================================-->
+
+	<!-- Verification Code Number-->
+	<string name="Lbl_CheckYourEmail">تحقق من بريدك الإلكتروني</string>
+	<string name="Lbl_WeSentEmailTo">"لقد أرسلنا بريدًا إلكترونيًا إلى @.\nأدخل الرمز المكون من 4 أرقام لإعادة تعيين كلمة المرور الخاصة بك."</string>
+	<string name="Lbl_ActivationSent">تم إرسال بريد التنشيط</string>
+	<string name="Lbl_PleaseTypeEmail">يُرجى كتابة البريد الإلكتروني للحساب الذي تريد استرداده.</string>
+	<string name="Lbl_YouWillGetCode">سوف تحصل على رمز الاسترداد المكون من 4 أرقام</string>
+	<!--===============================================================-->
+
+	<!-- 1.2.2 Version-->
+	<string name="Lbl_ViewProfile">عرض الصفحة الشخصية</string>
+
+	<!-- Verification Code Number-->
+	<string name="Lbl_VerificationText1">لتسجيل الدخول، يتعين عليك التحقق من هويتك.</string>
+	<string name="Lbl_VerificationText2">لقد أرسلنا إليك رمز التأكيد على عنوان بريدك الإلكتروني.</string>
+	<string name="Lbl_AddCode">أضف رقم الكود</string>
+	<string name="Lbl_ResetPassword">إعادة تعيين كلمة المرور</string>
+	<string name="Btn_ResendEmail">إعادة إرسال البريد الإلكتروني</string>
+
+	<!--Call-->
+	<string name="Lbl_Select_contact">حدد جهة اتصال</string>
+	<string name="Lbl_Phone">الهاتف</string>
+	<string name="Lbl_Web">الويب</string>
+	<string name="Lbl_Calling">جارٍ الاتصال...</string>
+	<string name="Lbl_Waiting_to_connect">في انتظار الاتصال...</string>
+	<string name="Lbl_Faild_to_connect">فشل الاتصال !!</string>
+	<string name="Lbl_No_respond_from_the_user">لا توجد استجابة من المستخدم</string>
+	<string name="Lbl_The_user_declinde_your_call">رفض المستخدم مكالمتك</string>
+	<string name="Lbl_Lost_his_connection">فقد اتصاله</string>
+	<string name="Lbl_Lost_Connection">الاتصال المفقود</string>
+
+	<string name="Lbl_Calls">المكالمات</string>
+	<string name="Lbl_Empty_calls">لا توجد مكالمات</string>
+	<string name="Lbl_Start_calls">ابدأ مكالمة جديدة من قائمة أصدقائك بالضغط على الزر الموجود أسفل الشاشة.</string>
+
+	<string name="Lbl_Notification_of_Messages">إشعار بالرسائل</string>
+
+	<string name="Lbl_Dismiss">تجاهل</string>
+	<string name="Lbl_Answer">الإجابة</string>
+	<string name="Lbl_Clear_call_log">مسح سجل المكالمات</string>
+	<string name="Lbl_Answered_call">مكالمة تم الرد عليها</string>
+	<string name="Lbl_Missed_call">مكالمة لم يرد عليها</string>
+	<string name="Lbl_Declined_call">تم رفض المكالمة</string>
+	<string name="Lbl_Waiting_for_answer">في انتظار الإجابة</string>
+	<string name="Lbl_Need_Camera">تحتاج إلى أذونات الكاميرا والميكروفون للاتصال.</string>
+	<string name="Lbl_Room_Disconnected">تم قطع اتصال المستخدم.</string>
+	<string name="Lbl_Connected">متصل</string>
+	<string name="Lbl_User_Lost_Connection">اتصال المستخدم المفقود</string>
+	<string name="Lbl_Calling_video">الاتصال بالفيديو</string>
+
+	<string name="Lbl_Call">اتصل</string>
+	<string name="Lbl_Select_Type_Call">حدد نوع الاتصال؟</string>
+	<string name="Lbl_Voice_call">مكالمة صوتية</string>
+	<string name="Lbl_Video_call">مكالمة فيديو</string>
+	<string name="Lbl_Muted_his_video">قام بتجاهل مقطع الفيديو الخاص به</string>
+	<string name="Lbl_is_calling_you">يتصل بك</string>
+
+	<!-- 1.4 Version-->
+	<!--===============================================================-->
+	<string name="Lbl_loadMore">تحميل المزيد</string>
+	<string name="press_again_exit">اضغط مرة أخرى للخروج</string>
+	<string name="Lbl_CopyLink">انسخ الرابط</string>
+
+	<string name="Lbl_BagOfCredits">حقيبة الاعتمادات</string>
+	<string name="Lbl_BoxOfCredits">صندوق الاعتمادات</string>
+	<string name="Lbl_ChestOfCredits">صندوق الاعتمادات</string>
+
+	<string name="Lbl_AreYouSureDeleteMessages">هل أنت متأكد من رغبتك في حذف الرسائل؟</string>
+	<string name="Lbl_MessageCall1">"لا أستطيع التحدث الآن، ما الأمر؟"</string>
+	<string name="Lbl_MessageCall2">"سأتصل بك فورًا"</string>
+	<string name="Lbl_MessageCall3">"سأتصل بك لاحقًا"</string>
+	<string name="Lbl_MessageCall4">"لا أستطيع التحدث الآن. اتصل بي لاحقًا"</string>
+	<string name="Lbl_MessageCall5">رسالة مخصصة..</string>
+
+	<!--Article-->
+	<string name="Lbl_ExploreArticle">استكشاف المقالات</string>
+	<string name="Lbl_Empty_Article">لا توجد مقالات</string>
+	<string name="Lbl_Start_Article">لا توجد مقالات متاحة</string>
+	<string name="Lbl_Blogs">المدونات</string>
+	<string name="Lbl_ReadTheLatestArticles">اقرأ أحدث المقالات</string>
+	<string name="Lbl_NoMoreArticles">لم يتم العثور على المزيد من المقالات</string>
+
+	<string name="Lbl_BankTransfer">تحويل مصرفي</string>
+	<string name="Lbl_YourWasReceiptSuccessfullyUploaded">تم تحميل الإيصال بنجاح</string>
+	<string name="Lbl_Note">ملاحظة:</string>
+	<string name="Lbl_short_Note1">يُرجى تحويل المبلغ</string>
+	<string name="Lbl_short_Note2">إلى هذا الحساب البنكي للشراء</string>
+	<string name="Lbl_short_Note3">خطة العضوية المميزة</string>
+	<string name="Lbl_long_Note">لتأكيد التحويل البنكي، ستحتاج إلى تحميل إيصال أو التقاط لقطة شاشة للتحويل الخاص بك خلال يوم واحد من تاريخ الدفع. إذا تم إجراء تحويل مصرفي ولكن لم يتم تحميل أي إيصال خلال هذه الفترة، فسيتم إلغاء طلبك. سوف نقوم بالتحقق من إيصالك وتأكيده خلال 3 أيام عمل من تاريخ تحميله.</string>
+
+
+	<string name="Lbl_AccountNumber">رقم الحساب / IBAN</string>
+	<string name="Lbl_AccountName">اسم الحساب</string>
+	<string name="Lbl_RoutingCode">رمز التوجيه</string>
+
+	<string name="Lbl_CreditCard">بطاقة الائتمان</string>
+	<string name="Lbl_Basics">الأساسيات</string>
+	<string name="Lbl_Background">الخلفية</string>
+
+	<string name="Lbl_ToHeight">الارتفاع حتى</string>
+	<string name="Lbl_FromHeight">من الارتفاع</string>
+	<string name="Lbl_ErrorPleaseSelectImage">خطأ، يرجى تحديد الصورة</string>
+
+	<!-- 1.4.3 Version-->
+	<!--===============================================================-->
+	<string name="Lbl_Finding_your_Location">العثور على موقعك…</string>
+	<string name="Lbl_SearchForPlace">البحث عن مكان</string>
+	<string name="Lbl_Error_DisplayAddress">غير قادر على تحديد العنوان. حاول مرة أخرى بعد بضع دقائق.</string>
+	<string name="Lbl_Title_Location">موقعي</string>
+	<string name="Lbl_Snippet_Location">"هذا هو موضع جهازي"</string>
+	<string name="Lbl_MyLocation">موقعي</string>
+	<string name="Lbl_Default">الافتراضي</string>
+	<string name="Lbl_HotORNot">ساخن أم لا</string>
+	<string name="Lbl_ViewMore">عرض المزيد</string>
+
+	<!-- 1.5 Version-->
+	<!--===============================================================-->
+	<string name="Lbl_Camera_Not_Available">هل الكاميرا غير متاحة.</string>
+	<string name="Lbl_TheFilesWillBeDeleted">سيتم حذف الملفات. هل أنت متأكد؟</string>
+	<string name="Lbl_FilesAreNowDeleted">تم الآن حذف الملفات</string>
+
+	<!--My Affiliates-->
+	<string name="Lbl_MyAffiliates">الشركات التابعة لي</string>
+	<string name="Lbl_EarnUpTo">اربح ما يصل إلى</string>
+	<string name="Lbl_forEachUserYourReferToUs">لكل مستخدم تقوم بإحالته إلينا</string>
+	<string name="Lbl_ShareTo">المشاركة في</string>
+
+	<!--Manage Sessions-->
+	<string name="Lbl_ManageSessions">إدارة الجلسات</string>
+	<string name="Lbl_Empty_Sessions">لا توجد جلسات !!</string>
+	<string name="Lbl_Browser">المتصفح</string>
+	<string name="Lbl_IpAddress">عنوان IP</string>
+	<string name="Lbl_AreYouSureLogoutFromThisDevice">هل أنت متأكد من أنك تريد تسجيل الخروج من هذا الجهاز؟</string>
+
+	<!--TwoFactor-->
+	<string name="Lbl_TwoFactor">المصادقة الثنائية</string>
+	<string name="Lbl_Describe_TwoFactor">"قم بتشغيل تسجيل الدخول المكون من خطوتين لرفع مستوى أمان حسابك، وبمجرد تشغيله، ستستخدم كلاً من كلمة المرور ورمز الأمان المكون من 6 أرقام الذي يتم إرساله إلى هاتفك أو البريد الإلكتروني إلى قم بتسجيل الدخول."</string>
+	<string name="Lbl_ConfirmationEmail_TwoFactor">لقد أرسلنا بريدًا إلكترونيًا يحتوي على رمز التأكيد لتمكين المصادقة الثنائية.</string>
+	<string name="Lbl_ConfirmationEmailSent">تم إرسال رسالة تأكيد بالبريد الإلكتروني.</string>
+	<string name="Lbl_ConfirmationCode">رمز التأكيد</string>
+	<string name="Lbl_ConfirmationCodeSent">تم إرسال رمز التأكيد</string>
+	<string name="Lbl_TwoFactorOn">تشغيل عاملين</string>
+	<string name="Lbl_Enable">تمكين</string>
+	<string name="Lbl_Disable">تعطيل</string>
+
+	<!--Withdrawals-->
+	<string name="Lbl_Withdrawals">عمليات السحب</string>
+	<string name="Lbl_PayPalEmail">البريد الإلكتروني لـ PayPal</string>
+	<string name="Lbl_Amount">المبلغ</string>
+	<string name="Lbl_MyBalance">رصيدي</string>
+	<string name="Lbl_CantRequestWithdrawals">لا يمكنك طلب هذا المبلغ الذي لا يتناسب مع رصيدك الحالي</string>
+	<string name="Lbl_RequestSentWithdrawals">تم إرسال طلب السحب الخاص بك بنجاح</string>
+	<string name="Lbl_PaymentHistory">سجل الدفع</string>
+	<string name="Lbl_Requested">مطلوب</string>
+	<string name="Lbl_Status">الحالة</string>
+	<string name="Lbl_PendingReview">في انتظار المراجعة</string>
+	<string name="Lbl_Approved">تمت الموافقة عليه</string>
+	<string name="Lbl_Declined">تم الرفض</string>
+
+	<!--Login WoWonder-->
+	<string name="Lbl_LoginWith">تسجيل الدخول باستخدام</string>
+	<string name="Lbl_ErrorLogin_3">اسم المستخدم أو كلمة المرور غير صحيحة</string>
+	<string name="Lbl_ErrorLogin_4">لم يتم العثور على اسم المستخدم</string>
+	<string name="Lbl_ErrorLogin_5">كلمة المرور غير صحيحة</string>
+	<string name="Lbl_ErrorLogin_6">لا يمكنك إجراء عملية التسجيل، يرجى المحاولة مرة أخرى لاحقًا أو الاتصال بنا</string>
+	<string name="Lbl_ContinueAs">المتابعة باسم</string>
+
+	<!--SearchFilter-->
+	<string name="Lbl_Distance">المسافة</string>
+	<string name="Lbl_distance_away">على مسافة</string>
+	<string name="Lbl_km">كم</string>
+
+	<!--Media Files-->
+	<string name="Lbl_MediaFiles">ملفات الوسائط</string>
+	<string name="Lbl_SeeMoreMedia">عرض المزيد من الوسائط</string>
+	<string name="Lbl_AskDeleteFile">هل تريد حذف هذا الملف؟</string>
+	<string name="Lbl_ChooseTheFileType">اختر نوع الملف</string>
+	<string name="Lbl_ImageGallery">معرض الصور</string>
+	<string name="Lbl_VideoGallery">معرض الفيديو</string>
+	<string name="Lbl_RecordVideoFromCamera">تسجيل فيديو من الكاميرا</string>
+	<string name="Lbl_TakeImageFromCamera">التقط صورة من الكاميرا</string>
+	<string name="Lbl_Empty_Media">لا توجد وسائط</string>
+
+	<!--Friends-->
+	<string name="Lbl_AddFriend">أضف صديقًا</string>
+	<string name="Lbl_UnFriend">إلغاء الصداقة</string>
+	<string name="Lbl_Requests">الطلبات</string>
+	<string name="Lbl_DisplayAllFriends">اعرض قائمة أصدقائك.</string>
+	<string name="Lbl_Empty_FriendsRequests">لا توجد طلبات جديدة</string>
+	<string name="Lbl_NoFriendsRequests">"عندما يرسل لك الأشخاص طلبات صداقة، سيظهرون هنا."</string>
+	<string name="Lbl_DeclineRequest">رفض الطلب</string>
+	<string name="Lbl_AcceptRequest">قبول الطلب</string>
+	<string name="Lbl_FriendRequest">طلب صداقة</string>
+	<string name="Lbl_View_All_FriendRequest">عرض جميع طلبات الأصدقاء</string>
+	<string name="Lbl_TheRequestSent">تم إرسال الطلب، انتظر الموافقة</string>
+	<string name="Lbl_TheFriendshipCanceled">تم إلغاء الصداقة</string>
+
+	<!--Theme-->
+	<string name="Lbl_Display">العرض</string>
+	<string name="Lbl_Theme">الموضوع</string>
+	<string name="Lbl_Night_Mode">الوضع الليلي</string>
+	<string name="Lbl_Light">الضوء</string>
+	<string name="Lbl_Dark">مظلم</string>
+	<string name="Lbl_SetByBattery">تم الضبط بواسطة توفير شحن البطارية</string>
+
+	<string name="Lbl_ThisUserHasBeenLiked">لقد تم الإعجاب بهذا المستخدم</string>
+	<string name="Lbl_ThisUserHasBeenDisliked">لم يتم الإعجاب بهذا المستخدم</string>
+
+	<!-- 1.6 Version-->
+	<!--===============================================================-->
+	<string name="Lbl_I_Desliked">الأشخاص الذين لم أحبهم</string>
+	<string name="Lbl_I_Desliked_desc">عرض المستخدمين الذين لم يعجبني.</string>
+	<string name="Lbl_I_Liked">الأشخاص الذين أعجبني</string>
+	<string name="Lbl_I_Liked_desc">إظهار المستخدمين الذين أبديت إعجابهم بهم.</string>
+	<string name="Lbl_your_are_premium">أنت مستخدم مميز</string>
+	<string name="Lbl_Renew">تجديد</string>
+
+	<string name="Lbl_UnLiked">لم يعجبني</string>
+	<string name="Lbl_UnDisliked">لم يعجبني</string>
+	<string name="Lbl_FriendRequestYou">طلب أن يكون صديقًا لك.</string>
+	<string name="Lbl_FriendRequestAccepted">موجود الآن في قائمة أصدقائك.</string>
+	<string name="Lbl_ProUser">مستخدم محترف</string>
+	<string name="Lbl_ExpirationDate">تاريخ انتهاء الصلاحية</string>
+
+
+	<string name="Lbl_ErrorMaxSwaps">لقد تجاوزت الحد الأقصى لعدد مرات الإعجاب أو التمرير في هذا اليوم</string>
+	<string name="Lbl_ErrorNotHaveCredit">عذرًا، لا يمكنك إرسال الهدية نظرًا لعدم وجود رصيد كافي</string>
+	<string name="Lbl_ErrorLimitOfMediaUploads">عذرًا، لقد وصلت إلى الحد الأقصى لتحميلات الوسائط.</string>
+	<string name="Lbl_Empty_GetPremium">احصل على الإصدار المميز لعرض من أعجبك!</string>
+	<string name="Lbl_GetPremiumMainText">احصل على قسط لتستمتع بالعديد من المزايا</string>
+	<string name="Lbl_UploadedSuccessfullyWithReviewed">تم التحميل بنجاح، ستتم مراجعة الملف</string>
+	<string name="Lbl_UploadedSuccessfully">تم التحميل بنجاح</string>
+	<string name="Lbl_ErrorMaxChatLimit">لقد تجاوزت الحد الأقصى للدردشة، احصل على قسط لمواصلة الدردشة</string>
+
+	<!-- 1.7 Version-->
+	<!--===============================================================-->
+	<!--UpdateManagerApp-->
+	<string name="Lbl_ThereIsNewUpdate">هناك تحديث جديد</string>
+	<string name="Lbl_DiscoverNewVersion">اكتشف الإصدار الجديد</string>
+	<string name="Lbl_Current">الحالي</string>
+	<string name="Lbl_Update">تحديث</string>
+
+	<!--InAppReview-->
+	<string name="Lbl_Rate">السعر</string>
+	<string name="Lbl_RateOurAppContent">إذا كنت تحب تطبيقنا، فيرجى تخصيص بعض الوقت لتندره.</string>
+
+	<!-- 1.9 Version-->
+	<!--===============================================================-->
+	<string name="Lbl_SuccessfullyUpdated">تم التحديث بنجاح</string>
+	<string name="Lbl_SuccessfullyUpgraded">تمت الترقية بنجاح</string>
+	<string name="Lbl_PaymentSuccessfully">تم الدفع بنجاح</string>
+	<string name="Lbl_SentSuccessfully">تم الإرسال بنجاح</string>
+	<string name="Lbl_Check">تحقق</string>
+	<string name="Lbl_ProfileOn">الملف الشخصي على</string>
+
+	<!-- 2.1 Version-->
+	<!--===============================================================-->
+	<string name="Lbl_Error_IsUserYearsOld">عذراً، لا يمكن التسجيل لعدم استيفاء شروط السن لمن يزيد عن 18 عاماً</string>
+
+	<!-- 2.3 Version-->
+	<!--===============================================================-->
+	<string name="Lbl_Transactions">المعاملات</string>
+	<string name="Lbl_Empty_Transactions">لا توجد معاملات</string>
+	<string name="Lbl_Pro">الاحترافي</string>
+	<string name="Lbl_Please_wait">الرجاء الانتظار…</string>
+	<string name="Lbl_AddCommentHere">أضف تعليقًا هنا</string>
+	<string name="Lbl_Payment">الدفع</string>
+
+	<!--Live Video Agora-->
+	<string name="Lbl_Live">مباشر</string>
+	<string name="Lbl_CreateLiveVideo">إنشاء فيديو مباشر</string>
+	<string name="Lbl_IsLiveNow">مباشر الآن</string>
+	<string name="Lbl_AddLiveVideoContext">أضف سياق فيديو مباشر</string>
+	<string name="Lbl_PleaseEnterLiveStreamName">يُرجى إدخال اسم البث المباشر</string>
+	<string name="Lbl_Go_Live">البث المباشر</string>
+	<string name="Lbl_GetReady">استعد</string>
+	<string name="Lbl_JoiningStream">الانضمام إلى الدفق</string>
+	<string name="Lbl_LiveStreamHasEnded">انتهى البث المباشر الخاص بك</string>
+	<string name="Lbl_LiveStreamShareSuccess">شكرًا، نأمل رؤيتك مرة أخرى</string>
+	<string name="Lbl_StartedBroadcastingLive">بدأ البث المباشر</string>
+	<string name="Lbl_StreamHasEnded">انتهى البث.</string>
+	<string name="Lbl_LiveStreamer_alert_title">هل أنت مستعد لإيقاف البث المباشر؟</string>
+	<string name="Lbl_LiveStreamer_alert_message">"انقر على "نعم" لإنهاء البث أو "لا" للمتابعة"</string>
+	<string name="Lbl_LiveViewer_alert_title">هل أنت مستعد للتوقف عن المشاهدة؟</string>
+	<string name="Lbl_LiveViewer_alert_message">"انقر على "نعم" للخروج من البث المباشر أو على "لا" لمواصلة المشاهدة"</string>
+	<string name="Lbl_YourLiveStreamHasEnded">انتهى البث المباشر الخاص بك</string>
+	<string name="Lbl_LiveStreamer_End_title">شكرًا، نأمل رؤيتك مرة أخرى</string>
+	<string name="Lbl_LiveViewer_End_title">ابدأ البث المباشر الخاص بك الآن</string>
+
+	<!-- 2.4 Version-->
+	<!--===============================================================-->
+	<string name="Lbl_ThisFileIsPrivate">هذا الملف خاص</string>
+
+	<!-- 2.5 Version-->
+	<!--===============================================================-->
+	<string name="Lbl_PConfirmFollowers">تأكيد الطلب عندما يطلب شخص ما أن يكون صديقا لك؟</string>
+
+	<!-- 2.6 Version-->
+	<!--===============================================================-->
+	<string name="Lbl_call_swipe_up_to_answer">التمرير لأعلى للإجابة</string>
+	<string name="Lbl_call_swipe_down_to_reject">اسحب لأسفل للرفض</string>
+ 
+	<!-- 2.7 Version-->
+	<!--===============================================================-->
+	<string name="Lbl_Duration">المدة</string>
+	<string name="Lbl_Accept">قبول</string>
+	<string name="Lbl_SelectYourPaymentMethod">حدد طريقة الدفع الخاصة بك</string>
+	<string name="Lbl_Bank">البنك</string>
+	<string name="Lbl_RazorPay">RazorPay</string>
+	<string name="Lbl_PaySera">PaySera</string>
+	<string name="Lbl_PayStack">Paystack</string>
+	<string name="Lbl_AuthorizeNet">AuthorizeNet</string>
+	<string name="Lbl_SecurionPay">SecurionPay</string>
+	<string name="Lbl_IyziPay">IyziPay</string>
+	<string name="Lbl_CashFree">CashFree</string>
+	<string name="Lbl_AamarPay">AamarPay</string>
+	<string name="Lbl_GooglePay">Google Pay</string>
+	<string name="Lbl_PayNow">الدفع الآن</string>
+	<string name="Lbl_PayWith">الدفع باستخدام</string>
+	<string name="Lbl_Processing">جارٍ المعالجة...</string>
+	<string name="Lbl_PleaseEnterName">خطأ، الرجاء إدخال الاسم</string>
+	<string name="Lbl_ErrorConnectionPayment">"إنه غير متاح الآن، يرجى المحاولة مرة أخرى لاحقًا"</string>
+	<string name="Lbl_WithdrawMethod">طريقة السحب</string>
+	<string name="Lbl_SwiftCode">الرمز السريع</string>
+	<string name="Lbl_Address">العنوان</string>
+	<string name="Lbl_ThereIsNoBalance">لا يوجد رصيد</string>
+
+	<!-- 2.8 Version-->
+	<!--===============================================================-->
+	<string name="Lbl_WelcomeTo">مرحبًا بك في</string>
+	<string name="Lbl_LoginHeader">قم بتسجيل الدخول لمواصلة البحث عن الشريك.</string>
+	<string name="Lbl_RegisterHeader">سجل لمواصلة البحث عن شريك.</string>
+	<string name="Lbl_FullName">الاسم الكامل</string>
+	<string name="Lbl_NotAMember">لست عضوًا؟</string>
+	<string name="Lbl_RegisterNow">سجل الآن</string>
+	<string name="Lbl_LoginNow">سجل الدخول الآن</string>
+	<string name="Lbl_continueWith">تابع مع</string>
+	<string name="Lbl_Google">Google</string>
+	<string name="Lbl_Explore">استكشف</string>
+	<string name="Lbl_ViewAll">عرض الكل</string>
+	<string name="Lbl_Popularity">الشعبية</string>
+	<string name="Lbl_MoreInfo">مزيد من المعلومات</string>
+	<string name="Lbl_WhyChoosePremiumMembership">لماذا تختار العضوية المميزة؟</string>
+	<string name="Lbl_CreateUnlimitedVideoAndAudioCalls">إنشاء مكالمات فيديو وصوت غير محدودة</string>
+	<string name="Lbl_FindPotentialMatchesByCountry">البحث عن التطابقات المحتملة حسب البلد</string>
+
+	<!-- 2.9 Version-->
+	<!--===============================================================-->
+	<string name="Lbl_EndToEndEncrypted">مشفر من طرف إلى طرف</string>
+	<string name="Lbl_Flip">قلب</string>
+	<string name="Lbl_StopVideo">إيقاف الفيديو</string>
+	<string name="Lbl_Mute">كتم الصوت</string>
+	<string name="Lbl_EndCall">إنهاء المكالمة</string>
+	<string name="Lbl_Speaker">مكبر الصوت</string>
+
+	<!-- 3.0 Version-->
+	<!--===============================================================-->
+	<string name="Lbl_Skip">تخطي</string>
+	<string name="Lbl_DeleteAllChat">حذف جميع الدردشات</string>
+	<string name="Lbl_MessagesRequests">طلبات الرسائل</string>
+
+	<!-- 3.1 Version-->
+	<!--===============================================================-->	
+	<string name="Lbl_FlutterWave">FlutterWave</string>
+ 
+	<!-- 3.2 Version-->
+	<!--===============================================================-->
+	<string name="Lbl_ErrorCall_Message">حدث خطأ في الاتصال، يرجى إعادة المحاولة لاحقًا.</string>
+	<string name="Lbl_ErrorCall_Code">خطأ في رمز الاتصال:</string>
+	<string name="Lbl_ContactUs">اتصل بنا</string>
+
+	<!-- 3.3 Version-->
+	<!--===============================================================-->
+	<string name="Lbl_Other">أخرى</string>
+	<string name="Lbl_Email_Has_Been_Send">تم إرسال البريد الإلكتروني</string>
+	<string name="Lbl_Decline">رفض</string>
+	<string name="Lbl_HangUp">أغلق الخط</string>
+	
+	<!-- 3.4 Version-->
+	<!--===============================================================-->
+	<string name="Lbl_Display_your_app_Language">عرض لغة التطبيق الخاص بك</string>
+	<string name="Lbl_PointsAdded">النقاط المضافة</string>
+
+	<!-- V3.6 String translate -->
+	<!--===============================================================-->
+	<string name="Lbl_ErrorLive_Code">خطأ في الكود المباشر :</string>
+
+</resources>

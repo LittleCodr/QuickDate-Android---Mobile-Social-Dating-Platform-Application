@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/activity_call_chat_view"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"	>
+	 
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:layout_marginTop="100dp">
+		<ImageView
+			android:id="@+id/UserImageView"
+			android:scaleType="centerCrop"
+			android:layout_width="115dp"
+			android:layout_height="115dp"
+			android:focusable="false"
+			android:clickable="false"
+			android:layout_centerInParent="true"
+			android:layout_gravity="center"
+			android:src="@drawable/no_profile_image_circle"
+			android:layout_marginStart="5dp" />
+
+		<TextView
+			android:id="@+id/UsernameTextView"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="25sp"
+			android:layout_centerHorizontal="true"
+			android:textStyle="bold"  
+			android:gravity="center_horizontal"
+			android:layout_gravity="center"
+			android:layout_alignParentBottom="true"
+			android:layout_marginTop="10dp" />
+
+		<TextView
+			android:id="@+id/TypecallTextView"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="16sp"
+			android:layout_centerHorizontal="true"
+			android:gravity="center_horizontal"
+			android:layout_gravity="center" 
+			android:layout_alignParentBottom="true"
+			android:layout_marginTop="15dp" />
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="130dp"
+		android:layout_gravity="bottom"
+		android:layout_marginBottom="30dp"
+		android:layout_marginStart="30dp"
+		android:layout_marginEnd="30dp"
+		android:weightSum="3"
+		android:gravity="center"
+		android:orientation="horizontal">
+
+		<LinearLayout
+			android:id="@+id/DeclineButtonLayout"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:layout_marginTop="10dp"
+			android:layout_marginStart="10dp"
+			android:layout_marginEnd="10dp"
+			android:orientation="vertical">
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="60dp"
+				android:layout_height="60dp"
+				android:background="@drawable/shape_circle_white"
+				android:backgroundTint="@color/accent"
+				android:layout_gravity="center"
+				android:gravity="center">
+				<ImageView
+					android:layout_width="35dp"
+					android:layout_height="35dp"
+					android:id="@+id/iconEndCall"
+					android:src="@drawable/icon_call_end_vector"
+					android:gravity="center"
+					android:tint="@color/gnt_white"
+					android:layout_gravity="center"
+					android:layout_centerHorizontal="true"
+					android:layout_centerVertical="true"
+					android:clickable="false"
+					android:focusable="false" />
+			</LinearLayout>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/Lbl_Decline"
+				android:textSize="14sp"
+				android:layout_marginTop="10dp"
+				android:textColor="?attr/colorSecText"
+				android:layout_gravity="center"
+				android:gravity="center"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/AnswerCallButtonLayout"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:layout_marginStart="10dp"
+			android:layout_marginEnd="10dp"
+			android:orientation="vertical">
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="80dp"
+				android:layout_height="80dp"
+				android:background="@drawable/shape_circle_white"
+				android:backgroundTint="@color/gnt_green"
+				android:layout_gravity="center"
+				android:gravity="center">
+				<ImageView
+					android:layout_width="35dp"
+					android:layout_height="35dp"
+					android:src="@drawable/icon_call_answer_vector"
+					android:gravity="center"
+					android:tint="@color/gnt_white"
+					android:layout_gravity="center"
+					android:layout_centerHorizontal="true"
+					android:layout_centerVertical="true"
+					android:clickable="false"
+					android:focusable="false" />
+			</LinearLayout>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/Lbl_Answer"
+				android:textSize="14sp"
+				android:layout_marginTop="10dp"
+				android:textColor="?attr/colorSecText"
+				android:layout_gravity="center"
+				android:gravity="center"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/MessageButtonLayout"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:layout_marginTop="10dp"
+			android:layout_marginStart="10dp"
+			android:layout_marginEnd="10dp"
+			android:orientation="vertical">
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="60dp"
+				android:layout_height="60dp"
+				android:background="@drawable/shape_circle_white"
+				android:backgroundTint="@color/gnt_gray"
+				android:layout_gravity="center"
+				android:gravity="center">
+				<ImageView
+					android:layout_width="35dp"
+					android:layout_height="35dp"
+					android:id="@+id/iconEndCall"
+					android:src="@drawable/icon_message_vector"
+					android:gravity="center"
+					android:tint="@color/gnt_white"
+					android:layout_gravity="center"
+					android:layout_centerHorizontal="true"
+					android:layout_centerVertical="true"
+					android:clickable="false"
+					android:focusable="false" />
+			</LinearLayout>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/Lbl_Message"
+				android:textSize="14sp"
+				android:layout_marginTop="10dp"
+				android:textColor="?attr/colorSecText"
+				android:layout_gravity="center"
+				android:gravity="center"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</FrameLayout>

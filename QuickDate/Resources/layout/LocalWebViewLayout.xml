@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="?attr/colorFill"
+              android:clickable="true"
+              android:focusable="true"
+              android:orientation="vertical">
+         <androidx.appcompat.widget.Toolbar
+              android:id="@+id/toolbar"
+              android:layout_width="match_parent"
+              android:layout_height="48dp"
+              app:theme="@style/ToolbarTheme"
+              android:layout_gravity="top"
+              app:layout_collapseMode="pin"
+              android:elevation="2dp"
+              app:titleTextAppearance="@style/Toolbar.TitleText"
+              android:background="?attr/colorFill" />
+	<RelativeLayout  
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+			android:id="@+id/swipeRefreshLayout"
+			android:layout_width="match_parent"
+			android:layout_above="@id/adView"
+			app:layout_behavior="@string/appbar_scrolling_view_behavior"
+			android:layout_height="match_parent" >
+			<WebView
+				android:id="@+id/LocalWebView" 
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"/>
+		</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+		
+
+		<com.google.android.gms.ads.AdView
+			android:id="@+id/adView"
+			app:adSize="SMART_BANNER"
+			app:adUnitId="@string/banner_ad_unit_id"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content" 
+			android:layout_alignParentBottom="true"/>
+		  
+	</RelativeLayout>
+
+</LinearLayout> 

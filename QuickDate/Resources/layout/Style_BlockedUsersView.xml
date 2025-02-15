@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="72dp"
+    android:clickable="false"
+    android:orientation="horizontal"
+    android:focusable="false"
+    android:layout_alignParentStart="true"
+	android:background="?attr/selectableItemBackground"
+    android:foregroundGravity="center_horizontal"
+    android:gravity="center_vertical">
+
+    <ImageView
+        android:id="@+id/ImageUser"
+        android:scaleType="centerCrop"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="12dp"
+        android:focusable="false"
+        android:clickable="false"
+        android:src="@drawable/no_profile_image_circle" />
+
+    <LinearLayout
+        android:id="@+id/message_container"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:orientation="vertical"
+        android:focusable="false"
+        android:layout_marginStart="12dp"
+        android:layout_alignParentStart="true"
+        >
+
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:clickable="false"
+            android:focusable="false"
+            android:layout_alignParentStart="true"
+            android:gravity="start"
+            android:textSize="16dp"
+            android:lineHeight="20dp"
+            android:textAlignment="textStart"
+            android:text="The Ellen Show"  />
+         
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        >
+
+        <androidx.appcompat.widget.AppCompatButton
+		    android:layout_width="100dp"
+		    android:layout_height="40dp"
+		    android:id="@+id/btn_block_control"
+		    android:layout_alignParentEnd="true"
+		    android:layout_centerVertical="true"
+		    android:background="@drawable/round_button_normal"
+		    android:text="Unblock"
+		    style="?android:attr/borderlessButtonStyle"
+		    android:tag="false"
+		    android:paddingTop="4dp"
+		    android:paddingEnd="12dp"
+		    android:paddingBottom="4dp"
+		    android:paddingStart="12dp"
+		    android:layout_marginEnd="12dp"
+		    android:textAlignment="center"
+		    android:textAllCaps="false"
+		    android:forceDarkAllowed="false"
+		    android:textColor="@color/accent"
+		    android:textFontWeight="500"
+		    android:textSize="14dp"
+		    android:lineHeight="20dp"
+		    />
+    </LinearLayout>
+    
+
+</LinearLayout>

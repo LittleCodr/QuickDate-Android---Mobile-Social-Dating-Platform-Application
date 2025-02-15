@@ -1,0 +1,96 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:layout_margin="10dp"
+    android:id="@+id/maincardview"
+    app:cardBackgroundColor="?attr/colorFill"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="0dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:scaleType="centerCrop"
+            android:maxHeight="350dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="userprofile"
+            android:id="@+id/imgUser"
+            android:src="@drawable/no_profile_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <RelativeLayout
+            android:background="@drawable/Shape_Alfa_color_black"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_above="@+id/LastSeen"
+                android:textStyle="bold"
+                android:id="@+id/txtName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="9dp"
+                android:layout_marginStart="9dp"
+                android:maxLines="1"
+                android:maxLength="35"
+                android:layout_toStartOf="@+id/OnlineIcon"
+                android:layout_marginTop="20dp"
+                android:textSize="@dimen/msg_text_secondary"
+                android:text="Begovsky , 22"
+                android:layout_alignParentStart="true"
+                android:textColor="#ffff" />
+            <TextView
+                android:textStyle="normal"
+                android:id="@+id/LastSeen"
+                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="9dp"
+                android:layout_marginStart="9dp"
+                android:layout_marginBottom="9dp"
+                android:maxLines="1"
+                android:layout_alignParentStart="true"
+                android:gravity="center"
+                android:textSize="11dp"
+                android:text="2 hours ago"
+                android:textColor="#ffff" />
+            <View
+                android:id="@+id/OnlineIcon"
+                android:layout_above="@+id/LastSeen"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginBottom="4dp"
+                android:backgroundTint="#30db3c"
+                android:background="@drawable/circlegradient"
+                android:layout_width="8dp"
+                android:layout_height="8dp" />
+        </RelativeLayout>
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="likeprofile"
+            android:id="@+id/LikeButton"
+            android:tint="@color/gnt_white"
+            android:src="@drawable/icon_heart_post_vector"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animation_view_of_like"
+            android:layout_marginStart="0dp"
+            android:scaleType="fitCenter"
+            android:translationY="-24.5dp"
+            android:translationX="15dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="1dp"
+            android:layout_alignParentEnd="true"
+            android:layout_height="66dp"
+            android:padding="0dp"
+            app:lottie_fileName="LikeHeart.json"
+            app:lottie_loop="false"
+            app:lottie_autoPlay="true"
+            android:layout_width="66dp" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

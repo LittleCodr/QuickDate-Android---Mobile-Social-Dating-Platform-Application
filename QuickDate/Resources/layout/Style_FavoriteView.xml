@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="25dp"
+    android:gravity="center"
+    android:background="?attr/selectableItemBackground" >
+    <RelativeLayout
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/people_profile_sos"
+            android:scaleType="centerCrop"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/no_profile_image_circle" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ImageLastseen"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/gnt_white"
+            android:layout_alignBottom="@id/people_profile_sos"
+            android:layout_marginBottom="2dp" 
+            android:layout_centerVertical="true"
+            android:layout_marginStart="55dp"
+            android:src="@color/gnt_green"
+            android:layout_above="@id/people_profile_sos" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/people_profile_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/people_profile_sos"
+        android:textColor="#6f6f6f"
+        android:lines="1"
+        android:maxLines="1"
+        android:layout_marginTop="10dp"
+        android:textSize="14sp" />
+    <TextView
+        android:id="@+id/people_profile_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/people_profile_name"
+        android:textColor="#b7b7b7"
+        android:textSize="12sp"
+        android:lines="1"
+        android:maxLines="1"
+        android:layout_marginTop="-5dp" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:id="@+id/btn_UnFavorite"
+        android:textSize="12sp"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:layout_below="@+id/people_profile_time"
+        android:background="@drawable/round_button_outline"
+        android:tag="false"
+        android:paddingStart="17dp"
+        android:paddingEnd="17dp"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:text="@string/Lbl_UnFavorite"
+        android:textColor="@color/accent"
+        android:layout_marginTop="7dp" />
+</LinearLayout>
